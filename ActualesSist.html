@@ -71,10 +71,10 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: <br/>40.0 </td>
-									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>18.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
+									<td>N&uacute;mero Total de Proyectos: <br/>43.0 </td>
+									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>21.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
 									<td>N&uacute;mero Total de Alumnos: <br/>43.0 </td>
-									<td>N&uacute;mero Total de Tutores Involucrados: <br/>29.0 </td>								</tr>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>31.0 </td>								</tr>
 							</tbody>
 						</table>
 					</section>
@@ -85,11 +85,12 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(40, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,40, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,40, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,40, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,40, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarAllFilas(43, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,43, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,43, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,43, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,43, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(4,3,10,43, 'P')">41...43</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -498,17 +499,95 @@ Se va a desarrollar un visor 3D compatible con ficheros STL, que permita a los e
 								<td> Álvaro Pérez Santamaría<p></p> <p></p>  </td>
 								<td> 22/12/2016</td>
 							</tr><!-- End Proyecto-->
+							<tr id="P40"> <!-- Begin Proyecto-->
+								<th> GII17.1Creación de un preview de impresión 3D utilizando tecnologías HTML5/JS</th>
+								<td> El proyecto consiste en desarrollar un preview de impresión para productos host que trabajen con impresoras 3D. En dicho preview debería verse una representación tridimensional del resultado final de impresión, teniendo en cuenta los parámetros geométricos de la pieza así como los posibles settings de impresión aplicados.
+Además de mostrar una visualización sería deseable que se permitiese la manipulación de la vista por parte del usuario, es decir, poder llevar a cabo operaciones de rotación libre, panning, zooming, etc."  	
+Tiempo estimado de desarrollo 	Aproximadamente 500 horas, dependiendo especialmente de la aplicación/web de ejemplo que se desarrolle alrededor del componente de preview.
+Descripción detallada de las funciones a realizar por el alumno 	"Fase 1 Investigación de la representación geométrica de plots (piezas) para impresoras 3D
+Fase 2 Investigación de los formatos de archivo presentes en el mercado (y/o que va a utilizar HP en sus impresoras 3D)
+Fase 3 Investigación de representación 3D en HTML5
+Fase 4 Diseño global del proyecto
+Fase 5 Analisis, Planificicación y diseño pormenorizado.
+Fase 6 Implementación del control
+Fase 7 Implementación de aplicación web básica para alimentar el control (importando algún formato de fichero)
+Fase 8 Pruebas y despliegue
+Fase 9 Documentación"
+Requisitos necesarios a nivel de conocimientos del alumno/os 	"Conocimientos requeridos: HTML5, JS, relaciones y transformaciones en R3.
+Conocimientos deseables: Frameworks específicos de desarrollo y representación en HTML5/JS.
+Conocimientos a aprender en el desarrollo del proyecto: Creación de componentes web reusables, representación de volúmenes 3D, negocio de las impresoras 3D."
+Necesidades Hardware	Una workstation con tarjeta gráfica profesional, al menos 4/6 GB de RAM, 250+ GB disco y procesador multicore potente. Al tratarse de un proyecto de desarrollo 3D cuanto más potente sea la máquina más eficiente será el desarrollo.
+Necesidades Software	Sistema operativo y entorno de desarrollo a elección del alumno, siempre y cuando sea suficiente para la realización del proyecto. Mínimo: navegador web, editor de texto.
+Coste temporal estimado	
+Otras Necesidades	
+Formas de contacto con el tutor y dedicacion estimada del tutor de HP 	Contacto via email, teléfono, skipe (o herramientas similares), contacto presencial cuando sea necesario.
+Observaciones	Este proyecto permite al alumno introducirse en el mundo de las impresoras 3D así como en las tecnologías de aplicaciones web utilizando HTML5 y JavaScript/TypeScript.
+</td>
+								<td> Carlos López Nozal<p></p>Tutor empresa HP Guillermo Ménguez Álvarez<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2016-2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P41"> <!-- Begin Proyecto-->
+								<th> GII17.2 Localization Round Process GUI</th>
+								<td> Automatizar el proceso completo de Ronda de Localización mediante una GUI que consista en una secuencia de pasos.
+
+Por ejemplo:
+1) Introducir datos generales de la ronda (con valores ya predefinidos cargados): número de ronda, directorio raíz de los fuentes, directorio raíz de los Xliff.
+2) Notificaciones: abrir un mail con una plantilla cargada y una lista de destinatarios. Dejar que el usuario la chequee y envíe el mail.
+3) Actualizar el repositorio de Localización y el de Views.
+4) Llamar a los scripts para copiar del repositorio de Localización al de Views, cambiar el formato de los FP de multi-línea a single-line…
+5) Llamar a los scripts para correr una ronda en una dirección u otra
+…
+Valorar la posibilidad de tener un proceso background, precargado con un Calendario de Localización, que lance pasos de la secuencia en función de fechas. Por ejemplo: un día antes de una fecha roja, abrir un mail con una plantilla cargada y una lista de destinatarios, para avisar que el día siguiente es el último para añadir cadenas.
+
+La aplicación debería ser diseñada para su uso en varias plataformas. Determinados módulos serán específicos de la plataforma (por ejemplo, el gestor de correo, y el proceso background) Para este proyecto, estos módulos específicos se implementarán para Windows. Pero el diseño facilitará la extensión a Linux en un futuro."
+Area o grupo al que pertenece el tutor empresa 	Localización.
+Requisitos necesarios a nivel de conocimientos del alumno/os 	"Conocimientos requeridos: Metodologías de programación, buenas prácticas de diseño, principalmente, en este caso, extensibilidad.
+Conocimientos deseables: Python, PyQt.
+Conocimientos a aprender en el desarrollo del proyecto: Procesos background Windows.
+Necesidades Hardware	Una máquina con 2GB de RAM, 25 GB de Disco y Procesador 1GHz (o superior)
+Necesidades Software	Maquina con Windows 7 (o superior)</td>
+								<td> Carlos López Nozal<p></p>Tutor de empresa HP Robeto Turrado Camblor<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2016-2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P42"> <!-- Begin Proyecto-->
+								<th> GII17.3 Aplicación para el procesado de Metricas de diversas aplicaciones</th>
+								<td> El proyecto consiste en desarrollar una aplicación que procese ficheros de metricas (XMLs) generados por varias aplicaciones, guardando la información en una BD. La aplicacion ha de permitir generar diversos informes y graficas, según la configuración que determine el usuario por aplicación e informes deseados (Datamining). 
+
+Tiempo estimado de desarrollo 	Aproximadamente 350 horas,  siendo variable en función de los objetivos detallados que se marquen.
+
+Descripción detallada de las funciones a realizar por el alumno 	
+Fase 1 Investigación de las mejores prácticas en diseño adaptable.
+Fase 2 Diseño global del proyecto
+Fase 3 Analisis, Planificicación y diseño pormenorizado.
+Fase 4 Implementación
+Fase 5 Pruebas e instalación
+Fase 6 Documentación"
+Requisitos necesarios a nivel de conocimientos del alumno:Conocimientos requeridos: HTML5, JavaScript/TypeScript, CSS (Angular 2)
+Conocimientos deseables: Frameworks específicos de desarrollo y representación en HTML5/JS.
+Necesidades Hardware	Maquina con Windows7 o superior.
+Necesidades Software	Sistema operativo y entorno de desarrollo a elección del alumno, siempre y cuando sea suficiente para la realización del proyecto. Mínimo: navegador web, editor de texto.
+
+Otras Necesidades	
+Formas de contacto con el tutor y dedicacion estimada del tutor de HP 	Contacto via email, teléfono, skipe (o herramientas similares), contacto presencial cuando sea necesario.
+Observaciones	Este proyecto permite al alumno introducirse en el mundo del procesado de XML así como en las tecnologías de aplicaciones web utilizando HTML5 y JavaScript/TypeScript.</td>
+								<td> <p></p>Tutor de empresa HP Sergio Martinez y Fernando González<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2016-2017</td>
+							</tr><!-- End Proyecto-->
 						</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(40, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,40, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,40, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,40, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,40, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarAllFilas(43, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,43, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,43, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,43, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,43, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(4,3,10,43, 'P')">41...43</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -534,7 +613,7 @@ Se va a desarrollar un visor 3D compatible con ficheros STL, que permita a los e
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Dec 22 17:31:33 CET 2016 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Jan 19 13:51:18 CET 2017 </li>
 							</ul>
 						</div>
 					</div>
