@@ -71,10 +71,10 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: <br/>40.0 </td>
-									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>21.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
+									<td>N&uacute;mero Total de Proyectos: <br/>46.0 </td>
+									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>23.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
 									<td>N&uacute;mero Total de Alumnos: <br/>43.0 </td>
-									<td>N&uacute;mero Total de Tutores Involucrados: <br/>29.0 </td>								</tr>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>32.0 </td>								</tr>
 							</tbody>
 						</table>
 					</section>
@@ -85,11 +85,12 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(40, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,40, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,40, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,40, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,40, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarAllFilas(46, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,46, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,46, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,46, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,46, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(4,6,10,46, 'P')">41...46</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -465,7 +466,7 @@ Para el desarrollo de la herramienta se recomienda usar Phonegap, un marco de de
 								<td> Este proyecto aborda la adaptación de las prácticas de osteología humana a la modalidad virtual.
 El objetivo será ayudar a los alumnos a reconocer los diferentes huesos del cuerpo humano e identificar y aplicar las técnicas de osteometría.
 Se va a desarrollar un visor 3D compatible con ficheros STL, que permita a los estudiantes interactuar con modelos 3D de huesos (rotar, zoom-in, zoom-out), medir distancias entre puntos y además responder preguntas definidas por el profesor usando anotaciones en el modelo.</td>
-								<td> Alvar Arnaiz Gonzalez<p></p>José Francisco Díez Pastor<p></p> </td>
+								<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p> </td>
 								<td> Alberto Vivar Arribas<p></p> <p></p>  </td>
 								<td> 12/11/2016</td>
 							</tr><!-- End Proyecto-->
@@ -553,17 +554,73 @@ ObservacionesEste proyecto permite al alumno introducirse en el mundo del proces
 								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
 								<td> 2016-2017</td>
 							</tr><!-- End Proyecto-->
+							<tr id="P40"> <!-- Begin Proyecto-->
+								<th> GII17.4 Sistema de reconocimiento automático en arqueobotánica</th>
+								<td> Proyecto a realizar en colaboración con investigadores del CSIC en el que, mediante técnicas de reconocimiento automático de imágenes, se diseñará e implementará un sistema software capaz de identificar fitolitos en fotografías realizadas con microscopio.
+
+El análisis de fitolitos es una popular técnica utilizada en arqueobotánica para la identificación e interpretación de vegetales fosilizados. Gracias a la observación de los fitolitos y a la contabilidad de una determinada muestra, es posible determinar condiciones ambientales así como actividades humanas relacionadas con las plantas, tales como técnicas agrícolas empleadas o dieta, entre otras muchas.
+
+El proyecto se realizará en Python mediante la utilización del paquete scikit-learn que facilitará las labores de segmentación y reconocimiento de patrones. Se valorará el que se hayan cursado asignaturas tales como Sistemas Inteligentes y Minería de Datos.</td>
+								<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Virginia Ahedo García </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2016-2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P41"> <!-- Begin Proyecto-->
+								<th> GII17.5 Clasificadores multi-label en Scikit Learn</th>
+								<td> El proyecto consiste en la implementación de diversos algoritmos de combinación de clasificadores (ensembles) para multi-label sobre la plataforma Scikit Learn (Python).
+
+Como bien es sabido, las técnicas de aprendizaje automático necesitan conjuntos de datos para "aprender". Estos conjuntos de datos pueden o no disponer de una variable de interés, en función de ello se suelen agrupar las técnicas en aprendizaje supervisado y no supervisado. En el aprendizaje supervisado, tradicionalmente los conjuntos de datos suelen tener solo una variable a predecir (lo que suele designarse como single-label), pero desde hace unos años ha aparecido un nuevo concepto "multi-label", el cual hace referencia a aquellos conjuntos de datos en los que cada elemento (ejemplo) de la base de datos pertenece simultáneamente a más de una clase. Un par de ejemplos habituales son: el reconocimiento de textos, en el cual un texto puede recibir diversas etiquetas: una noticia de un futbolista puede ser al mismo tiempo etiquetada como "deportiva" y "moda"; o el etiquetado de imágenes: una imagen puede tener la etiqueta "árbol", "montaña" y "mar" simultáneamente.
+
+Durante el proyecto se deberán implementar diversas técnicas/algoritmos de ensembles para conjuntos de datos multi-label utilizando la plataforma Scikit Learn. Scikit Learn es una librería de Python para minería de datos y análisis de datos muy popular. </td>
+								<td> Álvar Arnaiz González<p></p>Juan José Rodríguez Díez<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2016-2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P42"> <!-- Begin Proyecto-->
+								<th> GII17.6 Conversión de la aplicación docente Thoth a JavaScript</th>
+								<td> El proyecto consiste en la transformación de un proyecto previo, escrito en Java, a tecnologías web, más concretamente JavaScript. La conversión se realizará mediante herramientas automáticas de transformación de código tales como JSweet o GWT. El software a transformar es Thoth que, tras sucesivas versiones, es una herramienta escrita en Java con mucha funcionalidad en teoría de autómatas y lenguajes formales. 
+
+El proyecto será el de desarrollar una página web dinámica capaz de realizar las diversas simulaciones y algoritmos ya implementados en Thoth. 
+
+El alumno debe tener cierto dominio de tecnologías web, tales como HTML, CSS y JavaScript (o una decidida disposición por aprenderlas), así como un buen manejo en Java.</td>
+								<td> Álvar Arnaiz González<p></p>César Ignacio García Osorio<p></p> </td>
+								<td> Francisco Javier Páramo Arnáiz<p></p> <p></p>  </td>
+								<td> 31/01/2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P43"> <!-- Begin Proyecto-->
+								<th> GII17.7 Creación de un videojuego y un bot inteligente para el mismo</th>
+								<td> El proyecto tiene como propósito la creación de un videojuego  y mediante el análisis y explotación técnicas de aprendizaje máquina  dotarle de la capacidad de descubrir las reglas del juego y que aprenda jugar por sí mismo.</td>
+								<td> José Francisco Díez Pastor<p></p>César García Osorio<p></p> </td>
+								<td> Pablo Alejos Salamanca<p></p> <p></p>  </td>
+								<td> 31/01/2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P44"> <!-- Begin Proyecto-->
+								<th> GII17.8 Herramienta para el análisis hemeroteca</th>
+								<td> En este proyecto de estudiarán las herramientas y tecnologías necesarias para la obtención de textos a partir de fuentes diversas (diarios online pdf)  etc) y su posterior análisis mediante técnicas de tipo cualitativo o cuantitativo.</td>
+								<td> José Francisco Díez Pastor<p></p>César García Osorio<p></p> </td>
+								<td> Miguel Rodríguez Rico<p></p> <p></p>  </td>
+								<td> 31/01/2017</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P45"> <!-- Begin Proyecto-->
+								<th> GII17.9 Aplicación de análisis paleontológico. Perikymata 2.0</th>
+								<td> Los perikymata son pequeños surcos que aparece durante el crecimiento del diente. Su análisis en restos fósiles permite estimar la edad, velocidad de crecimiento y otros datos útiles en la investigación paleontológica.
+En esta segunda versión se trabajará en realizar pruebas, correcciones, y mejoras a la primera versión. Así como en la introducción de nuevas funcionalidades.</td>
+								<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor<p></p> </td>
+								<td> Andrés Miguel Terán<p></p> <p></p>  </td>
+								<td> 31/01/2017</td>
+							</tr><!-- End Proyecto-->
 						</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(40, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,40, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,40, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,40, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,40, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarAllFilas(46, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,46, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,46, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,46, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,46, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(4,6,10,46, 'P')">41...46</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -589,7 +646,7 @@ ObservacionesEste proyecto permite al alumno introducirse en el mundo del proces
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Fri Jan 20 14:44:01 CET 2017 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jan 31 12:34:35 CET 2017 </li>
 							</ul>
 						</div>
 					</div>
