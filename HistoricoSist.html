@@ -19,8 +19,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 25, 1, 25, 43], ['2015/2016', 28, 3, 28, 43], ['2016/2017', 6, 3, 6, 11]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.281999999999999, 7.5225806], ['2015/2016', 8.31607142857143, 6.52765], ['2016/2017', 8.733333333333333, 4.091398]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 25, 1, 25, 43], ['2015/2016', 28, 3, 28, 43], ['2016/2017', 8, 3, 8, 13]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.281999999999999, 7.5225806], ['2015/2016', 8.31607142857143, 6.52765], ['2016/2017', 8.58125, 4.584677]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -77,16 +77,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 70 </td>
-									<td>N&uacute;mero Total de Alumnos: 68 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,97, 4, 10, 1,46) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (225,86, 89, 576, 113,06) </td>
+									<td>N&uacute;mero Total de Proyectos: 72 </td>
+									<td>N&uacute;mero Total de Alumnos: 70 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,98, 4, 10, 1,45) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (224,81, 89, 576, 111,66) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 25, 28, 6] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 9] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 25, 28, 6] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 43, 43, 11] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 25, 28, 8] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 11] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 25, 28, 8] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 43, 43, 13] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -105,14 +105,15 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(70, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,70, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,70, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,70, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,70, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,70, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,70, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,70, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarAllFilas(72, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,72, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,72, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,72, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,72, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,72, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,72, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,72, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(7,2,10,72, 'P')">71...72</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -691,20 +692,37 @@ María Esther Baños García </td>
 									<td> 15/02/2017</td>
 									<td> 7.9</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P70"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/aps0047/UbuNurse">GII16.S UBUnurse</a></th>
+									<td> Pedro Luis Sánchez Ortega </td>
+									<td> 1 </td>
+									<td> 22/12/2016</td>
+									<td> 15/06/2017</td>
+									<td> 7.25</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P71"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Plata17/TouchCarPI">GII16.P Diseño de una autorradio con pantalla táctil mediante Rasberry Pi</a></th>
+									<td> César Represa </td>
+									<td> 1 </td>
+									<td> 26/11/2016</td>
+									<td> 15/06/2017</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(70, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,70, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,70, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,70, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,70, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,70, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,70, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,70, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarAllFilas(72, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,72, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,72, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,72, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,72, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,72, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,72, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,72, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(7,2,10,72, 'P')">71...72</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -730,7 +748,7 @@ María Esther Baños García </td>
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Fri Feb 17 10:17:42 CET 2017 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jun 20 14:01:15 CEST 2017 </li>
 							</ul>
 						</div>
 					</div>
