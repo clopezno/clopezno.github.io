@@ -47,13 +47,2575 @@
 					</nav>
 				</header>
 				<div id='pageHome' class='container'>
-				
-				
-				<section>
-				 <a href="http://tfgqa-ubugii.rhcloud.com/"> <img src="./images/tfgsonar.png" alt="Evaluación mediante métricas de código" style="width:100%;height:100%;"> </a>
-				</section>
-
-						
+					<section>
+						<div class='container right_aligned'>
+							<script type="text/javascript">addthis_pub  = 'gymi82';</script>
+							<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" 
+							   onmouseout="addthis_close()" onclick="return addthis_sendto()">
+							   <img class="gif" src="http://s9.addthis.com/button1-bm.gif" alt="compartir"/>
+							</a>
+							<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+							<a href="javascript:var t=((window.getSelection&amp;&amp;window.getSelection())||(document.getSelection&amp;&amp;document.getSelection())||(document.selection&amp;&amp;document.selection.createRange&amp;&amp;document.selection.createRange().text));var e=(document.charset||document.characterSet);if(t!=''){location.href='http://translate.google.com/translate_t?text='+t+'&amp;hl=es&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;}else{location.href='http://translate.google.com/translate?u='+escape(location.href)+'&amp;hl=es&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;};" 
+							   onclick="alert(document.getElementById('instructions').firstChild.nodeValue);return false;">
+							   <img class="gif" src="http://www.google.com/intl/es/images/logos/translate_logo.gif" alt="Google Translate" />
+							</a>	
+						</div>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>Descripci&oacute;n del experimento<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<table>
+							<tr><td rowspan="5"> <img src='./images/ico_experimento.jpg' alt='experimento'/> </td></tr>
+							<tr><td> Esta página proporciona el acceso a un repositorio de métricas de algunos proyectos de la asignatura de 5º de Ingeniería Informática de la Universidad de Burgos, como realizan otras instituciones de reconocido prestigio. </td></tr>
+							<tr><td> Se describen dos intervalos válidos respecto a las métricas numéricas consideradas en el experimento. Por un lado, los recomendados por autores de las métricas y herramientas de medida y por otro, un intervalo relativo obtenido a partir del primer y tercer cuartil de los valores de los proyectos. Asociado a cada uno de estos intervalos se definen dos indicadores de cobertura que muestran el número de total de valores de las métricas que están en el intervalo válido. </td></tr>
+							<tr><td> El análisis basado en los indicadores de cobertura aquí planteado no pretende ser un modelo de calidad completo ya que se considera un conjunto muy reducido de métricas estáticas de código sin abordar otros multiples factores como: naturaleza del proyecto, técnología utilizada, métricas de proceso, metricas sobre otros subproductos software. </td></tr>
+							<tr><td> Si quieres evaluar tu proyecto utilizando los intervalos de métricas de este histórico de medidas tienes que: <ol> <li>Obtener previamente los valores de las métricas del proyecto con la herramienta SourceMonitor  y exportarlos a xml<a href="http://www.campwoodsw.com/sourcemonitor.html"> <img alt="Download SourceMonitor" style="vertical-align:middle;" src="./images/Download.png"> </a> (ver video adjunto)<li> Introducir el fichero xml con los valores de las métricas como entrada a la  aplicación web que se ejecutará pulsando la siguiente imagen  <a href="./html/AppletAutoEvaluacion.html"><img alt="Autoevaluación de requisito no funcional facilidad de mantenimiento" style="vertical-align:middle;" src="./images/autoevaluacion.jpg"></a> (ver video adjunto)</ol> </td></tr>
+						</table>
+						<div>
+							<iframe style="width:420px; height:315px;" src="https://www.youtube.com/embed/Uu4EeMJT-gw" allowfullscreen></iframe>
+							<iframe style="width:420px; height:315px;" src="https://www.youtube.com/embed/u2Y6Q7A-DsE" allowfullscreen></iframe>
+							
+						</div>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>Intervalos de M&eacute;tricas de Producto<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<ol class='lnorm'>
+							<li> Comparaci&oacute;n de los intervalos proporcionado por las herramientas respecto a los valores de los proyectos de 5Âº de Ingenier&iacute;a Inform&aacute;tica </li>
+						</ol>
+						<p class="green"> VERDE: Si el valor esta dentro del intervalo. </p>
+						<p class="red"> ROJO: Si el valor  no esta dentro del intervalo.</p>
+						<p> NEGRO: Si no existe intervalo recomendado.</p>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(14, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,14, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,4,10,14, 'P')">11...14</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<table>
+							<thead>
+								<tr>
+									<th> DESCRIPCION<i class= ' small mdi-action-info'></i></th>
+									<th onmouseover="Tip('M&iacute;nimo valor recomendado por la herramienta de medida. Es un campo opcional.')" onmouseout="UnTip()">Min</th>
+									<th onmouseover="Tip('M&aacute;ximo valor recomendado por la herramienta de medida. Es un campo opcional.')" onmouseout="UnTip()">Max</th>
+									<th onmouseover="Tip('M&iacute;nimo valor en proyectos de la asignatura de Sistemas Inform&aacute;ticos de 5Âº II de la UBU.')" onmouseout="UnTip()">Min_b</th>
+									<th onmouseover="Tip('Valor del 25% de la muestra en proyectos de la asignatura de Sistemas Inform&aacute;ticos de 5Âº II de la UBU.')" onmouseout="UnTip()">Q1_b</th>
+									<th onmouseover="Tip('Valor de la media aritm&eacute;tica en proyectos de la asignatura de Sistemas Inform&aacute;ticos de 5Âº II de la UBU.')" onmouseout="UnTip()">Avg_b</th>
+									<th onmouseover="Tip('Valor de la mediana de la muestra en proyectos de la asignatura de Sistemas Inform&aacute;ticos de 5Âº II de la UBU.')" onmouseout="UnTip()">Q2_b</th>
+									<th onmouseover="Tip('Valor del 75% de la muestra en proyectos de la asignatura de Sistemas Inform&aacute;ticos de 5Âº de la UBU.')" onmouseout="UnTip()">Q3_b</th>
+									<th onmouseover="Tip('M&aacute;ximo valor en proyectos de la asignatura de Sistemas Inform&aacute;ticos de 5Âº II de la UBU.')" onmouseout="UnTip()">Max_b</th>
+									<th onmouseover="Tip('Gr&aacute;fico resumen con los datos estad&iacute;sticos e la asignatura de Sistemas Inform&aacute;ticos de 5Âº de la UBU.')" onmouseout="UnTip()">BOXPLOT_UBU</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr id='P0'>
+									<td>Nombre Proyecto</td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+								</tr>
+								<tr id='P1'>
+									<td>Lenguaje</td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+									<td> - </td>
+								</tr>
+								<tr id='P2'>
+									<td>Lineas de Codigo</td>
+									<td> - </td>
+									<td> - </td>
+									<td>1.978</td>
+									<td>17.472</td>
+									<td><img src='./images/ico_bolaazul.png' alt=' ' />26.824,59</td>
+									<td><img src='./images/ico_barra.png' alt=' ' />28.185</td>
+									<td>6.277</td>
+									<td>224.889</td>
+									<td><img src='./images/metrics/J0.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P3'>
+									<td>N de Sentencias</td>
+									<td> - </td>
+									<td> - </td>
+									<td>805</td>
+									<td>15.267</td>
+									<td><img src='./images/ico_bolaazul.png' alt=' ' />13.758,9</td>
+									<td><img src='./images/ico_barra.png' alt=' ' />31.505</td>
+									<td>5.978</td>
+									<td>203.613</td>
+									<td><img src='./images/metrics/J1.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P4'>
+									<td>Porcentaje de Sentencia Condicionales</td>
+									<td> - </td>
+									<td> - </td>
+									<td>0</td>
+									<td>11,7</td>
+									<td><img src='./images/ico_bolaazul.png' alt=' ' />11,67</td>
+									<td><img src='./images/ico_barra.png' alt=' ' />18</td>
+									<td>52,6</td>
+									<td>52,6</td>
+									<td><img src='./images/metrics/J2.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P5'>
+									<td>N de Llamadas a Metodos</td>
+									<td> - </td>
+									<td> - </td>
+									<td>0</td>
+									<td>1.798</td>
+									<td><img src='./images/ico_bolaazul.png' alt=' ' />5.571,41</td>
+									<td><img src='./images/ico_barra.png' alt=' ' />3.163</td>
+									<td>6.129</td>
+									<td>27.859</td>
+									<td><img src='./images/metrics/J3.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P6'>
+									<td>Porcentaje de Lineas de Comentarios</td>
+									<td>8</td>
+									<td>22</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">2,3</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">25,6</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />26,74</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />32,6</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">4,2</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">46,3</td>
+									<td><img src='./images/metrics/J4.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P7'>
+									<td>N de Clases e Interfaces</td>
+									<td> - </td>
+									<td> - </td>
+									<td>0</td>
+									<td>170</td>
+									<td><img src='./images/ico_bolaazul.png' alt=' ' />153,67</td>
+									<td><img src='./images/ico_barra.png' alt=' ' />319</td>
+									<td>48</td>
+									<td>875</td>
+									<td><img src='./images/metrics/J5.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P8'>
+									<td>N de Metodos por Clase</td>
+									<td>4</td>
+									<td>16</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">3,66</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">21,55</td>
+									<td class='green' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />8,51</td>
+									<td class='green' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />4,98</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">6,98</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">35,27</td>
+									<td><img src='./images/metrics/J6.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P9'>
+									<td>Media de Sentencias por Metodo</td>
+									<td>6</td>
+									<td>12</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">3,72</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,54</td>
+									<td class='green' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />8,71</td>
+									<td class='green' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />6,09</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,47</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">64,87</td>
+									<td><img src='./images/metrics/J7.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P10'>
+									<td>Complejidad Maxima</td>
+									<td>2</td>
+									<td>8</td>
+									<td class='green'  onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">6</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">21</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />102,63</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />34</td>
+									<td class='green'  onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">6</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">1.267</td>
+									<td><img src='./images/metrics/J10.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P11'>
+									<td>Maxima Profundidad de Bloques</td>
+									<td>3</td>
+									<td>7</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">5</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />8,37</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />9</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td><img src='./images/metrics/J12.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P12'>
+									<td>Media de Profundidad de Bloques</td>
+									<td>1</td>
+									<td>2,2</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,33</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,95</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />2,36</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />2,26</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,56</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">4,59</td>
+									<td><img src='./images/metrics/J13.png' alt='boxplot'/></td>
+								</tr>
+								<tr id='P13'>
+									<td>Media de Complejidad</td>
+									<td>2</td>
+									<td>4</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,35</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,84</td>
+									<td class='green' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()"> <img src='./images/ico_bolaazul.png' alt=' ' />2,78</td>
+									<td class='green' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()"> <img src='./images/ico_barra.png' alt=' ' />2,37</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,9</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">10,48</td>
+									<td><img src='./images/metrics/J14.png' alt='boxplot'/></td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(14, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,14, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,4,10,14, 'P')">11...14</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>Coberturas Globales de M&eacute;tricas<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<ol class='lnorm'>
+							<li> Porcentajes de Cobertura de las metricas con intervalos recomendados respecto a las m&eacute;tricas de los proyectos de la asignatura de 5Âº de Ingenier&iacute;a Inform&aacute;tica de la Universidad de Burgos.</li>
+						</ol>
+						<table>
+							<thead>
+								<tr>
+								<th> Porcentaje de Cobertura respecto Q1Q3</th>
+								<th> Porcentaje de Cobertura respecto Avg</th> 
+								<th> Porcentaje de Cobertura respecto Med</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:0%;"></div>
+												</div>
+											</td>
+											<td>0/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>Coberturas de Proyectos<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<ol class='lnorm'>
+							<li> Valores de las metricas de los proyectos de 5Âº de Ingenier&iacute;a Inform&aacute;tica comparados con los intervalos recomendados  </li>
+						</ol>
+						<p class="green"> VERDE: Si el valor esta dentro del intervalo. </p>
+						<p class="red"> ROJO: Si el valor  no esta dentro del intervalo.</p>
+						<p> NEGRO: Si no existe intervalo recomendado.</p>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(51, 'S')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,51, 'S')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,51, 'S')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,51, 'S')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,51, 'S')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,51, 'S')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(5,1,10,51, 'S')">51...51</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<ol class='lnorm'><li> Tabla ordenable por columnas. Haz click en las cabeceras de las columnas. </li></ol>
+						<table class="sortable">
+							<thead>
+								<tr>
+									<th>  <i class= ' small mdi-action-info'></i></th>
+									<th onmouseover="Tip('Lineas de Codigo')" onmouseout="UnTip()">J0</th>
+									<th onmouseover="Tip('N de Sentencias')" onmouseout="UnTip()">J1</th>
+									<th onmouseover="Tip('Porcentaje de Sentencia Condicionales')" onmouseout="UnTip()">J2</th>
+									<th onmouseover="Tip('N de Llamadas a Metodos')" onmouseout="UnTip()">J3</th>
+									<th onmouseover="Tip('Porcentaje de Lineas de Comentarios')" onmouseout="UnTip()">J4</th>
+									<th onmouseover="Tip('N de Clases e Interfaces')" onmouseout="UnTip()">J5</th>
+									<th onmouseover="Tip('N de Metodos por Clase')" onmouseout="UnTip()">J6</th>
+									<th onmouseover="Tip('Media de Sentencias por Metodo')" onmouseout="UnTip()">J7</th>
+									<th onmouseover="Tip('Complejidad Maxima')" onmouseout="UnTip()">J10</th>
+									<th onmouseover="Tip('Maxima Profundidad de Bloques')" onmouseout="UnTip()">J12</th>
+									<th onmouseover="Tip('Media de Profundidad de Bloques')" onmouseout="UnTip()">J13</th>
+									<th onmouseover="Tip('Media de Complejidad')" onmouseout="UnTip()">J14</th>
+									<th onmouseover="Tip('Cobertura  Ubu')" onmouseout="UnTip()">Cobertura UBU</th>
+									<th onmouseover="Tip('Cobertura  Tool')" onmouseout="UnTip()">Cobertura  Tool</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr id='S0'>
+									<td onmouseover="Tip('2003_adquisicion_informacion_java_moon')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>24559</td>
+									<td>15970</td>
+									<td>33.5</td>
+									<td>6959</td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">21</td>
+									<td>136</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">10,69</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">9,26</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">173</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,56</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">4,28</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>6/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S1'>
+									<td onmouseover="Tip('2003_algoritmos_geneticos_clasificacion_series')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>6104</td>
+									<td>3230</td>
+									<td>16.8</td>
+									<td>1992</td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">18,5</td>
+									<td>40</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">8,6</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,33</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">20</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">7</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,03</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,73</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:66.67%;"></div>
+												</div>
+											</td>
+											<td>8/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:85.71%;"></div>
+												</div>
+											</td>
+											<td>6/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S2'>
+									<td onmouseover="Tip('2003_refactorizaciones_especializacion_jerarquias_herencia_java')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>11913</td>
+									<td>5192</td>
+									<td>11.4</td>
+									<td>5073</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">35</td>
+									<td>85</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">6,86</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,86</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">34</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,3</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,34</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:58.33%;"></div>
+												</div>
+											</td>
+											<td>7/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S3'>
+									<td onmouseover="Tip('2004_dynamic_time_warping')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>3375</td>
+									<td>1592</td>
+									<td>10.3</td>
+									<td>1179</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">32,2</td>
+									<td>36</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,61</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,65</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">26</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">6</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,91</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,05</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:16.67%;"></div>
+												</div>
+											</td>
+											<td>2/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:71.43%;"></div>
+												</div>
+											</td>
+											<td>5/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S4'>
+									<td onmouseover="Tip('2004_waef')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>57303</td>
+									<td>19307</td>
+									<td>12.2</td>
+									<td>10353</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">44</td>
+									<td>560</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,07</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,58</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">73</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,91</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S5'>
+									<td onmouseover="Tip('2005_cualitativos_mineria_series')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>12073</td>
+									<td>5978</td>
+									<td>9.8</td>
+									<td>5336</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">22,3</td>
+									<td>50</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">14,36</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,64</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">25</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,21</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,84</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:83.33%;"></div>
+												</div>
+											</td>
+											<td>10/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S6'>
+									<td onmouseover="Tip('2005_definicion_refactorizaciones_xmi')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>63595</td>
+									<td>26772</td>
+									<td>11.7</td>
+									<td>20069</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">33,2</td>
+									<td>446</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">6,86</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,99</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">61</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,96</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,12</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S7'>
+									<td onmouseover="Tip('2005_gestion_datos_pml_pdm_aplicacion_modelos_conexionistas')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>25803</td>
+									<td>11564</td>
+									<td>8.4</td>
+									<td>6314</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">35,5</td>
+									<td>175</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">8,51</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,15</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">18</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,83</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,67</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S8'>
+									<td onmouseover="Tip('2005_gestion_documental_contenidos_web')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>2269</td>
+									<td>1342</td>
+									<td>15.9</td>
+									<td>855</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">4,2</td>
+									<td>25</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,08</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">8,54</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">13</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">7</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,3</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">3,04</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S9'>
+									<td onmouseover="Tip('2005_mapeador_uml_java')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>73404</td>
+									<td>31505</td>
+									<td>12.2</td>
+									<td>24219</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">34</td>
+									<td>476</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">7,44</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,21</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">58</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,99</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,21</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>6/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S10'>
+									<td onmouseover="Tip('2005_metrica')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>49490</td>
+									<td>35799</td>
+									<td>52.6</td>
+									<td>12067</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">7,2</td>
+									<td>74</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">35,27</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">12,22</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">1.267</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">3,17</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">5,21</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:0%;"></div>
+												</div>
+											</td>
+											<td>0/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S11'>
+									<td onmouseover="Tip('2006_conexionistas_moviles_Matlab')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>17472</td>
+									<td>8574</td>
+									<td>7.2</td>
+									<td>5582</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">33</td>
+									<td>273</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">3,98</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,81</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">22</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,95</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,66</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>6/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:14.29%;"></div>
+												</div>
+											</td>
+											<td>1/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S12'>
+									<td onmouseover="Tip('2006_compilador_MatLab')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>14364</td>
+									<td>9096</td>
+									<td>28.9</td>
+									<td>4833</td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">16,6</td>
+									<td>86</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">6,98</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">13,32</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">211</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">3,04</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">4,25</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:66.67%;"></div>
+												</div>
+											</td>
+											<td>8/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S13'>
+									<td onmouseover="Tip('2006_congresos_JSP')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>83984</td>
+									<td>30114</td>
+									<td>10.4</td>
+									<td>18458</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">29,9</td>
+									<td>459</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">9,15</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,29</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">34</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,61</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,81</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:16.67%;"></div>
+												</div>
+											</td>
+											<td>2/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S14'>
+									<td onmouseover="Tip('2006_neuraliza_vb_cs')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>3615</td>
+									<td>1650</td>
+									<td> - </td>
+									<td> - </td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">25,9</td>
+									<td>33</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,06</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,75</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">71</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">6</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,49</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,72</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:10%;"></div>
+												</div>
+											</td>
+											<td>1/10</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S15'>
+									<td onmouseover="Tip('2006_refactorizaciones')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>28185</td>
+									<td>10058</td>
+									<td>11.3</td>
+									<td>8285</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">32,1</td>
+									<td>186</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,03</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">9,83</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">79</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,2</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,59</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S16'>
+									<td onmouseover="Tip('2006_ruteo')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>10577</td>
+									<td>7011</td>
+									<td>13</td>
+									<td>5359</td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">16,1</td>
+									<td>105</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,09</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">13,12</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">79</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,71</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">3,9</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:58.33%;"></div>
+												</div>
+											</td>
+											<td>7/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S17'>
+									<td onmouseover="Tip('2006_visualizacion_multidimensionales-CPP')" onmouseout="UnTip()"> <img src='./images/ico_C.gif' alt='C'/> </td>
+									<td>14836</td>
+									<td>6864</td>
+									<td>10.6</td>
+									<td> - </td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">34,3</td>
+									<td>80</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">7,25</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,9</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">27</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,33</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,48</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:54.55%;"></div>
+												</div>
+											</td>
+											<td>6/11</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S18'>
+									<td onmouseover="Tip('2007_clasificacion_series')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>14839</td>
+									<td>6365</td>
+									<td>8.6</td>
+									<td>3841</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">27,7</td>
+									<td>52</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">13,65</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,47</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">37</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,36</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,91</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:75%;"></div>
+												</div>
+											</td>
+											<td>9/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S19'>
+									<td onmouseover="Tip('2007_congresos_JSP')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>3766</td>
+									<td>1356</td>
+									<td>5.2</td>
+									<td>761</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">38,3</td>
+									<td>30</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">6,97</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">3,72</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">27</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">7</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,59</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,43</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:0%;"></div>
+												</div>
+											</td>
+											<td>0/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S20'>
+									<td onmouseover="Tip('2007_csharp_moon')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>47886</td>
+									<td>23014</td>
+									<td>25.6</td>
+									<td>12866</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">28,7</td>
+									<td>428</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">6,6</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,14</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">267</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,05</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,26</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S21'>
+									<td onmouseover="Tip('2007_hospital_metaheuristicas-JavaStruts')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>40857</td>
+									<td>14238</td>
+									<td>10</td>
+									<td>6243</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">41,5</td>
+									<td>195</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">11,67</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,18</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">59</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,8</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,7</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:25%;"></div>
+												</div>
+											</td>
+											<td>3/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S22'>
+									<td onmouseover="Tip('2007_refactorizaciones_dinamicas')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>41955</td>
+									<td>14948</td>
+									<td>11.4</td>
+									<td>12084</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">32,7</td>
+									<td>281</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">3,97</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">9,8</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">88</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,41</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,63</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S23'>
+									<td onmouseover="Tip('2007_ruteo_1')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>17448</td>
+									<td>10559</td>
+									<td>14.1</td>
+									<td>8523</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">22,6</td>
+									<td>145</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,12</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">14,38</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">79</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,92</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">4,6</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>6/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:14.29%;"></div>
+												</div>
+											</td>
+											<td>1/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S24'>
+									<td onmouseover="Tip('2007_test_monkey-C#')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>7119</td>
+									<td>2883</td>
+									<td> - </td>
+									<td> - </td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">7,5</td>
+									<td>34</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">9,59</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,02</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">87</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">7</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,84</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,81</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>5/10</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S25'>
+									<td onmouseover="Tip('2007_trading_agent_V2_')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>23380</td>
+									<td>10406</td>
+									<td>15.8</td>
+									<td>4826</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">30,6</td>
+									<td>108</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">11,45</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,09</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">89</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,11</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,49</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:75%;"></div>
+												</div>
+											</td>
+											<td>9/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S26'>
+									<td onmouseover="Tip('2008_1_cgosorio_analisis_sintactico')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>11287</td>
+									<td>6127</td>
+									<td>22</td>
+									<td>3775</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">28,5</td>
+									<td>91</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">7,66</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,66</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">116</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,27</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,59</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:83.33%;"></div>
+												</div>
+											</td>
+											<td>10/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S27'>
+									<td onmouseover="Tip('2008_1_cgosorio_automata_programable_C#')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>14374</td>
+									<td>7939</td>
+									<td> - </td>
+									<td> - </td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">8,3</td>
+									<td>20</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">21,55</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">15,68</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">553</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">3,98</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">4,58</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>5/10</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:14.29%;"></div>
+												</div>
+											</td>
+											<td>1/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S28'>
+									<td onmouseover="Tip('2008_1_clopezno_defectos_codigo_V2')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>8320</td>
+									<td>3858</td>
+									<td>7.5</td>
+									<td>2421</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">32,6</td>
+									<td>80</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,17</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,08</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">33</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,02</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,95</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:58.33%;"></div>
+												</div>
+											</td>
+											<td>7/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S29'>
+									<td onmouseover="Tip('2008_AnalisisdeDMedioAmbientalesMConexionistas.xml')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>7164</td>
+									<td>3864</td>
+									<td> - </td>
+									<td>282.24</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">2,4</td>
+									<td>72</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,04</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,98</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">24</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,26</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,14</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:54.55%;"></div>
+												</div>
+											</td>
+											<td>6/11</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S30'>
+									<td onmouseover="Tip('2008_BancaSegura.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>7989</td>
+									<td>3225</td>
+									<td>4.4</td>
+									<td>2236</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">38,9</td>
+									<td>45</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">12,6</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,44</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">18</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,61</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,35</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:14.29%;"></div>
+												</div>
+											</td>
+											<td>1/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S31'>
+									<td onmouseover="Tip('2008_GuiAutomationTester.xml')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>5026</td>
+									<td>1897</td>
+									<td> - </td>
+									<td> - </td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">8,8</td>
+									<td>19</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">11,89</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,7</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">36</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,81</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,57</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>5/10</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S32'>
+									<td onmouseover="Tip('2008_PluginRefactorizacionparaEclipse.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>41227</td>
+									<td>14274</td>
+									<td>9.5</td>
+									<td>10056</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">45,6</td>
+									<td>319</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">3,66</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">8,01</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">45</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,89</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,37</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:25%;"></div>
+												</div>
+											</td>
+											<td>3/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S33'>
+									<td onmouseover="Tip('2008_SistemasdeDetecciónCodigoDuplicadoSoporteaSCM.xml')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>26017</td>
+									<td>10705</td>
+									<td> - </td>
+									<td> - </td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">23,3</td>
+									<td>117</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">7,58</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">34</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,32</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,71</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:70%;"></div>
+												</div>
+											</td>
+											<td>7/10</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S34'>
+									<td onmouseover="Tip('2008_Agente con RBF.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>27332</td>
+									<td>12125</td>
+									<td>13</td>
+									<td>6129</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">30,5</td>
+									<td>134</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">11,67</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,45</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">52</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,99</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,09</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:75%;"></div>
+												</div>
+											</td>
+											<td>9/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S35'>
+									<td onmouseover="Tip('2008_Medicones de Terrenos PC Plot GPS.xml')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>19536</td>
+									<td>8939</td>
+									<td> - </td>
+									<td> - </td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">4,5</td>
+									<td>103</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">9,5</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">6,58</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">16</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">4,06</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">5,41</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:70%;"></div>
+												</div>
+											</td>
+											<td>7/10</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S36'>
+									<td onmouseover="Tip('2009_TAC_Classic2.0.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>8408</td>
+									<td>3509</td>
+									<td>17.9</td>
+									<td>2403</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">37,8</td>
+									<td>32</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">9,59</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">8,58</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">32</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,48</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">3,34</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>6/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S37'>
+									<td onmouseover="Tip('2009_ComunidadesGrafos.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>11060</td>
+									<td>4710</td>
+									<td>7.5</td>
+									<td>3163</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">38,5</td>
+									<td>104</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,43</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">5,4</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">14</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">7</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,77</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,66</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S38'>
+									<td onmouseover="Tip('2009_DetecciondeDefectosMineria.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>22193</td>
+									<td>10468</td>
+									<td>10.2</td>
+									<td>6833</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">27,7</td>
+									<td>170</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,45</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">8,35</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">35</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,36</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,52</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S39'>
+									<td onmouseover="Tip('2009_DynamicRefactoringv02.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>118214</td>
+									<td>38846</td>
+									<td>10.6</td>
+									<td>27859</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">46,3</td>
+									<td>875</td>
+									<td class='red' onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">3,81</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,57</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">49</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,95</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,41</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:25%;"></div>
+												</div>
+											</td>
+											<td>3/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S40'>
+									<td onmouseover="Tip('2009_RealidadAumentada.xml')" onmouseout="UnTip()"> <img src='./images/ico_C.gif' alt='C'/> </td>
+									<td>9243</td>
+									<td>4768</td>
+									<td>22.3</td>
+									<td> - </td>
+									<td class='green'  onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">21</td>
+									<td>0</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">13,04</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">11,9</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">74</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,44</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">3,91</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:54.55%;"></div>
+												</div>
+											</td>
+											<td>6/11</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S41'>
+									<td onmouseover="Tip('2009_Clasificadores_entornos_cambiantes.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>8157</td>
+									<td>3665</td>
+									<td>18</td>
+									<td>2019</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">29</td>
+									<td>54</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,63</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">11,12</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">23</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,46</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">3,85</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:50%;"></div>
+												</div>
+											</td>
+											<td>6/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S42'>
+									<td onmouseover="Tip('2009_Combinación_Metodos_Clustering.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>2557</td>
+									<td>833</td>
+									<td>11</td>
+									<td>433</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">45,4</td>
+									<td>11</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">11,27</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,54</td>
+									<td class='green'  onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">6</td>
+									<td class='green'  onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">5</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,6</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,84</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:57.14%;"></div>
+												</div>
+											</td>
+											<td>4/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S43'>
+									<td onmouseover="Tip('2009_Mapas_Autoorganizados(java).xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>6466</td>
+									<td>2288</td>
+									<td>9.8</td>
+									<td>1129</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">41,9</td>
+									<td>34</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">9,85</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,63</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">21</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">1,94</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,62</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:41.67%;"></div>
+												</div>
+											</td>
+											<td>5/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S44'>
+									<td onmouseover="Tip('2009_MovedSearchv10.xml')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>224889</td>
+									<td>203613</td>
+									<td> - </td>
+									<td>12.82</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">2,3</td>
+									<td>233</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">12,71</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">64,87</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">679</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">4,59</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">10,48</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:18.18%;"></div>
+												</div>
+											</td>
+											<td>2/11</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:14.29%;"></div>
+												</div>
+											</td>
+											<td>1/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S45'>
+									<td onmouseover="Tip('2009_RefactoriT_Ubu.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>1978</td>
+									<td>805</td>
+									<td>31.6</td>
+									<td>168</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">25,6</td>
+									<td>13</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,69</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">8,43</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">150</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">4,18</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">4,41</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:25%;"></div>
+												</div>
+											</td>
+											<td>3/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:28.57%;"></div>
+												</div>
+											</td>
+											<td>2/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S46'>
+									<td onmouseover="Tip('2009_SIG_Ayuntamientos.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>31266</td>
+									<td>15267</td>
+									<td>7.4</td>
+									<td>9919</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">24,7</td>
+									<td>299</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,86</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,42</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">17</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,01</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,84</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:58.33%;"></div>
+												</div>
+											</td>
+											<td>7/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S47'>
+									<td onmouseover="Tip('2009_Telemedicion_en_tiempo_real_java.xml')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>24485</td>
+									<td>9811</td>
+									<td>7.8</td>
+									<td>10263</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">28,1</td>
+									<td>197</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">5,35</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,21</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">27</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='green'  onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,1</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,73</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:33.33%;"></div>
+												</div>
+											</td>
+											<td>4/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S48'>
+									<td onmouseover="Tip('2010_PNUNIT')" onmouseout="UnTip()"> <img src='./images/ico_Csharp.gif' alt='Csharp'/> </td>
+									<td>7616</td>
+									<td>3773</td>
+									<td> - </td>
+									<td>4.61</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">6,8</td>
+									<td>48</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">7,63</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">7,85</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">44</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,33</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,59</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:63.64%;"></div>
+												</div>
+											</td>
+											<td>7/11</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S49'>
+									<td onmouseover="Tip('2010_HorariosHospital')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>16802</td>
+									<td>8361</td>
+									<td>12.5</td>
+									<td>7161</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">23,5</td>
+									<td>133</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">4,98</td>
+									<td class='green'  onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">10,86</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">94</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">9</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,67</td>
+									<td class='green'  onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">2,9</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:58.33%;"></div>
+												</div>
+											</td>
+											<td>7/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:42.86%;"></div>
+												</div>
+											</td>
+											<td>3/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+								<tr id='S50'>
+									<td onmouseover="Tip('2010_Seguridad_Bancaria')" onmouseout="UnTip()"> <img src='./images/ico_Java.gif' alt='Java'/> </td>
+									<td>6277</td>
+									<td>2647</td>
+									<td>5.1</td>
+									<td>1798</td>
+									<td class='red' onmouseover="Tip('[8 ,22]')" onmouseout="UnTip()">37,2</td>
+									<td>36</td>
+									<td class='green'  onmouseover="Tip('[4 ,16]')" onmouseout="UnTip()">12,25</td>
+									<td class='red' onmouseover="Tip('[6 ,12]')" onmouseout="UnTip()">4,69</td>
+									<td class='red' onmouseover="Tip('[2 ,8]')" onmouseout="UnTip()">18</td>
+									<td class='red' onmouseover="Tip('[3 ,7]')" onmouseout="UnTip()">8</td>
+									<td class='red' onmouseover="Tip('[1 ,2,2]')" onmouseout="UnTip()">2,5</td>
+									<td class='red' onmouseover="Tip('[2 ,4]')" onmouseout="UnTip()">1,36</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:58.33%;"></div>
+												</div>
+											</td>
+											<td>7/12</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+									<td>
+								<table>
+									<tbody>
+										<tr>
+											<td class="percentgraph">
+												<div class="progress">
+													<div class="determinate" style="width:14.29%;"></div>
+												</div>
+											</td>
+											<td>1/7</td>
+										</tr>
+									</tbody>
+								</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(51, 'S')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,51, 'S')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,51, 'S')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,51, 'S')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,51, 'S')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,51, 'S')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(5,1,10,51, 'S')">51...51</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+					</section>
+				</div>
+			</div>
 			<footer class='page-footer grey ubu'>
 				<div class='container'>
 					<div class='row'>
@@ -72,7 +2634,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Fri Mar 13 09:30:30 CET 2015 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Jul 10 12:17:15 CEST 2017 </li>
 							</ul>
 						</div>
 					</div>
