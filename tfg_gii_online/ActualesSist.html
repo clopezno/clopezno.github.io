@@ -1,0 +1,191 @@
+<!DOCTYPE html >
+<html lang="es">
+	<head>
+		<meta charset='UTF-8'/>
+		<meta name='description' content='Informaci&oacute;n sobre los trabajos fin de Grado  presentados en Ingenier&iacute;a Inform&aacute;tica en la Universidad de Burgos' />
+		<meta name='keywords' content='Sistemas Inform&aacute;ticos, m&eacute;tricas software, ingenieria software, proyectos inform&aacute;ticos'/>
+		<title> Ingenier&iacute;a Inform&aacute;tica </title>
+		<link rel='shortcut icon' href='./images/logoLSI.gif'/>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<!--JS-->
+		<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+		<script src='./js/materialize.min.js' type='text/javascript'> </script>
+		<script src='./js/init.js' type="text/javascript"> </script>
+		<script src='./js/sorttable.js' type='text/javascript'> </script>
+		<script src='./js/chart.js' type="text/javascript"> </script>
+		<!--CSS-->
+		<link href='css/materialize.min.css' type='text/css' rel='stylesheet' media='screen,projection'/>
+		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
+	</head>
+	<body>
+		<div id='page-wrapper'>
+			<div id='page'>
+				<header>
+					<nav class='red ubu'>
+						<div class='container'>
+							<div class='nav-wrapper'>
+								<div class='col s12'>
+									<a href='index.html' class='brand-logo'><img src='./images/logoUBU.png' alt='UBu'/></a>
+									<ul class='right hide-on-med-and-down'>
+										<li><a class='dropdown-button' href='index.html'>Informaci&oacute;n</a></li>
+										<li><a class='dropdown-button' href='ActualesSist.html'>Proyectos activos</a></li>
+										<li><a class='dropdown-button' href='HistoricoSist.html'>Hist&oacute;rico</a></li>
+										<li><a class='dropdown-button' href='MetricSist.html'>M&eacute;tricas</a></li>
+									</ul>
+									<ul id='slide-out' class='side-nav full'>
+										<li><a href='index.html'>Informaci&oacute;n</a></li>
+										<li><a href='ActualesSist.html'>Proyectos activos</a></li>
+										<li><a href='HistoricoSist.html'>Hist&oacute;rico</a></li>
+										<li><a href='MetricSist.html'>M&eacute;tricas</a></li>
+									</ul>
+									<a href='#' data-activates='slide-out' class='button-collapse'><i class='mdi-navigation-menu'></i></a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<div id='pageHome' class='container'>
+					<section>
+						<div class='container right_aligned'>
+							<script type="text/javascript">addthis_pub  = 'gymi82';</script>
+							<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" 
+							   onmouseout="addthis_close()" onclick="return addthis_sendto()">
+							   <img class="gif" src="http://s9.addthis.com/button1-bm.gif" alt="compartir"/>
+							</a>
+							<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+							<a href="javascript:var t=((window.getSelection&amp;&amp;window.getSelection())||(document.getSelection&amp;&amp;document.getSelection())||(document.selection&amp;&amp;document.selection.createRange&amp;&amp;document.selection.createRange().text));var e=(document.charset||document.characterSet);if(t!=''){location.href='http://translate.google.com/translate_t?text='+t+'&amp;hl=es&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;}else{location.href='http://translate.google.com/translate?u='+escape(location.href)+'&amp;hl=es&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;};" 
+							   onclick="alert(document.getElementById('instructions').firstChild.nodeValue);return false;">
+							   <img class="gif" src="http://www.google.com/intl/es/images/logos/translate_logo.gif" alt="Google Translate" />
+							</a>	
+						</div>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>M&eacute;tricas<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<table>
+							<thead>
+								<tr>
+									<th colspan='2'> <i class='small mdi-action-info'></i>Informaci&oacute;n estad&iacute;stica</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr>
+									<td>N&uacute;mero Total de Proyectos: <br/>4.0 </td>
+									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>4.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
+									<td>N&uacute;mero Total de Alumnos: <br/>0 </td>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>6.0 </td>								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>Descripci&oacute;n de proyectos<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(4, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(0,4,10,4, 'P')">1...4</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<ol class='lnorm'><li> Tabla ordenable por columnas. Haz click en las cabeceras de las columnas. </li></ol>
+						<table class="sortable striped">
+							<thead>
+								<tr>
+									<th> T&iacute;tulo<i class= ' tiny mdi-content-sort'></i></th>
+									<th> Descripci&oacute;n</th>
+									<th> Tutor/es</th>
+									<th> Alumno/s</th>
+									<th> CursoAsignacion</th>
+								</tr> 
+							</thead>
+						<tbody>
+							<tr id="P0"> <!-- Begin Proyecto-->
+								<th> GII17.10 Generador de mapas de calor en tiempo real</th>
+								<td> Se propone la creación de un plugin para Grafana, que sea capaz de actualizar  los valores de un SVG configurable, usando valores de una fuente de datos compatible con Grafana. Se pide que sea un plano en SVG (crear el archivo con un programa como inkscape o illustrator, que se pueda subir por la interface para configurar) con una serie de etiquetas/clases que se asocien a métricas de la fuente de datos necesaria, y que por ejemplo, cambie de color la temperatura de una sala del plano en función de ese valor y unos límites establecidos, que ya provee el grafana por configuración y percentiles.
+
+Programación de plugin para grafana: Tecnologias: Html5, Css3, Typescript/Javascript, SVG. Preferencia alumnos matriculados en Grado online. En este <a href="https://universidaddeburgos.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=c&chid=cd3511f2-a48c-4c8b-8344-9105552e28fa&s=0&t=pfb">GII1enlace puedes ver los videos con la descripción de los TFG por los tutores de la empresa.</a>
+
+</td>
+								<td> Carlos López Nozal<p></p>Guillemo Santos Melgar:  guillermo.santos-melgar@hp.com skype (@neomorfeo1984)<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2017-2018</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P1"> <!-- Begin Proyecto-->
+								<th> GII17.11 Herramienta gráfica para envio, gestión y manipulación de contextualización de cadenas de texto</th>
+								<td> Crear una tool gráfica amigable en la que introducir imágenes y textos por parte del usuario. Esta tool se encargará de realizar un empaquetado y envío a un repositorio de almacenamiento.
+Desarrollar analisis, diseño e implementación de la app utilizando una arquitectura MVC. Análisis, investigación e implementación de un sistema de envío, errores y log.
+Tecnologías usadas C++, Qt, Qml, scripting 
+Ordenador con SO base linux (ubuntu preferiblemente), IDE Qtcreator.
+Preferencia alumnos matriculados en Grado online. En este <a href="https://universidaddeburgos.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=c&chid=cd3511f2-a48c-4c8b-8344-9105552e28fa&s=0&t=pfb">GII1enlace puedes ver los videos con la descripción de los TFG por los tutores de la empresa.</a></td>
+								<td> Carlos López Nozal<p></p>Hector Sanchez:  hector.sanchez-gonzalez@hp.com<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2017-2018</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P2"> <!-- Begin Proyecto-->
+								<th> GII17.12 Panel informativo para eventos</th>
+								<td> Se trata de hacer una web configurable para presentar en grandes pantallas (o murales) localizadas en eventos o empresas. El tamaño de la página web será de sólo una pantalla y se podrán configurar distintos módulos que aparezcan en ella. Entre estos módulos al menos deberán existir los siguientes: un reproductor de videos (locales o de la web), un difusor de twitter (seguimiento de cuentas o hashtag), un informador de trafico local en tiempo real y previsión del tiempo en las próximas horas.
+El alumno desarrollará la aplicación web utilizando las tecnologías que mejor se adapten a las necesidades del proyecto. Preferencia alumnos matriculados en Grado online. En este <a href="https://universidaddeburgos.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=c&chid=cd3511f2-a48c-4c8b-8344-9105552e28fa&s=0&t=pfb">GII1enlace puedes ver los videos con la descripción de los TFG por los tutores de la empresa.</a></td>
+								<td> Carlos López Nozal<p></p>Sergio Martínez Prieto: sergio.martinez-prieto@hp.com<p></p>Fernando Rodríguez </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2017-2018</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P3"> <!-- Begin Proyecto-->
+								<th> GII17.13 Control de esquemas de respuestas en APIs</th>
+								<td> En el desarrollo moderno de aplicaciones web, para nutrir al front end de datos se hace uso de las llamadas API REST. Estas consisten en WebServices que devuelven la información que se quiere mostrar, como los datos de X perfil o las fotos de N página. Estas APIs suelen definir un esquema, normalmente de tipo XSD para las respuestas XML. Se hará uso de estos esquemas para detectar variaciones en la estructura de los datos que devolverá el WebService mediante la creación de un script. Posteriormente se visualizarán los resultados en una web.
+Creación de una pequeña API REST con unos esquemas xsd, que se utilizará para comprobar que el script posterior funciona correctamente. Creación del script que valide los esquemas de los WebServices y sea capaz de detectar cambios en su estructura respecto a los esquemas de la anterior ejecución. Generar un JSON con los resultados, que se utilizará para visualizar los datos mediante la creación de una página web. Para el diseño de la web de resultados, se utilizará Angular, donde se adquirirán conocimientos sobre el funcionamiento de Node.js para la instalación de paquetes desde el repositorio y de la estructura interna de los archivos que utiliza Angular.
+El software utilizado es libre de uso. Node.js tiene licencia MIT, y como IDE se utilizará Sublime text, Visual Code, Atom o Eclipse, que no requieren licencia.
+Si fuera necesario simplificar el proyecto, se podrían dar los esquemas XSD ya realizados. También se podría entregar la estructura de la web mediante un repositorio en github, para que el alumno clonara el repositorio e hiciera uso de esa base, cosa que es muy común en los proyectos JavaScript. Preferencia alumnos matriculados en Grado online. En este <a href="https://universidaddeburgos.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=c&chid=cd3511f2-a48c-4c8b-8344-9105552e28fa&s=0&t=pfb">GII1enlace puedes ver los videos con la descripción de los TFG por los tutores de la empresa.</a></td>
+								<td> Carlos López Nozal<p></p>Sergio Diez Cristóbal:  sergio.diez.cristobal@hp.com<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2017-2018</td>
+							</tr><!-- End Proyecto-->
+						</tbody>
+						</table>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(4, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(0,4,10,4, 'P')">1...4</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+					</section>
+				</div>
+			</div>
+			<footer class='page-footer grey ubu'>
+				<div class='container'>
+					<div class='row'>
+						<div class='col l4 s12'>
+							<h5 class='white-text'>Informaci&oacute;n</h5>
+							<p class='white-text'><i class='mdi-action-face-unlock'></i> Creado por <strong>Beatriz Zurera Mart&iacute;nez-Acitores</strong> <br/>
+							<i class='mdi-communication-email'></i> <a href='mailto:bzm0001@alu.ubu.es'>bzm0001@alu.ubu.es</a> </p>
+							<p class='white-text'><i class='mdi-hardware-keyboard-alt'></i> Tutorizado por <strong>Carlos L&oacute;pez Nozal </strong> <br/>
+							<i class='mdi-communication-email'></i> <a href='mailto:clopezno@ubu.es'>clopezno@ubu.es</a> </p>
+						</div>
+						<div class='col l4 s12'>
+							<ul>
+								<li><a href='http://validator.w3.org/check/referer' title='UBU'><img class='img-responsive' src='./images/HTML.png' title='UBU' alt='UBU'/></a></li>
+							</ul>
+						</div>
+						<div class='col l4 s12'>
+							<ul>
+								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Sep 26 12:07:21 CEST 2017 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class='footer-copyright'>
+					<div class='container white-text'>
+						Copyright  <strong>&copy; LSI</strong>.
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
