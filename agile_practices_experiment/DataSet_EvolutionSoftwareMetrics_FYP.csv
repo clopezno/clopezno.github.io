@@ -1,0 +1,56 @@
+Name,Group,Year,I1,I2,I3,TI1,TC1,TC2,C1,TC3,Grade,url
+FYP2012,NOUBU,2012,9,0.05,100,2.44,1,165.99,0.63,27.67,,https://github.com/wakandan/FYP
+FYP2015,NOUBU,2015,1,0.01,100,694,8.95,1199.74,0.54,3.44,,https://github.com/evandrix/Splat
+FYP2014,NOUBU,2014,,,,,0.5,187.73,0.41,62,,https://github.com/Quantza/fyp
+FYP2012,NOUBU,2012,,,,,1.41,53.4,0.89,19,,https://github.com/Raynos/fyp
+FYP2017,NOUBU,2017,,,,,0.54,75.17,0.51,69,,https://github.com/wanaimannnn/fyp
+FYP2017,NOUBU,2017,1,0.03,0,,1.08,35.65,0.79,33,,https://github.com/Vungo0510/FYP
+FYP2017,NOUBU,2017,1,0.14,100,0,1.3,9.09,0.57,7,,https://github.com/jikkuchacko/FYP
+FYP2017,NOUBU,2017,1,0.04,100,,0.89,24.06,1,27,,https://github.com/gihanwijesinghe/FYP
+FYP2017,NOUBU,2017,,,,,1.7,50.86,0.6,15,,https://github.com/wuthmone/Exchange-Rate-Predictor-Web-App
+FYP2017,NOUBU,2017,,,,,3.78,83.18,0.68,7.33,,https://github.com/Stefan0010/FYP
+FYP2011,NOUBU,2011,,,,,3.02,126.76,0.43,10.5,,https://github.com/stedolan/fyp
+FYP2015,NOUBU,2015,,,,,12.02,120.19,0.8,2.5,,https://github.com/littleniu/FYPhotoBrowser
+FYP2011,NOUBU,2011,,,,,10.39,166.17,0.38,2.67,,https://github.com/paruss/FYP
+FYP2016,NOUBU,2016,,,,,3.67,197.98,0.35,9,,https://github.com/ds216/FYP
+FYP2013,NOUBU,2013,29,0.1,100,142.28,2.21,612.67,0.49,13.85,,https://github.com/jvia/fyp
+FYP2016,NOUBU,2016,,,,,2.17,75.95,0.6,17.5,,https://github.com/cubecnelson/FYP
+FYP2016,NOUBU,2016,17,0.28,100,4.12,1.55,93.29,0.42,20,,https://github.com/leesyjasmine/fypcookies
+FYP2017,NOUBU,2017,,,,,31.74,190.46,0.5,1,,https://github.com/girisagar46/FYPFruitClassifier
+FYD2016,NOUBU,2016,23,0.14,47,21,1.02,170.97,0.88,33.6,,https://github.com/pjsinco/fyd
+FYD2016,NOUBU,2016,6,0.3,100,0,3.35,64.94,0.65,10,,https://github.com/Padavan94/FYD
+FYD2013,NOUBU,2013,,,,,2.3,119.84,0.65,13,,https://github.com/kdedakia/fydp
+FYD2013,NOUBU,2013,6,0.08,83,10,2.6,210.23,0.39,11.29,,https://github.com/Morton00000/FyD-1.5.1
+FYD2016,NOUBU,2016,,,,,3.81,117.98,0.48,7.75,,https://github.com/mmendel/FYDP
+FYD2017,NOUBU,2017,2,0.03,100,0,3.17,250.29,0.68,9.88,,https://github.com/stephensjlee/fydp
+FYD2017,NOUBU,2017,3,0.07,100,2,5.58,239.89,0.51,5.38,,https://github.com/FicciTong/fydp
+FYPD2016,NOUBU,2016,116,0.28,100,0.02,0.71,294.01,0.52,45.89,,https://github.com/Kamilla-K/FYDP
+FYPD2016,NOUBU,2016,75,0.24,82,20.32,0.59,185.15,0.51,52.33,,https://github.com/chrisngan24/fydp
+FYPD2016,NOUBU,2016,,,,,0.31,10.22,0.94,33,,https://github.com/mominirfan/FYDProject
+FYPD2016,NOUBU,2016,2,0.13,0,0,4.06,60.85,0.67,5,,https://github.com/zmbernho/FYDP
+FYD2017,NOUBU,2017,24,0.32,91,1.91,3.58,264.86,0.28,8.22,,https://github.com/jtmzheng/fydp
+201701gobees ,UBU,2017,193,0.47,90,8.73,0.45,182.88,0.3,68.33,10,https://github.com/davidmigloz/go-bees
+201702 :: CalificacionesMoodle ,UBU,2017,1,0.07,0,0,5.62,78.7,0.36,4.67,7.6,https://github.com/claumartinezh/TFG_UBUGrades
+201702 :: DietaPorDientes ,UBU,2017,85,0.69,100,4.62,1.19,146.78,0.27,24.6,9.5,https://github.com/Itg0001/TFG_DietaPorDientes
+201702 :: GestionTFG_Web2.0 ,UBU,2017,41,0.52,87,8.47,2.57,203.12,0.41,13.17,7.9,https://github.com/jfb0019/Gestor-TFG-2016
+201702 :: Mercapro ,UBU,2017,,,,,2.85,17.1,0.83,6,6.4,https://github.com/rubenbarrios/mercapro-2
+201702 :: Torneos ,UBU,2017,105,1.09,92,6.53,0.82,79.98,0.45,48,9.3,https://github.com/JoseBarbero/PlataformaTorneos2x2
+201702 :: SimuladorApuestas ,UBU,2017,19,0.26,100,9.74,1.27,94.04,0.41,24.67,8,https://github.com/nunobasurto/apuestas_deportivas
+201702 :: UBUGRAPH50 ,UBU,2017,24,0.8,100,17.71,3.91,117.24,0.37,7.5,8,https://github.com/dvr0006/UBUGRAPH-5.0
+201706 :: DespertadorAndroid6,UBU,2017,,,,,4.68,84.28,0.44,6,8,https://github.com/apd0025/AlarmaHablada
+201706 :: TouchCarPI ,UBU,2017,40,0.5,100,16.43,2.37,189.42,0.45,11.43,9,https://github.com/Plata17/TouchCarPI
+201706 :: UBuNurse ,UBU,2017,42,1.68,97,9.27,3.81,95.2,0.4,8.3,7.25,https://github.com/aps0047/UbuNurse
+201707 :: 3DViewer ,UBU,2017,206,0.65,91,10.41,0.74,233.99,0.29,39.38,8.5,https://github.com/Alberto-Vivar/3D-Viewer
+201707 :: CoyunturaEconomica ,UBU,2017,43,0.49,100,25.21,1.66,144.57,0.49,17.4,6.5,https://github.com/NelsonParamo/GI16.M_ProyectoCoyuntura
+201707 :: Perikymata ,UBU,2017,130,1.19,100,8.3,1.83,199.96,0.33,15.57,9.2,https://github.com/amtBurgos/Perikymata2017
+201707 :: Quicktest ,UBU,2017,53,0.14,100,3.23,0.44,163.18,0.34,74.2,9.4,https://github.com/Fernan-Ramos/Test-Manager
+201601 :: Mis Beans ,UBU,2016,,,,,4.86,92.38,0.42,6.33,9,https://github.com/smarquina/misBeans
+201602 :: Activiti API ,UBU,2016,24,0.53,100,91.17,5.41,243.29,0.4,5.62,7.75,https://github.com/dba0010/Activiti-Api
+201602 :: Autocorreción de prácticas en Java ,UBU,2016,,,,,1.07,138.38,0.34,25.8,9,https://github.com/avg0043/TFG_Autocorrecc_Java 
+201602 :: UBUDiabetes ,UBU,2016,,,,,8.48,93.3,0.55,3.67,7.75, https://github.com/mlj0004/tfg_gii14b/
+201606 :: UBUGraph 4.0 ,UBU,2016,,,,,1.96,25.43,1,13,7.4,https://github.com/asl0044/UBUGraph4.0 
+201607 :: GSC Supuestos Contables ,UBU,2016,,,,,11.4,478.6,0.45,2.62,9.1,https://github.com/noeliamansog/TFG-GII.15.I 
+201609 :: ProgDinamica ,UBU,2016,33,0.87,3,57,8.85,336.38,0.26,3.45,6.3,https://github.com/aam0093/Proyecto-Quiz-Prog.-Dinamica 
+201407 :: 201407PLQuiz ,UBU,2014,22,0.08,36,18.5,0.92,262.03,0.21,31.78,9,https://github.com/RobertoIA/PLQuiz
+201507 :: Extensión de Lógica Difusa para NetLogo ,UBU,2015,,,,,6,143.92,0.42,4.8,8.1,https://github.com/MarcAlmen/NetLogo-FuzzyLogic-Extension/commits/master
+201507 :: Quiz-Grafos ,UBU,2015,44,2.32,97,27.9,6.89,131,0.37,3.8,5,https://github.com/jorgealonsomar/TFGII-Quiz-Grafos
