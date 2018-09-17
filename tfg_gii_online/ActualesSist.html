@@ -70,10 +70,10 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: <br/>5.0 </td>
-									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>3.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
-									<td>N&uacute;mero Total de Alumnos: <br/>5.0 </td>
-									<td>N&uacute;mero Total de Tutores Involucrados: <br/>6.0 </td>								</tr>
+									<td>N&uacute;mero Total de Proyectos: <br/>12.0 </td>
+									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>8.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
+									<td>N&uacute;mero Total de Alumnos: <br/>7.0 </td>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>15.0 </td>								</tr>
 							</tbody>
 						</table>
 					</section>
@@ -84,8 +84,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(5, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(0,5,10,5, 'P')">1...5</a> </td>
+									<td><a href="javascript:MostrarAllFilas(12, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,12, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,2,10,12, 'P')">11...12</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -135,7 +136,7 @@ El alumno desarrollará la aplicación web utilizando las tecnologías que mejor
 Tenemos en el laboratorio placas Freescale (FRDMK64F) conectadas a plantas piloto (plantas de control de temperatura y caudal de aire) y la idea es desarrollar una interfaz que actúe como un SCADA (interfaz hombre máquina) para monitorizar variables del proceso así como actuar sobre el proceso y un módulo de comunicaciones entre el PC y la placa. La interfaz hombre máquina iría implementada en el PC y habría que dotarla de un módulo de comunicaciones implementado tanto en el PC como en la placa que pueda soportar alguna de estas comunicaciones: wifi, Ethernet, comunicación serie, etc.
 
 El módulo de comunicaciones implementado en la placa será en C y la interfaz hombre máquina podrá ser en cualquier lenguaje, C++, visual basic, etc.</td>
-								<td> Alejandro Merino Gómez<p></p><p></p> </td>
+								<td> Alejandro Merino Gómez<p></p> Daniel Sarabia Ortiz<p></p> </td>
 								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
 								<td> 2017-2018</td>
 							</tr><!-- End Proyecto-->
@@ -146,14 +147,121 @@ El módulo de comunicaciones implementado en la placa será en C y la interfaz h
 								<td> Jorge Zamora Marqués<p></p> <p></p>  </td>
 								<td> 02/02/2017</td>
 							</tr><!-- End Proyecto-->
+							<tr id="P5"> <!-- Begin Proyecto-->
+								<th> GII_O_MA_18.01  Simulación de redes con GNS3</th>
+								<td> Modalidad A.El objetivo principal del proyecto es profundizar en las posibilidades de simulación de redes con el software GNS y explorar las posibilidades de distribución de la simulación.
+Utilizando el software de simulación de redes GNS3, se simularía una red de computadores compleja, que incluirían funcionalidades como, servidor web, servidor DNS, servidor DHCP, acceso a internet, filtrado de tramas en switches, etc.
+Se explorarían además las posibilidades de acceso a equipos remotos y del uso de dockers en GNS3.
+
+
+**** Trabajos teóricos relacionados: 
+Héctor Delgado Patiño. "Construcción de una red MPLS y validación de GNS3 para su simulación". PFC Universidad de Cartagena. http://repositorio.upct.es/bitstream/handle/10317/5251/tfg682.pdf?sequence=1
+Rubén Isa Hidalgo . "Implementación de un laboratorio virtual para aprendizaje de SDN". TFG Universidad de Cantabria.
+https://repositorio.unican.es/xmlui/bitstream/handle/10902/9377/387880.pdf
+
+**** Trabajos prácticos relacionados:
+https://github.com/GNS3/gns3-gui/releases</td>
+								<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p><p></p>Daniel Sarabia Ortiz </td>
+								<td> Alumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P6"> <!-- Begin Proyecto-->
+								<th> GII_O_MA_18.02 Generación rutas utilizando sistemas empotrados</th>
+								<td> Modalidad A.Se trataría de utilizar la placa de desarrollo FRDM K64F, con un módulo GPS incorporado, que fuera capaz de registrar en una tarjeta microSD la ruta seguida por el dispositivo. Para ello se debe desentramar la cadena GPS y almacenarla. La activación/desactivación de la captura GPS se hará de acuerdo a la información recogida por el acelerómetro. Se proporcionarán además estadísticas diarias. De manera adicional, se podrá incluir que la información recogida por el dispositivo se muestre en una aplicación web.
+
+**** Trabajos teóricos relacionados: 
+Ignacio Fernández Cascajares. "Desarrollo de un robot móvil v2.0" TFM de la Universidad de Burgos.
+
+Javier Álamo del Pozo. "Sistema de posicionamiento interior y exterior" TFM de la Universidad de Burgos.
+
+**** Trabajos prácticos relacionados:
+https://github.com/ErichStyger/mcuoneclipse/tree/master/Examples/Eclipse/FRDM-KL25Z/FRDM-KL25Z_Adafruit_GPS
+
+https://github.com/ErichStyger/mcuoneclipse/tree/master/Examples/Eclipse/FRDM-K64F/FRDM-K64F_DataLogger</td>
+								<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P7"> <!-- Begin Proyecto-->
+								<th> GII_O_MB_18.03 EnergySaver: Centralizar el encendido y apagado de equipos de forma remota utilizando un sitema de reglas.</th>
+								<td> Modalidad B. El proyecto consiste en el desarrollo de una aplicación cliente-servidor en la que se puede programar el encendido y apagado de los sistemas que ejecutan el cliente utilizando un sistema de reglas. Tras el encendido, se podrán lanzar un conjunto de comandos o aplicaciones seleccionables por el usuario. El apagado se podrá controlar con reglas del tipo: "XXX min. tras la finalización del proceso YYYY y del proceso ZZZZ". Los clientes podrán ejecutarse en distintas plataformas (al menos Windows y Linux).
+Tecnologías a utilizar: Sistemas Operativos, Linux, Windows, C++, HTML, CSS
+Conocimientos a aprender en el desarrollo del proyecto: Sistemas operativos, gestión remota de equipos.
+
+**** Trabajos teóricos relacionados: 
+A especificar por empresa HP SCDS.
+
+**** Trabajos prácticos relacionados:
+</td>
+								<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p><p></p>José María Rivera. Empresa HP SCDS </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P8"> <!-- Begin Proyecto-->
+								<th> GII_O_MB_18.04 TestingAWE: Sistema para generar test automáticos EndToEnd de aplicaciones Angular/Web/Electron</th>
+								<td> Modalidad B. El proyecto consiste en el desarrollo de una tooltik para la generación y ejecución de tests automáticos end to end de aplicaciones basadas en tecnología Angular, Web o Electron que puedan ser incluidas dentro de un sistema de integración continua.
+Tecnologías a utilizar: HTML, Javascript, Angular, Electron, C#
+Conocimientos a aprender en el desarrollo del proyecto: Derrollo de tests automáticos end to end
+
+**** Trabajos teóricos relacionados: 
+A especificar por la empresa HP SCDS
+
+</td>
+								<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p><p></p>David Calvo, Juan Manuel Zamarreño, Alicia Gago de empresa HP SCDS </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P9"> <!-- Begin Proyecto-->
+								<th> GII_O_MB_18.05 ReactVR: Herramienta para la visualización de piezas 3D utilizando React y ReactNative.</th>
+								<td> Modalidad B. Desarrollar una aplicación que permita la visualización e inspección de piezas mediante tecnología React y React Native.
+Tecnologías a utilizar: JavaScript, HTML, CSS
+Conocimientos a aprender en el desarrollo del proyecto: Realidad Virtual, 3D
+**** Trabajos teóricos relacionados: 
+A especificar por la empresa HP SCDS
+</td>
+								<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p><p></p>Julia Herrero y Jorge Ferrero empresa HP SCDS </td>
+								<td> Tecnologías a utilizar: JavaScript, HTML, CSS Conocimientos a aprender en el desarrollo del proyecto: Realidad Virtual, 3D<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P10"> <!-- Begin Proyecto-->
+								<th> GII_O_MB_18.06 SmartFiller: Aplicar técnicas de Machine Learning para "rellenar" una parte eliminada de una imagen</th>
+								<td> Modalidad B. Utilizando técnicas de Machine Learning, desarrollar una aplicación que permita "rellenar" de forma inteligente una zona de una imagen cuyo contenido se ha marcado previamente como eliminado.
+
+Tecnologías a utilizar: C++, Python
+Conocimientos a aprender en el desarrollo del proyecto: Machine Learning, Procesamiento de imágenes
+
+**** Trabajos teóricos relacionados: 
+A especificar por la empresa HP SCDS
+
+
+</td>
+								<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p><p></p>Alejandro Viloria de empresa HP SCDS </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P11"> <!-- Begin Proyecto-->
+								<th> GII_O_MB_18.07 BC4Distribution: Aplicar tecnología Blockchain en una cadena de distribución de productos</th>
+								<td> Modalidad B.Utilizando tecnología BlockChain, desarrollar una aplicación que permita la trazabilidad completa de productos en una cadena de distribución.
+La aplicación debe contar una interface web para la interacción y consulta.
+Tecnologías a utilizar: C++, HTML, CSS, BlockChain
+Conocimientos a aprender en el desarrollo del proyecto: BlockChain
+
+**** Trabajos teóricos relacionados: 
+A especificar por la empresa HP SCDS
+</td>
+								<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p><p></p>Pablo Tejedor tutor HP SCDS </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2018-19</td>
+							</tr><!-- End Proyecto-->
 						</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(5, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(0,5,10,5, 'P')">1...5</a> </td>
+									<td><a href="javascript:MostrarAllFilas(12, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,12, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,2,10,12, 'P')">11...12</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -179,7 +287,7 @@ El módulo de comunicaciones implementado en la placa será en C y la interfaz h
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Sep 13 18:30:35 CEST 2018 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Sep 17 18:21:42 CEST 2018 </li>
 							</ul>
 						</div>
 					</div>
