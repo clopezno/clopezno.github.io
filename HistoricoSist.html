@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 20, 2, 20, 33]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.485, 5.7870965]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 22, 2, 22, 36]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.418181818181818, 6.2873898]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 118 </td>
-									<td>N&uacute;mero Total de Alumnos: 114 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,98, 0, 10, 1,61) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (221,69, 79, 864, 127,41) </td>
+									<td>N&uacute;mero Total de Proyectos: 120 </td>
+									<td>N&uacute;mero Total de Alumnos: 116 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,97, 0, 10, 1,6) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (223,82, 79, 864, 127,4) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 20] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 23] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 20] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 33] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 22] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 25] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 22] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 36] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,19 +104,19 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(118, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,118, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,118, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,118, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,118, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,118, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,118, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,118, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,118, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,118, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,118, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,118, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(11,8,10,118, 'P')">111...118</a> </td>
+									<td><a href="javascript:MostrarAllFilas(120, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,120, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,120, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,120, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,120, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,120, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,120, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,120, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilas(7,10,120, 'P')">71...80</a> </td>
+									<td><a href="javascript:MostrarFilas(8,10,120, 'P')">81...90</a> </td>
+									<td><a href="javascript:MostrarFilas(9,10,120, 'P')">91...100</a> </td>
+									<td><a href="javascript:MostrarFilas(10,10,120, 'P')">101...110</a> </td>
+									<td><a href="javascript:MostrarFilas(11,10,120, 'P')">111...120</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1079,25 +1079,41 @@ María Esther Baños García </td>
 									<td> 09/07/2018</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P118"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Sonia95LG/POODLEapp">GII17.14 POODLE Planificación  de carga académica</a></th>
+									<td> Carlos López Nozal </td>
+									<td> 1 </td>
+									<td> 06/10/2017</td>
+									<td> 21/09/2018</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P119"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mmb0093/TFG_Fitolitos">GII17.0H Reconocimiento de fitolitos v2.0</a></th>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
+									<td> 1 </td>
+									<td> 06/10/2017</td>
+									<td> 21/09/2018</td>
+									<td> 7.5</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(118, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,118, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,118, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,118, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,118, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,118, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,118, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,118, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,118, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,118, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,118, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,118, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(11,8,10,118, 'P')">111...118</a> </td>
+									<td><a href="javascript:MostrarAllFilas(120, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,120, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,120, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,120, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,120, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,120, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,120, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,120, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilas(7,10,120, 'P')">71...80</a> </td>
+									<td><a href="javascript:MostrarFilas(8,10,120, 'P')">81...90</a> </td>
+									<td><a href="javascript:MostrarFilas(9,10,120, 'P')">91...100</a> </td>
+									<td><a href="javascript:MostrarFilas(10,10,120, 'P')">101...110</a> </td>
+									<td><a href="javascript:MostrarFilas(11,10,120, 'P')">111...120</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1123,7 +1139,7 @@ María Esther Baños García </td>
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jul 10 11:48:48 CEST 2018 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Oct 08 11:29:17 CEST 2018 </li>
 							</ul>
 						</div>
 					</div>
