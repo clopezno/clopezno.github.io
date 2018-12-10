@@ -70,10 +70,10 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: <br/>6.0 </td>
+									<td>N&uacute;mero Total de Proyectos: <br/>7.0 </td>
 									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>0.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
 									<td>N&uacute;mero Total de Alumnos: <br/>10.0 </td>
-									<td>N&uacute;mero Total de Tutores Involucrados: <br/>8.0 </td>								</tr>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>9.0 </td>								</tr>
 							</tbody>
 						</table>
 					</section>
@@ -84,8 +84,8 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(6, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(0,6,10,6, 'P')">1...6</a> </td>
+									<td><a href="javascript:MostrarAllFilas(7, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(0,7,10,7, 'P')">1...7</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -175,14 +175,40 @@ https://www.sciencedirect.com/science/article/pii/S0370157312000828
 								<td> Raúl Ollés Clavelo<p></p> <p></p>  </td>
 								<td> 08/11/2018</td>
 							</tr><!-- End Proyecto-->
+							<tr id="P6"> <!-- Begin Proyecto-->
+								<th> GII_O_MC_18.09 Automatización del proceso de delineación a partir de datos de un levantamiento topográfico</th>
+								<td> Motivación
+El trabajo que realizamos habitualmente los Ingenieros Topógrafos consta de dos partes fundamentales; trabajo de campo y gabinete. Un problema importante al que nos enfrentamos es la gran cantidad de tiempo y recursos que invertimos en gestionar los datos obtenidos en campo para obtener un plano del levantamiento topográfico ejecutado, alargando en exceso el desarrollo y entrega de un proyecto.
+Con este planteamiento surge la necesidad de crear una aplicación que consiga automatizar este trabajo el máximo posible y así obtener un ahorro de tiempo y de recursos, fundamental en nuestros proyectos.
+Puede parecer a priori un trabajo sencillo y rápido de hacer con una herramienta de cad, uniendo puntos manualmente para crear líneas, u otros elementos, claro está, si tienes un levantamiento topográfico con 30 puntos y recuerdas como lo has hecho en campo, pero cuando tienes un levantamiento con 10000 puntos, e intervienen varias personas en él, se puede convertir en un trabajo muy complicado e insufrible de realizar.
+Una herramienta que incluya las funcionalidades que aquí se pretenden implementar, no existe como tal en el  mercado, algunos programas como Autocad o programas específicos de Topografía, disponen de algún módulo a mayores del programa, que permiten hacer algo similar, pero con un resultado muy pobre respecto a lo que aquí se plantea y necesitas un conocimiento avanzado de estos para conseguirlo.
+Objetivo
+Crear una aplicación que lea los datos extraídos del equipo topográfico, ya sea estación total o GPS y produzca un archivo de tipo dxf, compatible con los programas de cad (Autocad, MicroStation, DraftSight, etc), interpretando toda la codificación, separando los elementos en capas, dibujando todos los elementos medidos en campo, como líneas, curvas, símbolos, etc.. todo ello de forma automática.
+Hay que tener en cuenta que en el campo solo se miden puntos individuales con coordenadas x, y,z,todo el proceso para crear líneas rectas, curvas, superficies, etc, lo realizaría la aplicación interpretando la codificación.
+La aplicación no va a tener la pretensión de ser una aplicación de cad, ni nada parecido, sino una aplicación que automatice el proceso de interpretación de los datos provenientes de un levantamiento topográfico y genere una salida cad en formato dxf, automatizando lo máximo posible todo el proceso de dibujo e incluso pudiendo personalizar cada usuario la codificación en campo mediante librerías personalizadas.
+Herramientas:
+La aplicación se desarrollará con Python y Flask , usando las librerías de Python:
+Ezdxf,sdxf,Dxfgrabber
+
+
+**** Trabajos teóricos relacionados: 
+https://www.delicad.com/en/rapiddxf.php
+https://www.delicad.com/en/rapiddxf_lt.php
+
+**** Trabajos prácticos relacionados:
+</td>
+								<td> Carlos López Nozal<p></p>César I. García Osorio<p></p> </td>
+								<td> José Eduardo Risco Sánchez-Cortés<p></p> <p></p>  </td>
+								<td> 10/12/18</td>
+							</tr><!-- End Proyecto-->
 						</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(6, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(0,6,10,6, 'P')">1...6</a> </td>
+									<td><a href="javascript:MostrarAllFilas(7, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(0,7,10,7, 'P')">1...7</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -208,7 +234,7 @@ https://www.sciencedirect.com/science/article/pii/S0370157312000828
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Nov 08 20:49:13 CET 2018 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Dec 10 18:59:08 CET 2018 </li>
 							</ul>
 						</div>
 					</div>
