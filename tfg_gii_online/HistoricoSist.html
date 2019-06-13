@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2015/2016', 1, 0, 1, 1], ['2016/2017', 3, 0, 3, 4], ['2017/2018', 3, 2, 3, 7], ['2018/2019', 4, 1, 4, 6]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2015/2016', 9.7, 5.354839], ['2016/2017', 6.666666666666667, 13.5161295], ['2017/2018', 9.5, 6.27957], ['2018/2019', 7.625, 4.564516]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2015/2016', 1, 0, 1, 1], ['2016/2017', 3, 0, 3, 4], ['2017/2018', 3, 2, 3, 7], ['2018/2019', 5, 1, 5, 8]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2015/2016', 9.7, 5.354839], ['2016/2017', 6.666666666666667, 13.5161295], ['2017/2018', 9.5, 6.27957], ['2018/2019', 8.0, 5.0451612]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 11 </td>
-									<td>N&uacute;mero Total de Alumnos: 10 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,06, 4, 10, 1,98) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (233,91, 112, 747, 185,76) </td>
+									<td>N&uacute;mero Total de Proyectos: 14 </td>
+									<td>N&uacute;mero Total de Alumnos: 13 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,37, 4, 10, 1,85) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (220,93, 112, 747, 166,06) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [1, 3, 3, 4] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[1, 1, 4, 5] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[1, 3, 3, 4] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[1, 4, 7, 6] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [1, 3, 3, 5] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[1, 1, 4, 6] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[1, 3, 3, 5] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[1, 4, 7, 8] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,9 +104,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(11, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,11, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,1,10,11, 'P')">11...11</a> </td>
+									<td><a href="javascript:MostrarAllFilas(14, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,14, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,4,10,14, 'P')">11...14</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -150,7 +150,7 @@
 								</tr><!-- End Proyecto-->
 								<tr id="P3"> <!-- Begin Proyecto-->
 									<th> GII17.10 Generador de mapas de calor en tiempo real<br> <a href=https://www.youtube.com/watch?v=7Z6jsWn5dMs&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA&index=2>Vídeo demostración</a> <br> <a href=https://codebeat.co/projects/gitlab-com-oscortiz-tfg_gii17-10_generador_de_mapas_de_calor_en_tiempo_real-master-b980eb2f-1c28-44d3-b429-0c41a44fb59a/all_complexities>Calidad de código</a></th>
-									<td> Carlos López Nozal<p></p>Guillemo Santos Melgar </td>
+									<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p>Guillemo Santos Melgar </td>
 									<td> 1 </td>
 									<td> 10/10/2017</td>
 									<td> 09/02/2018</td>
@@ -166,7 +166,7 @@
 								</tr><!-- End Proyecto-->
 								<tr id="P5"> <!-- Begin Proyecto-->
 									<th> GII_O_17.02 Sistema de navegación semiautomático en interiores<br> <a href=https://github.com/mbm0089/GII_0_17.02_SNSI/>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=WjOSTpxChIY&index=6&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=OFmsPbaPsCA&index=5&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=GII_0_17.02_SNSI>Calidad de código</a></th>
-									<td> Alejandro Merino Gómez<p></p>César García Osorio<p></p>José Francisco Díez Pastor </td>
+									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p>César García Osorio<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 09/11/2017</td>
 									<td> 05/06/2018</td>
@@ -174,7 +174,7 @@
 								</tr><!-- End Proyecto-->
 								<tr id="P6"> <!-- Begin Proyecto-->
 									<th> GII_O_17.01 Desarrollo de una interfaz para planta piloto<br> <a href=https://github.com/FranBurgos/TFG>Repositorio software</a><br> <a href=https://youtu.be/uvDMTtxGMDw?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/i_OkqDiP0AE?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG/files>Calidad de código</a></th>
-									<td> Alejandro Merino Gómez<p></p> Daniel Sarabia Ortiz </td>
+									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p> Daniel Sarabia Ortiz </td>
 									<td> 1 </td>
 									<td> 30/10/2018</td>
 									<td> 19/02/2019</td>
@@ -198,7 +198,7 @@
 								</tr><!-- End Proyecto-->
 								<tr id="P9"> <!-- Begin Proyecto-->
 									<th> GII17.0M Secuenciador heurístico<br> <a href=https://github.com/Victoracha/TFG-Reglas-de-prioridad>Repositorio software</a><br> <a href=https://youtu.be/nF6N2glndAk?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/2L5iGrXjTxI?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG-Reglas-de-prioridad/files>Calidad de código</a></th>
-									<td> José Manuel Galán Ordax </td>
+									<td> José Manuel Galán Ordax (Mención en Sistemas de Información) </td>
 									<td> 1 </td>
 									<td> 24/09/2018</td>
 									<td> 19/02/2019</td>
@@ -206,11 +206,35 @@
 								</tr><!-- End Proyecto-->
 								<tr id="P10"> <!-- Begin Proyecto-->
 									<th> GII16.N Aplicación para la gestión del sonido en un dispositivo móvil<br> <a href=https://github.com/JorgeZamora94/TFG-Gestor-de-sonido-para-dispositivos-Android>Repositorio software</a><br> <a href=https://youtu.be/VQNTjM7Kk3M?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/bbjKM6LRkEk?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG/files>Calidad de código</a></th>
-									<td> Carlos López Nozal </td>
+									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
 									<td> 1 </td>
 									<td> 02/02/2017</td>
 									<td> 19/02/2019</td>
 									<td> 6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P11"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_18.08 Retrogaming recommender<br> <a href=https://github.com/raulolles/TFG_GII_O_MA_18.08>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=BszjUZQFj30&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=12>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=CgOmExE7U3U&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=11>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/raulolles/TFG_GII_O_MA_18.08/dashboard>Calidad de código</a></th>
+									<td> José Manuel Galán Ordax (Mención en Sistemas de Información)<p></p>José Ignacio Santos Martín </td>
+									<td> 1 </td>
+									<td> 08/11/2018</td>
+									<td> 12/06/2019</td>
+									<td> 9.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P12"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_18.09 Automatización del proceso de delineación a partir de datos de un levantamiento topográfico<br> <a href=https://github.com/EduardoRisco/SurveyingPointCode>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=EZ_11OUcYGw&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=14>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=EZ_11OUcYGw&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=13>Vídeo de presentación</a><br> <a href=https://codebeat.co/projects/github-com-eduardorisco-surveyingpointcode-master>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p>César I. García Osorio </td>
+									<td> 1 </td>
+									<td> 10/12/18</td>
+									<td> 12/06/2019</td>
+									<td> 10</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P13"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.01Autoevaluación proceso de desarrollo de Trabajo Fin de Grado  en Github <br> <a href=https://github.com/rlp0019/Activiti-Api>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=yiQpHgNWMZY&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=16>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=gYCQdf51SsE&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=15>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/rlp0019/Activiti-Api/dashboard>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
+									<td> 1 </td>
+									<td> 12/02/19</td>
+									<td> 12/06/2019</td>
+									<td> 9</td>
 								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
@@ -218,9 +242,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(11, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,11, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,1,10,11, 'P')">11...11</a> </td>
+									<td><a href="javascript:MostrarAllFilas(14, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,14, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,4,10,14, 'P')">11...14</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -246,7 +270,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Wed Feb 20 11:26:45 CET 2019 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Jun 13 11:48:52 CEST 2019 </li>
 							</ul>
 						</div>
 					</div>
