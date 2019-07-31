@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 22, 2, 22, 36]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.418181818181818, 6.2873898]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 25, 2, 25, 40], ['2018/2019', 26, 0, 26, 65]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.228, 6.2980647], ['2018/2019', 8.200000000000001, 9.607941]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 120 </td>
-									<td>N&uacute;mero Total de Alumnos: 116 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,97, 0, 10, 1,6) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (223,82, 79, 864, 127,4) </td>
+									<td>N&uacute;mero Total de Proyectos: 146 </td>
+									<td>N&uacute;mero Total de Alumnos: 142 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,01, 0, 10, 1,5) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (237,01, 79, 864, 118,89) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 22] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 25] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 22] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 36] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 25, 26] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 28, 26] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 25, 26] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 40, 65] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,19 +104,22 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(120, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,120, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,120, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,120, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,120, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,120, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,120, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,120, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,120, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,120, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,120, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,120, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilas(11,10,120, 'P')">111...120</a> </td>
+									<td><a href="javascript:MostrarAllFilas(146, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,146, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,146, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,146, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,146, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,146, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,146, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,146, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilas(7,10,146, 'P')">71...80</a> </td>
+									<td><a href="javascript:MostrarFilas(8,10,146, 'P')">81...90</a> </td>
+									<td><a href="javascript:MostrarFilas(9,10,146, 'P')">91...100</a> </td>
+									<td><a href="javascript:MostrarFilas(10,10,146, 'P')">101...110</a> </td>
+									<td><a href="javascript:MostrarFilas(11,10,146, 'P')">111...120</a> </td>
+									<td><a href="javascript:MostrarFilas(12,10,146, 'P')">121...130</a> </td>
+									<td><a href="javascript:MostrarFilas(13,10,146, 'P')">131...140</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(14,6,10,146, 'P')">141...146</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1035,7 +1038,7 @@ María Esther Baños García </td>
 									<th> GII17 Localización de Intrusos</th>
 									<td> José Manuel Sáiz Díez </td>
 									<td> 1 </td>
-									<td> 01/01/18</td>
+									<td> 01/01/2018</td>
 									<td> 09/07/2018</td>
 									<td> 5.5</td>
 								</tr><!-- End Proyecto-->
@@ -1043,7 +1046,7 @@ María Esther Baños García </td>
 									<th> <a href="https://github.com/apj0007/PrawnView">GII17.18 PrawnVIEW</a></th>
 									<td> José Francisco Díez Pastor<p></p>Álvar Arnaiz González </td>
 									<td> 1 </td>
-									<td> 25/09/17</td>
+									<td> 25/09/2017</td>
 									<td> 09/07/2018</td>
 									<td> 6.5</td>
 								</tr><!-- End Proyecto-->
@@ -1051,7 +1054,7 @@ María Esther Baños García </td>
 									<th> <a href="https://github.com/cgc0045/TFG-UBUassistant">GII18.03 UBUassistant para Android</a></th>
 									<td> Pedro Renedo Fernández </td>
 									<td> 1 </td>
-									<td> 14/03/18</td>
+									<td> 14/03/2018</td>
 									<td> 09/07/2018</td>
 									<td> 8.5</td>
 								</tr><!-- End Proyecto-->
@@ -1095,25 +1098,236 @@ María Esther Baños García </td>
 									<td> 21/09/2018</td>
 									<td> 7.5</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P120"> <!-- Begin Proyecto-->
+									<th> GII18.0X Implantación de gestión de tiempos con control de presencia en SAP HR</th>
+									<td> José Manuel Galán Ordax<p></p>Junio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/06/2019</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P121"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/maltejanssen/NoisyNER---named-entity-recognition-in-social-media">GII18.0L NoisyNER - Named entity recognition in social media</a></th>
+									<td> Bruno Baruque Zanón<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P122"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Guillecal/TFG-Herramienta_para_medir_la_eficiencia_de_codigo_python/">GII18.0Y Herramienta para medir la eficiencia de código en Python</a></th>
+									<td> Jesús Enrique Sierra García<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P123"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Heber94/TFG-ElMundoEnTusGafas">GII18.0W El Mundo en tus Gafas</a></th>
+									<td> Álvar Arnaiz González<p></p>Pedro Luis Sánchez Ortega<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P124"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-smartfiller">GII18.0H SmartFiller</a></th>
+									<td> Juan José Rodríguez Diez<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P125"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/lca0037/GII18.0U-Ububooknet/">GII18.0U Ububooknet</a></th>
+									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P126"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/ElvisDSO/Qualificajocs">GII18.0Z Qualificajocs</a></th>
+									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P127"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mpl0045/UBU-TFG-IG-Study">GII18.0R IG-Study</a></th>
+									<td> José Manuel Galán Ordax<p></p>José Ignacio Santos Martín<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P128"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mfe0007/TFG-Deteccion_de_pallets_mediante_LIDAR">GII18.0S Detección de palets mediante LIDAR</a></th>
+									<td> Jesús Enrique Sierra García<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P129"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/hca0004/GII17.0T_Trayectorias_Semanticas_1819">GII18.0T Trayectorias Semánticas</a></th>
+									<td> Bruno Baruque Zanón<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P130"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/rnc0011/SistemaRecomendacionTFG">GII18.0M Sistema de Recomendación basado en Aprendizaje Profundo</a></th>
+									<td> Bruno Baruque Zanón<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P131"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-reactvr">GII18.0X ReactVR</a></th>
+									<td> Ángel Arroyo Puente<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P132"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/mus0007/testing-awe ">GII18.0J Testing AWE</a></th>
+									<td> Raúl Marticorena Sánchez<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P133"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/yjx0003/UBUMonitor">GII18.10 UBUMonitor</a></th>
+									<td> Raúl Marticorena Sánchez<p></p>Carlos Pardo<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P134"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jhm0025/TFG-GII18.09-Generador-de-informes-nutricionales/ ">GII18.09 Generador de Informes Nutricionales</a></th>
+									<td> Raúl Marticorena Sánchez<p></p>Antonio Canepa Oneto<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P135"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jct0024/HealthApp">GII18.0V Aplicación de recomendación nutricional - HEALTHAPP</a></th>
+									<td> Antonio Canepa Oneto<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P136"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mdi0007/Sistema-Informacion-sobre-Matriculacion ">GII18.18 Sistema de Información sobre Matriculación</a></th>
+									<td> Carlos Pardo<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 6.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P137"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/amm0131/TFG-HyperledgerFabric">GII18.19 Cartera blockchain sobre Hyperledger Fabric</a></th>
+									<td> Álvaro Herrero<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P138"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/daniarnaizg/TFG-Amazon-Scraper ">GII18.0C Extracción y procesamiento de datos de Amazon para su utilización en un estudio de marketing</a></th>
+									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P139"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/AdrianArnaiz/TFG-Neurodegenerative-Disease-Detection ">GII18.0E Uso de biomarcadores extraídos de la voz para la detección de la enfermedad del Parkinson</a></th>
+									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P140"> <!-- Begin Proyecto-->
+									<th> Clasificación de enfermedades de la piel con Deep Learning</th>
+									<td> José Francisco Díez Pastor<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.4</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P141"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jlgarridol/TFG-SmartBeds ">GII18.13 Minería de datos aplicada a la detección de crisis epilépticas y aplicación web</a></th>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P142"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/SergioLopez92/TFG-Datos-publicos ">GII18.11 Aplicación Web para la recopilación, tratamiento y visualización de datos públicos 2</a></th>
+									<td> José Francisco Díez Pastor<p></p>Jesus Maudes Raedo<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P143"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/aog0036/TFG-SmartBeds ">GII18.12 Minería de datos aplicada a la detección de crisis epilépticas y aplicación movil</a></th>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P144"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Josemi/AVC-TFG ">GII18.0Q Asistente Virtual para la Comunicación</a></th>
+									<td> César Represa Pérez<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P145"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/bsc0001/TFG_Stroke-Lesion-Segmentation-Approach-using-CT ">GII18.08 Aproximación hacia la identificación automática de lesión de ictus en TC craneal</a></th>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.3</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(120, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,120, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,120, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,120, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,120, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,120, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,120, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,120, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,120, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,120, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,120, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,120, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilas(11,10,120, 'P')">111...120</a> </td>
+									<td><a href="javascript:MostrarAllFilas(146, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,146, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,146, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,146, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,146, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,146, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,146, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,146, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilas(7,10,146, 'P')">71...80</a> </td>
+									<td><a href="javascript:MostrarFilas(8,10,146, 'P')">81...90</a> </td>
+									<td><a href="javascript:MostrarFilas(9,10,146, 'P')">91...100</a> </td>
+									<td><a href="javascript:MostrarFilas(10,10,146, 'P')">101...110</a> </td>
+									<td><a href="javascript:MostrarFilas(11,10,146, 'P')">111...120</a> </td>
+									<td><a href="javascript:MostrarFilas(12,10,146, 'P')">121...130</a> </td>
+									<td><a href="javascript:MostrarFilas(13,10,146, 'P')">131...140</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(14,6,10,146, 'P')">141...146</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1139,7 +1353,7 @@ María Esther Baños García </td>
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Oct 08 11:29:17 CEST 2018 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jul 30 14:20:12 CEST 2019 </li>
 							</ul>
 						</div>
 					</div>
