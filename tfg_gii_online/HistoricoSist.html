@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2015/2016', 1, 0, 1, 1], ['2016/2017', 3, 0, 3, 4], ['2017/2018', 3, 2, 3, 7], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 3, 0, 3, 4]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2015/2016', 9.7, 5.354839], ['2016/2017', 6.666666666666667, 13.5161295], ['2017/2018', 9.5, 6.27957], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 7.833333333333333, 8.301076]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 0, 2, 5], ['2018/2019', 7, 0, 7, 11], ['2019/2020', 3, 0, 3, 4]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 0.0], ['2017/2018', 9.5, 0.0], ['2018/2019', 8.428571428571429, 0.0], ['2019/2020', 7.833333333333333, 0.0]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 17 </td>
-									<td>N&uacute;mero Total de Alumnos: 16 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,28, 4, 10, 1,9) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (227,35, 112, 747, 150,91) </td>
+									<td>N&uacute;mero Total de Proyectos: 15 </td>
+									<td>N&uacute;mero Total de Alumnos: 14 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,1, 4, 10, 1,96) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (0, 0, 0, 0) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [1, 3, 3, 7, 3] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[1, 1, 4, 8, 3] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[1, 3, 3, 7, 3] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[1, 4, 7, 11, 4] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 3] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 3] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 4] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,9 +104,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(17, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,17, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,7,10,17, 'P')">11...17</a> </td>
+									<td><a href="javascript:MostrarAllFilas(15, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,15, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,5,10,15, 'P')">11...15</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -125,135 +125,119 @@
 							</thead>
 							<tbody>
 								<tr id="P0"> <!-- Begin Proyecto-->
-									<th> (Ejemplo presencial) GII15.G   Aplicación móvil iOS para preguntas tipo test<br> <a href=https://bitbucket.org/Xaaris/tfg/ >Repositorio software</a><br></th>
-									<td> Luis R. Izquierdo Millán </td>
-									<td> 1 </td>
-									<td> 30/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P1"> <!-- Begin Proyecto-->
-									<th> (Ejemplo presencial) GII16.H Monitorización del estado de una colmena mediante un smartphone<br> <a href=http://digit-moodle.blogspot.com.es/2017/02/un-tfg-en-ingenieria-informatica-de-10.html>Repositorio software</a><br></th>
+									<th> =CONCATENAR(B2;"<br>";  SI(N2 <> "";" <a href="&N2&">Repositorio software</a><br>";""); SI(O2 <> "";" <a href="&O2&">Vídeo demostración</a> <br>";""); SI(P2 <> "";" <a href="&P2&">Vídeo de presentación</a><br>";"");SI(Q2 <> "";" <a href="&Q2&">Calidad de código</a>";""))</th>
 									<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 30/09/2016</td>
 									<td> 15/02/2017</td>
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P2"> <!-- Begin Proyecto-->
-									<th> (Ejemplo presencial) GII17.0X Aplicación Web para la recopilación, tratamiento y visualización de datos públicos.<br> <a href=https://github.com/IvanArjona/TFG-Datos-publicos>Repositorio software</a><br></th>
-									<td> Jesús M. Maudes Raedo<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 25/09/2017</td>
-									<td> 06/06/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P3"> <!-- Begin Proyecto-->
-									<th> GII17.10 Generador de mapas de calor en tiempo real<br> <a href=https://www.youtube.com/watch?v=7Z6jsWn5dMs&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA&index=2>Vídeo demostración</a> <br> <a href=https://codebeat.co/projects/gitlab-com-oscortiz-tfg_gii17-10_generador_de_mapas_de_calor_en_tiempo_real-master-b980eb2f-1c28-44d3-b429-0c41a44fb59a/all_complexities>Calidad de código</a></th>
+								<tr id="P1"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B3;"<br>";  SI(N3 <> "";" <a href="&N3&">Repositorio software</a><br>";""); SI(O3 <> "";" <a href="&O3&">Vídeo demostración</a> <br>";""); SI(P3 <> "";" <a href="&P3&">Vídeo de presentación</a><br>";"");SI(Q3 <> "";" <a href="&Q3&">Calidad de código</a>";""))</th>
 									<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p>Guillemo Santos Melgar </td>
 									<td> 1 </td>
 									<td> 10/10/2017</td>
 									<td> 09/02/2018</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P4"> <!-- Begin Proyecto-->
-									<th> GII16.N Aplicación para la gestión del sonido en un dispositivo móvil<br> <a href=https://github.com/JorgeZamora94/TFG-Jorge-Zamora-2017-18>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=YygTc6teOkw&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA&index=4>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=XZy2yGWQVS8&index=3&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo de presentación</a><br></th>
+								<tr id="P2"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B4;"<br>";  SI(N4 <> "";" <a href="&N4&">Repositorio software</a><br>";""); SI(O4 <> "";" <a href="&O4&">Vídeo demostración</a> <br>";""); SI(P4 <> "";" <a href="&P4&">Vídeo de presentación</a><br>";"");SI(Q4 <> "";" <a href="&Q4&">Calidad de código</a>";""))</th>
 									<td> César Represa </td>
 									<td> 1 </td>
 									<td> 02/02/2017</td>
 									<td> 09/02/2018</td>
 									<td> 4</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P5"> <!-- Begin Proyecto-->
-									<th> GII_O_17.02 Sistema de navegación semiautomático en interiores<br> <a href=https://github.com/mbm0089/GII_0_17.02_SNSI/>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=WjOSTpxChIY&index=6&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=OFmsPbaPsCA&index=5&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=GII_0_17.02_SNSI>Calidad de código</a></th>
+								<tr id="P3"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B5;"<br>";  SI(N5 <> "";" <a href="&N5&">Repositorio software</a><br>";""); SI(O5 <> "";" <a href="&O5&">Vídeo demostración</a> <br>";""); SI(P5 <> "";" <a href="&P5&">Vídeo de presentación</a><br>";"");SI(Q5 <> "";" <a href="&Q5&">Calidad de código</a>";""))</th>
 									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p>César García Osorio<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 09/11/2017</td>
 									<td> 05/06/2018</td>
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P6"> <!-- Begin Proyecto-->
-									<th> GII_O_17.01 Desarrollo de una interfaz para planta piloto<br> <a href=https://github.com/FranBurgos/TFG>Repositorio software</a><br> <a href=https://youtu.be/uvDMTtxGMDw?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/i_OkqDiP0AE?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG/files>Calidad de código</a></th>
+								<tr id="P4"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B6;"<br>";  SI(N6 <> "";" <a href="&N6&">Repositorio software</a><br>";""); SI(O6 <> "";" <a href="&O6&">Vídeo demostración</a> <br>";""); SI(P6 <> "";" <a href="&P6&">Vídeo de presentación</a><br>";"");SI(Q6 <> "";" <a href="&Q6&">Calidad de código</a>";""))</th>
 									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p> Daniel Sarabia Ortiz </td>
 									<td> 1 </td>
 									<td> 30/10/2018</td>
 									<td> 19/02/2019</td>
 									<td> 8</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P7"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_18.01  Simulación de redes con GNS3<br> <a href=https://github.com/javi13gg/TFG_GII_O_MA_18.01-Simulacion-de-redes-con-GNS3>Repositorio software</a><br> <a href=https://youtu.be/PxZo4v2LuCw?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/9YZ86-tp1Ns?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG_GII_O_MA_18.01-Simulacion-de-redes-con-GNS3/files>Calidad de código</a></th>
+								<tr id="P5"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B7;"<br>";  SI(N7 <> "";" <a href="&N7&">Repositorio software</a><br>";""); SI(O7 <> "";" <a href="&O7&">Vídeo demostración</a> <br>";""); SI(P7 <> "";" <a href="&P7&">Vídeo de presentación</a><br>";"");SI(Q7 <> "";" <a href="&Q7&">Calidad de código</a>";""))</th>
 									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p>Daniel Sarabia Ortiz </td>
 									<td> 1 </td>
 									<td> 19/09/2018</td>
 									<td> 19/02/2019</td>
 									<td> 6</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P8"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_18.02 Generación rutas utilizando sistemas empotrados<br> <a href=https://github.com/alejandrolampreave/GPS>Repositorio software</a><br> <a href=https://youtu.be/6XycE70kDAU?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/UJMdEgxIo6w?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/GPS/files>Calidad de código</a></th>
+								<tr id="P6"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B8;"<br>";  SI(N8 <> "";" <a href="&N8&">Repositorio software</a><br>";""); SI(O8 <> "";" <a href="&O8&">Vídeo demostración</a> <br>";""); SI(P8 <> "";" <a href="&P8&">Vídeo de presentación</a><br>";"");SI(Q8 <> "";" <a href="&Q8&">Calidad de código</a>";""))</th>
 									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores) </td>
 									<td> 1 </td>
 									<td> 19/09/2018</td>
 									<td> 19/02/2019</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P9"> <!-- Begin Proyecto-->
-									<th> GII17.0M Secuenciador heurístico<br> <a href=https://github.com/Victoracha/TFG-Reglas-de-prioridad>Repositorio software</a><br> <a href=https://youtu.be/nF6N2glndAk?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/2L5iGrXjTxI?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG-Reglas-de-prioridad/files>Calidad de código</a></th>
+								<tr id="P7"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B9;"<br>";  SI(N9 <> "";" <a href="&N9&">Repositorio software</a><br>";""); SI(O9 <> "";" <a href="&O9&">Vídeo demostración</a> <br>";""); SI(P9 <> "";" <a href="&P9&">Vídeo de presentación</a><br>";"");SI(Q9 <> "";" <a href="&Q9&">Calidad de código</a>";""))</th>
 									<td> José Manuel Galán Ordax (Mención en Sistemas de Información) </td>
 									<td> 1 </td>
 									<td> 24/09/2018</td>
 									<td> 19/02/2019</td>
 									<td> 7.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P10"> <!-- Begin Proyecto-->
-									<th> GII16.N Aplicación para la gestión del sonido en un dispositivo móvil<br> <a href=https://github.com/JorgeZamora94/TFG-Gestor-de-sonido-para-dispositivos-Android>Repositorio software</a><br> <a href=https://youtu.be/VQNTjM7Kk3M?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/bbjKM6LRkEk?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG/files>Calidad de código</a></th>
+								<tr id="P8"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B10;"<br>";  SI(N10 <> "";" <a href="&N10&">Repositorio software</a><br>";""); SI(O10 <> "";" <a href="&O10&">Vídeo demostración</a> <br>";""); SI(P10 <> "";" <a href="&P10&">Vídeo de presentación</a><br>";"");SI(Q10 <> "";" <a href="&Q10&">Calidad de código</a>";""))</th>
 									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
 									<td> 1 </td>
 									<td> 02/02/2017</td>
 									<td> 19/02/2019</td>
 									<td> 6</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P11"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_18.08 Retrogaming recommender<br> <a href=https://github.com/raulolles/TFG_GII_O_MA_18.08>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=BszjUZQFj30&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=12>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=CgOmExE7U3U&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=11>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/raulolles/TFG_GII_O_MA_18.08/dashboard>Calidad de código</a></th>
+								<tr id="P9"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B11;"<br>";  SI(N11 <> "";" <a href="&N11&">Repositorio software</a><br>";""); SI(O11 <> "";" <a href="&O11&">Vídeo demostración</a> <br>";""); SI(P11 <> "";" <a href="&P11&">Vídeo de presentación</a><br>";"");SI(Q11 <> "";" <a href="&Q11&">Calidad de código</a>";""))</th>
 									<td> José Manuel Galán Ordax (Mención en Sistemas de Información)<p></p>José Ignacio Santos Martín </td>
 									<td> 1 </td>
 									<td> 08/11/2018</td>
 									<td> 12/06/2019</td>
 									<td> 9.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P12"> <!-- Begin Proyecto-->
-									<th> GII_O_MC_18.09 Automatización del proceso de delineación a partir de datos de un levantamiento topográfico<br> <a href=https://github.com/EduardoRisco/SurveyingPointCode>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=EZ_11OUcYGw&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=14>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=EZ_11OUcYGw&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=13>Vídeo de presentación</a><br> <a href=https://codebeat.co/projects/github-com-eduardorisco-surveyingpointcode-master>Calidad de código</a></th>
+								<tr id="P10"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B12;"<br>";  SI(N12 <> "";" <a href="&N12&">Repositorio software</a><br>";""); SI(O12 <> "";" <a href="&O12&">Vídeo demostración</a> <br>";""); SI(P12 <> "";" <a href="&P12&">Vídeo de presentación</a><br>";"");SI(Q12 <> "";" <a href="&Q12&">Calidad de código</a>";""))</th>
 									<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p>César I. García Osorio </td>
 									<td> 1 </td>
 									<td> 10/12/2018</td>
 									<td> 12/06/2019</td>
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P13"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_19.01Autoevaluación proceso de desarrollo de Trabajo Fin de Grado  en Github <br> <a href=https://github.com/rlp0019/Activiti-Api>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=yiQpHgNWMZY&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=16>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=gYCQdf51SsE&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=15>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/rlp0019/Activiti-Api/dashboard>Calidad de código</a></th>
+								<tr id="P11"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B13;"<br>";  SI(N13 <> "";" <a href="&N13&">Repositorio software</a><br>";""); SI(O13 <> "";" <a href="&O13&">Vídeo demostración</a> <br>";""); SI(P13 <> "";" <a href="&P13&">Vídeo de presentación</a><br>";"");SI(Q13 <> "";" <a href="&Q13&">Calidad de código</a>";""))</th>
 									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
 									<td> 1 </td>
 									<td> 12/02/2019</td>
 									<td> 12/06/2019</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P14"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_19.09 UBUGestLab v2<br> <a href=https://github.com/masantamario/Geslab-2.0>Repositorio software</a><br> <a href=https://web.microsoftstream.com/video/4ccf08c5-5341-4584-8b91-135d23bc7dab?App=msteamsBot&refId=f:1680646452739020596>Vídeo demostración</a> <br> <a href=https://web.microsoftstream.com/video/76a86f4c-af94-4005-b2eb-6da2a9889274>Vídeo de presentación</a><br></th>
+								<tr id="P12"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B14;"<br>";  SI(N14 <> "";" <a href="&N14&">Repositorio software</a><br>";""); SI(O14 <> "";" <a href="&O14&">Vídeo demostración</a> <br>";""); SI(P14 <> "";" <a href="&P14&">Vídeo de presentación</a><br>";"");SI(Q14 <> "";" <a href="&Q14&">Calidad de código</a>";""))</th>
 									<td> Pedro Renedo Fernández (Mención en Ingeniería del Software) </td>
 									<td> 1 </td>
 									<td> 05/12/2019</td>
 									<td> 08/07/2020</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P15"> <!-- Begin Proyecto-->
-									<th> GII_O_MB_19.0C ExoplanetIA<br> <a href=https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-exoplanetia>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=SpfrMFKNMdU>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=u0z3oxd8WTU>Vídeo de presentación</a><br></th>
+								<tr id="P13"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B15;"<br>";  SI(N15 <> "";" <a href="&N15&">Repositorio software</a><br>";""); SI(O15 <> "";" <a href="&O15&">Vídeo demostración</a> <br>";""); SI(P15 <> "";" <a href="&P15&">Vídeo de presentación</a><br>";"");SI(Q15 <> "";" <a href="&Q15&">Calidad de código</a>";""))</th>
 									<td> Carlos López Nozal (Mención Ingeniería del Software) </td>
 									<td> 1 </td>
 									<td> 07/10/2019</td>
 									<td> 08/07/2020</td>
 									<td> 9.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P16"> <!-- Begin Proyecto-->
-									<th> GII_O_MC_19.XX-Fatiga+PR<br> <a href=https://github.com/ysi0000/-FatigaMasPR>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=1ZRhmhdU6YU>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=9C4oSkTTeM4>Vídeo de presentación</a><br></th>
+								<tr id="P14"> <!-- Begin Proyecto-->
+									<th> =CONCATENAR(B16;"<br>";  SI(N16 <> "";" <a href="&N16&">Repositorio software</a><br>";""); SI(O16 <> "";" <a href="&O16&">Vídeo demostración</a> <br>";""); SI(P16 <> "";" <a href="&P16&">Vídeo de presentación</a><br>";"");SI(Q16 <> "";" <a href="&Q16&">Calidad de código</a>";""))</th>
 									<td> José Manuel Galán Ordax (Mención en Sistemas de Información)<p></p>Virginia Ahedo García </td>
 									<td> 1 </td>
 									<td> 01/10/2019</td>
@@ -266,9 +250,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(17, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,17, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,7,10,17, 'P')">11...17</a> </td>
+									<td><a href="javascript:MostrarAllFilas(15, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,15, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,5,10,15, 'P')">11...15</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -294,7 +278,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Fri Jul 10 12:57:33 CEST 2020 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Oct 06 11:28:18 CEST 2020 </li>
 							</ul>
 						</div>
 					</div>

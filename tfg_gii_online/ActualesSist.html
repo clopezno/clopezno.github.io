@@ -70,10 +70,10 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: <br/>9.0 </td>
-									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>4.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
+									<td>N&uacute;mero Total de Proyectos: <br/>11.0 </td>
+									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>5.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
 									<td>N&uacute;mero Total de Alumnos: <br/>14.0 </td>
-									<td>N&uacute;mero Total de Tutores Involucrados: <br/>7.0 </td>								</tr>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>8.0 </td>								</tr>
 							</tbody>
 						</table>
 					</section>
@@ -84,8 +84,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(9, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(0,9,10,9, 'P')">1...9</a> </td>
+									<td><a href="javascript:MostrarAllFilas(11, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,11, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,1,10,11, 'P')">11...11</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -233,8 +234,8 @@ La aplicación web multiempresa permitirá delegar la administración y gestión
 								<td> 2019-20</td>
 							</tr><!-- End Proyecto-->
 							<tr id="P8"> <!-- Begin Proyecto-->
-								<th> GII_O_MC_20.01 Vulnerabilidades en  redes de dependencias de paquetes de software   </th>
-								<td> El desarrollo open source ha proporcionado una gran cantidad y diversidad de librerías que se organizan en índices, normalmente publicados en repositorios oficiales configurados por defecto en las herramientas de instalación y gestión de paquetes de cada lenguaje. Algunos ejemplos son PyPI (Python Package Index) para Python, NPM (Node Package Manager) para JavaScript (Node.js), PEAR (PHP Extension and Application Repository), CPAN (Comprehensive Perl Archive Network) o Maven Central para Java. El tamaño típico de estos índices es del orden de cientos de miles de referencias.
+								<th> GII_O_MC 20.01 Vulnerabilidades en redes de dependencias de paquetes de software</th>
+								<td> <p><strong>Descripción</strong></p>El desarrollo open source ha proporcionado una gran cantidad y diversidad de librerías que se organizan en índices, normalmente publicados en repositorios oficiales configurados por defecto en las herramientas de instalación y gestión de paquetes de cada lenguaje. Algunos ejemplos son PyPI (Python Package Index) para Python, NPM (Node Package Manager) para JavaScript (Node.js), PEAR (PHP Extension and Application Repository), CPAN (Comprehensive Perl Archive Network) o Maven Central para Java. El tamaño típico de estos índices es del orden de cientos de miles de referencias.
 
 La utilización de librerías de estos repositorios para disminuir los tiempos de desarrollo y costes es prácticamente universal, en todos los lenguajes y tipos de proyecto software. Sin embargo, su empleo introduce riesgos como la exposición a bugs y modificaciones malintencionadas, los derivados del mantenimiento y actualización del software y, en última instancia, todos los propios de la dependencia funcional de una tercera parte. Estos riesgos pueden ser difíciles de apreciar en toda su dimensión por los desarrolladores, que sólo importan explícitamente una pequeña parte de las librerías que se emplean en cada proyecto. Debido a la transitividad de las dependencias, un único defecto o modificación puede tener efectos extensos y difíciles de predecir en el ecosistema software.
 
@@ -242,12 +243,41 @@ En este trabajo se construirá un modelo de red de dependencias de paquetes para
 
 Se desarrollará un conjunto de herramientas para la extracción de datos y construcción y evaluación del modelo y los resultados teóricos se aplicarán a alguno de los repositorios reales de paquetes de uso común.
 
-[1] Kikas, R., Gousios, G., Dumas, M., & Pfahl, D. (2017, May). Structure and evolution of package dependency networks. In 2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR) (pp. 102-112). IEEE.
-
-[2] Boldi, P. (2019, December). How Network Analysis Can Improve the Reliability of Modern Software Ecosystems. In 2019 IEEE First International Conference on Cognitive Machine Intelligence (CogMI) (pp. 168-172). IEEE. </td>
+<p><strong>Trabajos teóricos relacionados</strong></p>[1] Kikas, R., Gousios, G., Dumas, M., & Pfahl, D. (2017, May). Structure and evolution of package dependency networks. In 2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR) (pp. 102-112). IEEE. [2] Boldi, P. (2019, December). How Network Analysis Can Improve the Reliability of Modern Software Ecosystems. In 2019 IEEE First International Conference on Cognitive Machine Intelligence (CogMI) (pp. 168-172). IEEE.
+<p><strong>Trabajos prácticos relacionados </strong></p>
+<p><strong>Asignaturas recomendadas</strong></p></td>
 								<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>José Ignacio Santos Martín (Mención en Sistemas de Información)<p></p> </td>
 								<td> Daniel Setó Rey<p></p> <p></p>  </td>
 								<td> 05/06/20</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P9"> <!-- Begin Proyecto-->
+								<th> GII_O_MC_20.02 Sistema domótico inteligente</th>
+								<td> <p><strong>Descripción</strong></p>El proyecto consiste en la creación de un sistema domótico inteligente que sea capaz de realizar acciones básicas (encendido de calefacción, subida/bajada de persianas, encendido/apagado de luces...) según la estación del año y las condiciones meteorológicas. Esta información será recogida de la web mediante APIs públicas o webscrapping en un servidor que proveerá de dicha información a los diversos dispositivos domóticos que estarán gobernados por una Raspberry PI. 
+<p><strong>Trabajos teóricos relacionados</strong></p>https://dl.acm.org/doi/abs/10.1145/1141277.1141730
+<p><strong>Trabajos prácticos relacionados </strong></p>https://github.com/deepsyx/home-automation
+<p><strong>Asignaturas recomendadas</strong></p>Arquitectura de Computadores, Diseño y Administración de Sistemas y Redes, Interacción Hombre/Máquina, Sistemas Empotrados y de Tiempo Real, Sistemas Distribuidos</td>
+								<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>Álvar Arnaiz González<p></p> </td>
+								<td> David Colmenero Guerra<p></p> <p></p>  </td>
+								<td> 06/10/20</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P10"> <!-- Begin Proyecto-->
+								<th> GII_O_MA_20.03 Asistente de voz para Moodle . UBUVoiceAssistant 2.0</th>
+								<td> <p><strong>Descripción</strong></p>Asistente para consulta por voz y texto de los alumnos sobre sus asignaturas en Moodle. El proyecto parte de una primera versión, desarrollada con Python y MyCroft.
+
+- Mejoras en Mycroft de GUI e interacción con el usuario a nivel de usabilidad
+- Incluir internacionalización con biblioteca Python
+- Inclusión de mayor conjunto de respuestas y mejora de interacción en la conversación con el usuario.
+- Mejorar el despliegue de la aplicación (actualmente en máquina virtual)
+- Migración para el despliegue con Android y/o Docker
+- Desarrolo con Python y Qt. Mejorar cuestiones de calidad en código sobre el desarrollo actual.
+- Vídeo versión previa: https://www.youtube.com/watch?v=3v3tlSfW9Jo&list=PLbfgDC115L3BiZFnqIFx44bwnJEdEAask&index=10&t=0s
+- Recomendable mención de ingeniería del software y/o computación 
+<p><strong>Trabajos teóricos relacionados</strong></p>Ochoa-Orihuel, J.; Marticorena-Sánchez, R.; Sáiz-Manzanares, M.C. Moodle LMS Integration with Amazon Alexa: A Practical Experience. Appl. Sci. 2020, 10, 6859. 
+<p><strong>Trabajos prácticos relacionados </strong></p>
+<p><strong>Asignaturas recomendadas</strong></p>Desarrollo Avanzado de Sistemas Software, Diseño y Mantenimiento del Software, Estructuras de Datos, Interacción Hombre/Máquina, Programación Concurrente y de Tiempo Real, Sistemas Distribuidos, Validación y Pruebas</td>
+								<td> Raúl Marticorena Sánchez (Mención Computación)<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2020-21</td>
 							</tr><!-- End Proyecto-->
 						</tbody>
 						</table>
@@ -255,8 +285,9 @@ Se desarrollará un conjunto de herramientas para la extracción de datos y cons
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(9, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(0,9,10,9, 'P')">1...9</a> </td>
+									<td><a href="javascript:MostrarAllFilas(11, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,11, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,1,10,11, 'P')">11...11</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -282,7 +313,7 @@ Se desarrollará un conjunto de herramientas para la extracción de datos y cons
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Sep 28 13:21:24 CEST 2020 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Oct 06 11:28:18 CEST 2020 </li>
 							</ul>
 						</div>
 					</div>
