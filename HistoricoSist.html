@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 25, 2, 25, 40], ['2018/2019', 26, 0, 26, 65]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.228, 6.2980647], ['2018/2019', 8.200000000000001, 9.607941]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 27, 2, 27, 43], ['2018/2019', 41, 2, 41, 63], ['2019/2020', 27, 8, 27, 46]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.025925925925925, 6.9749107], ['2018/2019', 7.900000000000001, 10.313139], ['2019/2020', 7.974074074074075, 6.826762]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 146 </td>
-									<td>N&uacute;mero Total de Alumnos: 142 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,01, 0, 10, 1,5) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (237,01, 79, 864, 118,89) </td>
+									<td>N&uacute;mero Total de Proyectos: 190 </td>
+									<td>N&uacute;mero Total de Alumnos: 186 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,93, 0, 10, 1,48) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (245,46, 79, 864, 125,57) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 25, 26] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 28, 26] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 25, 26] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 40, 65] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 27, 41, 27] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 28, 36, 33] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 27, 41, 27] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 43, 63, 46] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,22 +104,26 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(146, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,146, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,146, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,146, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,146, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,146, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,146, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,146, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,146, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,146, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,146, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,146, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilas(11,10,146, 'P')">111...120</a> </td>
-									<td><a href="javascript:MostrarFilas(12,10,146, 'P')">121...130</a> </td>
-									<td><a href="javascript:MostrarFilas(13,10,146, 'P')">131...140</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(14,6,10,146, 'P')">141...146</a> </td>
+									<td><a href="javascript:MostrarAllFilas(190, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,190, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,190, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,190, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,190, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,190, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,190, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,190, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilas(7,10,190, 'P')">71...80</a> </td>
+									<td><a href="javascript:MostrarFilas(8,10,190, 'P')">81...90</a> </td>
+									<td><a href="javascript:MostrarFilas(9,10,190, 'P')">91...100</a> </td>
+									<td><a href="javascript:MostrarFilas(10,10,190, 'P')">101...110</a> </td>
+									<td><a href="javascript:MostrarFilas(11,10,190, 'P')">111...120</a> </td>
+									<td><a href="javascript:MostrarFilas(12,10,190, 'P')">121...130</a> </td>
+									<td><a href="javascript:MostrarFilas(13,10,190, 'P')">131...140</a> </td>
+									<td><a href="javascript:MostrarFilas(14,10,190, 'P')">141...150</a> </td>
+									<td><a href="javascript:MostrarFilas(15,10,190, 'P')">151...160</a> </td>
+									<td><a href="javascript:MostrarFilas(16,10,190, 'P')">161...170</a> </td>
+									<td><a href="javascript:MostrarFilas(17,10,190, 'P')">171...180</a> </td>
+									<td><a href="javascript:MostrarFilas(18,10,190, 'P')">181...190</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1099,212 +1103,564 @@ María Esther Baños García </td>
 									<td> 7.5</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P120"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/arp0054/TFG_ObjDetectorViaLaser/">GII18.0Z Detección de objetos con láser de seguridad</a></th>
+									<td> Jesús Enrique Sierra García </td>
+									<td> 1 </td>
+									<td> 05/09/2017</td>
+									<td> 25/01/2019</td>
+									<td> 6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P121"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/fransaiz95/Weblectric2018">GII18.0B Cliente-Servidor para administración de BBDD on-line de energía</a></th>
+									<td> Jesús M. Maudes Raedo<p></p>Álvar Arnaiz González </td>
+									<td> 1 </td>
+									<td> 23/09/2018</td>
+									<td> 20/02/2019</td>
+									<td> 6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P122"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/AbadiaTecnologica/Monitor-en-tiempo-real-de-un-sistema-de-fabricacion-aditiva-para-Octoprint">GII18.07 Monitor en tiempo real y control de acceso a recursos de un sistema de fabricación aditiva multi-puesto.</a></th>
+									<td> César Represa Pérez </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 20/02/2019</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P123"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/amb0070/CRET">GII18.0O Can-bus reverse engeniering toolkit</a></th>
+									<td> César Represa Pérez<p></p>Álvar Arnaiz González </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 20/02/2019</td>
+									<td> 9.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P124"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jubecu/DiagnosticoFresadoras">GII17.17 App para el diagnóstico de fallos en fresadoras</a></th>
+									<td> Raúl Marticorena Sánchez<p></p>Andrés Bustillo Iglesias </td>
+									<td> 1 </td>
+									<td> 27/11/2017</td>
+									<td> 20/02/2019</td>
+									<td> 5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P125"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mni0000/TFG_InterpretacionEscalas_UBU">GII18.0F Desarrollo de una aplicación informática para el registro e interpretación de una Escala de análisis funcional en edades 0-6 años</a></th>
+									<td> Raúl Marticorena Sánchez </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 20/02/2019</td>
+									<td> 5.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P126"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/rpp0041/PCVN.git">GII18.0PCVN</a></th>
+									<td> César I. García Osorio<p></p>Juan José Rodríguez Díez </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 20/02/2019</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P127"> <!-- Begin Proyecto-->
 									<th> GII18.0X Implantación de gestión de tiempos con control de presencia en SAP HR</th>
-									<td> José Manuel Galán Ordax<p></p>Junio </td>
+									<td> José Manuel Galán Ordax </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/06/2019</td>
 									<td> 7.2</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P121"> <!-- Begin Proyecto-->
+								<tr id="P128"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/maltejanssen/NoisyNER---named-entity-recognition-in-social-media">GII18.0L NoisyNER - Named entity recognition in social media</a></th>
-									<td> Bruno Baruque Zanón<p></p>Julio </td>
+									<td> Bruno Baruque Zanón </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P122"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Guillecal/TFG-Herramienta_para_medir_la_eficiencia_de_codigo_python/">GII18.0Y Herramienta para medir la eficiencia de código en Python</a></th>
-									<td> Jesús Enrique Sierra García<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P123"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Heber94/TFG-ElMundoEnTusGafas">GII18.0W El Mundo en tus Gafas</a></th>
-									<td> Álvar Arnaiz González<p></p>Pedro Luis Sánchez Ortega<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P124"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-smartfiller">GII18.0H SmartFiller</a></th>
-									<td> Juan José Rodríguez Diez<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P125"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/lca0037/GII18.0U-Ububooknet/">GII18.0U Ububooknet</a></th>
-									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P126"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/ElvisDSO/Qualificajocs">GII18.0Z Qualificajocs</a></th>
-									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P127"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mpl0045/UBU-TFG-IG-Study">GII18.0R IG-Study</a></th>
-									<td> José Manuel Galán Ordax<p></p>José Ignacio Santos Martín<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P128"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mfe0007/TFG-Deteccion_de_pallets_mediante_LIDAR">GII18.0S Detección de palets mediante LIDAR</a></th>
-									<td> Jesús Enrique Sierra García<p></p>Julio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.2</td>
-								</tr><!-- End Proyecto-->
 								<tr id="P129"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/hca0004/GII17.0T_Trayectorias_Semanticas_1819">GII18.0T Trayectorias Semánticas</a></th>
-									<td> Bruno Baruque Zanón<p></p>Julio </td>
+									<th> <a href="https://github.com/Guillecal/TFG-Herramienta_para_medir_la_eficiencia_de_codigo_python/">GII18.0Y Herramienta para medir la eficiencia de código en Python</a></th>
+									<td> Jesús Enrique Sierra García </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 7.7</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P130"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Heber94/TFG-ElMundoEnTusGafas">GII18.0W El Mundo en tus Gafas</a></th>
+									<td> Álvar Arnaiz González<p></p>Pedro Luis Sánchez Ortega </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 9.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P131"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-smartfiller">GII18.0H SmartFiller</a></th>
+									<td> Juan José Rodríguez Diez </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P132"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/lca0037/GII18.0U-Ububooknet/">GII18.0U Ububooknet</a></th>
+									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 8.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P133"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/ElvisDSO/Qualificajocs">GII18.0Z Qualificajocs</a></th>
+									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P134"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mpl0045/UBU-TFG-IG-Study">GII18.0R IG-Study</a></th>
+									<td> José Manuel Galán Ordax<p></p>José Ignacio Santos Martín </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P135"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mfe0007/TFG-Deteccion_de_pallets_mediante_LIDAR">GII18.0S Detección de palets mediante LIDAR</a></th>
+									<td> Jesús Enrique Sierra García </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P136"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/hca0004/GII17.0T_Trayectorias_Semanticas_1819">GII18.0T Trayectorias Semánticas</a></th>
+									<td> Bruno Baruque Zanón </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 01/07/2019</td>
+									<td> 7.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P137"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/rnc0011/SistemaRecomendacionTFG">GII18.0M Sistema de Recomendación basado en Aprendizaje Profundo</a></th>
-									<td> Bruno Baruque Zanón<p></p>Julio </td>
+									<td> Bruno Baruque Zanón </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P131"> <!-- Begin Proyecto-->
+								<tr id="P138"> <!-- Begin Proyecto-->
 									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-reactvr">GII18.0X ReactVR</a></th>
-									<td> Ángel Arroyo Puente<p></p>Julio </td>
+									<td> Ángel Arroyo Puente </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 7</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P132"> <!-- Begin Proyecto-->
+								<tr id="P139"> <!-- Begin Proyecto-->
 									<th> <a href="https://gitlab.com/mus0007/testing-awe ">GII18.0J Testing AWE</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Julio </td>
+									<td> Raúl Marticorena Sánchez </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P133"> <!-- Begin Proyecto-->
+								<tr id="P140"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/yjx0003/UBUMonitor">GII18.10 UBUMonitor</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Carlos Pardo<p></p>Julio </td>
+									<td> Raúl Marticorena Sánchez<p></p>Carlos Pardo </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 9.6</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P134"> <!-- Begin Proyecto-->
+								<tr id="P141"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/jhm0025/TFG-GII18.09-Generador-de-informes-nutricionales/ ">GII18.09 Generador de Informes Nutricionales</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Antonio Canepa Oneto<p></p>Julio </td>
+									<td> Raúl Marticorena Sánchez<p></p>Antonio Canepa Oneto </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P135"> <!-- Begin Proyecto-->
+								<tr id="P142"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/jct0024/HealthApp">GII18.0V Aplicación de recomendación nutricional - HEALTHAPP</a></th>
-									<td> Antonio Canepa Oneto<p></p>Julio </td>
+									<td> Antonio Canepa Oneto </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P136"> <!-- Begin Proyecto-->
+								<tr id="P143"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/mdi0007/Sistema-Informacion-sobre-Matriculacion ">GII18.18 Sistema de Información sobre Matriculación</a></th>
-									<td> Carlos Pardo<p></p>Julio </td>
+									<td> Carlos Pardo </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 6.7</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P137"> <!-- Begin Proyecto-->
+								<tr id="P144"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/amm0131/TFG-HyperledgerFabric">GII18.19 Cartera blockchain sobre Hyperledger Fabric</a></th>
-									<td> Álvaro Herrero<p></p>Julio </td>
+									<td> Álvaro Herrero </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 7.3</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P138"> <!-- Begin Proyecto-->
+								<tr id="P145"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/daniarnaizg/TFG-Amazon-Scraper ">GII18.0C Extracción y procesamiento de datos de Amazon para su utilización en un estudio de marketing</a></th>
-									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio<p></p>Julio </td>
+									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8.1</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P139"> <!-- Begin Proyecto-->
+								<tr id="P146"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/AdrianArnaiz/TFG-Neurodegenerative-Disease-Detection ">GII18.0E Uso de biomarcadores extraídos de la voz para la detección de la enfermedad del Parkinson</a></th>
-									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio<p></p>Julio </td>
+									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 9.8</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P140"> <!-- Begin Proyecto-->
+								<tr id="P147"> <!-- Begin Proyecto-->
 									<th> Clasificación de enfermedades de la piel con Deep Learning</th>
-									<td> José Francisco Díez Pastor<p></p>Julio </td>
+									<td> José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 9.4</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P141"> <!-- Begin Proyecto-->
+								<tr id="P148"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/jlgarridol/TFG-SmartBeds ">GII18.13 Minería de datos aplicada a la detección de crisis epilépticas y aplicación web</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 9.1</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P142"> <!-- Begin Proyecto-->
+								<tr id="P149"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/SergioLopez92/TFG-Datos-publicos ">GII18.11 Aplicación Web para la recopilación, tratamiento y visualización de datos públicos 2</a></th>
-									<td> José Francisco Díez Pastor<p></p>Jesus Maudes Raedo<p></p>Julio </td>
+									<td> José Francisco Díez Pastor<p></p>Jesus Maudes Raedo </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 8.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P143"> <!-- Begin Proyecto-->
+								<tr id="P150"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/aog0036/TFG-SmartBeds ">GII18.12 Minería de datos aplicada a la detección de crisis epilépticas y aplicación movil</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 9.7</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P144"> <!-- Begin Proyecto-->
+								<tr id="P151"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/Josemi/AVC-TFG ">GII18.0Q Asistente Virtual para la Comunicación</a></th>
-									<td> César Represa Pérez<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> César Represa Pérez<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 9.8</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P145"> <!-- Begin Proyecto-->
+								<tr id="P152"> <!-- Begin Proyecto-->
 									<th> <a href="https://github.com/bsc0001/TFG_Stroke-Lesion-Segmentation-Approach-using-CT ">GII18.08 Aproximación hacia la identificación automática de lesión de ictus en TC craneal</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor<p></p>Julio </td>
+									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 05/09/2018</td>
 									<td> 01/07/2019</td>
 									<td> 7.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P153"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/carhf95/gestionCrisisYEmergenciasAdisseo">GII18.0O Gestión de crisis y emergencias en una planta química</a></th>
+									<td> César Represa </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 19/09/2019</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P154"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/dsm0028/TFG-1819">GII18.0D Seguimiento de la actividad mediante pulseras cuantificadoras</a></th>
+									<td> José Francisco Díez Pastor<p></p>César García Osorio </td>
+									<td> 1 </td>
+									<td> 05/09/2018</td>
+									<td> 19/09/2019</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P155"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/mlb0029/comparador-de-metricas-de-evolucion-en-repositorios-software">GII17.0Ñ Evaluación de la actividad de un proyecto software</a></th>
+									<td> Carlos López Nozal </td>
+									<td> 1 </td>
+									<td> 18/09/2018</td>
+									<td> 19/09/2019</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P156"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/ers0026/ProyectoFinal">GII18.0I BC4Distribution: Aplicar tecnología Blockchain en una cadena de distribución de productos</a></th>
+									<td> Ángel Arroyo Puente<p></p>Tutor empresarial     HP SCDS     Pablo Tejedor </td>
+									<td> 1 </td>
+									<td> 16/10/2018</td>
+									<td> 24/01/2020</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P157"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/fma0043/TFG_ARBUBU">GII18.16 Árboles Singulares de la UBU (ARBUBU)</a></th>
+									<td> Pedro Renedo Fernández<p></p>Antonio Canepa Oneto<p></p>Luis Marcos </td>
+									<td> 1 </td>
+									<td> 28/02/2019</td>
+									<td> 24/01/2020</td>
+									<td> 6.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P158"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jng0020/PruebaNetExtractor">GII 19.08 NetExtractor</a></th>
+									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 09/10/2019</td>
+									<td> 20/02/2020</td>
+									<td> 9.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P159"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/SergioBueno27/TFG_GII_Analisis_Comercial_Urbano">GII 19.31 Análisis comercial urbano utilizando series temporales de compras de tarjetas de crédito</a></th>
+									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 24/10/2019</td>
+									<td> 20/02/2020</td>
+									<td> 9.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P160"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/gonzalez23david/subscription-app">GII 19.37 Gestión y Entrega Subscripciones</a></th>
+									<td> Pedro Renedo Fernández </td>
+									<td> 1 </td>
+									<td> 30/09/2019</td>
+									<td> 20/02/2020</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P161"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jrb0043/TFG-BigchainDB">GII 19.30 Arquitectura de validación sobre Blockchain</a></th>
+									<td> Álvaro Herrero Cosío </td>
+									<td> 1 </td>
+									<td> 14/10/2019</td>
+									<td> 20/02/2020</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P162"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jcr0069/TourPlanner-FrontEnd-Cliente">GII17.0S Planificación de Rutas Turísticas Personalizadas con Ventanas de Tiempo</a></th>
+									<td> Bruno Baruque Zanón<p></p>Santiago Porras Alonso </td>
+									<td> 1 </td>
+									<td> 05/04/2019</td>
+									<td> 20/02/2020</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P163"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/MarcosMillanTFG/GII-19.20--ASTI-CHALLENGE">Programación de robot móvil para superación de pruebas en competición robótica</a></th>
+									<td> Jesús Enrique Sierra García<p></p>Diego Moreno Eguiluz </td>
+									<td> 1 </td>
+									<td> 04/10/2019</td>
+									<td> 20/02/2020</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P164"> <!-- Begin Proyecto-->
+									<th> Datawarehouse Sistema de ayuda para la asignación en sigma</th>
+									<td> Carlos Pardo Aguilar </td>
+									<td> 1 </td>
+									<td> 01/02/2019</td>
+									<td> 20/02/2020</td>
+									<td> 5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P165"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-smartenhancer">GII 19.23 SmartEnhancer: Machine Learning para mejorar la calidad de las imágenes</a></th>
+									<td> Ángel Arroyo Puente<p></p>Tutor empresarial HP </td>
+									<td> 1 </td>
+									<td> 09/10/2019</td>
+									<td> 06/07/2020</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P166"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/adp1002/UBUVoiceAssistant">GII 19.40 Desarrollo de aplicación con asistente de voz para Moodle</a></th>
+									<td> Raúl Marticorena Sánchez </td>
+									<td> 1 </td>
+									<td> 10/02/2020</td>
+									<td> 06/07/2020</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P167"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-scan2vector">GII 19.24 Scan2Vector</a></th>
+									<td> Pedro Latorre Carmona<p></p>Tutor empresarial HP </td>
+									<td> 1 </td>
+									<td> 09/10/2019</td>
+									<td> 06/07/2020</td>
+									<td> 5.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P168"> <!-- Begin Proyecto-->
+									<th> GII 19.42 Desarrollo de aplicaciones mediante plataformas Low Code</th>
+									<td> César Represa Pérez </td>
+									<td> 1 </td>
+									<td> 04/03/2020</td>
+									<td> 06/07/2020</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P169"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/turbolargoo/Free-Connect">GII 19.35 Free Connect: Toolkit de ayuda para la interconexión de sensores inalambricos.</a></th>
+									<td> César Represa Pérez </td>
+									<td> 1 </td>
+									<td> 02/12/2019</td>
+									<td> 06/07/2020</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P170"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/gpm0009/TFG_MetrominutoWeb">GII 19.12 Creador automático de mapas de movilidad</a></th>
+									<td> Álvar Arnaiz González<p></p>César García Osorio </td>
+									<td> 1 </td>
+									<td> 24/10/2019</td>
+									<td> 06/07/2020</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P171"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/apm1005/TFG">GII 19.26 LogScope</a></th>
+									<td> Virginia Ahedo García<p></p>José Manuel Galán Ordax<p></p>Ignacio Cruzado Nuño </td>
+									<td> 1 </td>
+									<td> 10/10/2019</td>
+									<td> 06/07/2020</td>
+									<td> 8.25</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P172"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/ZoeCalvo/Sentinel">GII 19.01 Sentinel</a></th>
+									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 30/09/2019</td>
+									<td> 06/07/2020</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P173"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/psnti/Jellyfish_Forecast">GII 19.34 Predicción de llegada de medusas a la costa usando Aprendizaje Automático</a></th>
+									<td> José Francisco Díez Pastor<p></p>Álvar Arnaiz González </td>
+									<td> 1 </td>
+									<td> 29/01/2020</td>
+									<td> 06/07/2020</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P174"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/RubenMarcosUBU/TFG">GII 19.46 Asistente de programación en lenguaje C</a></th>
+									<td> Carlos Pardo Aguilar </td>
+									<td> 1 </td>
+									<td> 10/02/2020</td>
+									<td> 06/07/2020</td>
+									<td> 5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P175"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/mpc0082/UBUEstelas">GII 19.45 UBUEstelas</a></th>
+									<td> Raúl Marticorena Sánchez<p></p>Andrés Bustillo Iglesias </td>
+									<td> 1 </td>
+									<td> 05/09/2019</td>
+									<td> 06/07/2020</td>
+									<td> 9.25</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P176"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/xjx1001/UBUMonitor">GII 19.38 Herramienta de clustering a partir de datos extraídos de Moodle</a></th>
+									<td> Raúl Marticorena Sánchez </td>
+									<td> 1 </td>
+									<td> 21/01/2020</td>
+									<td> 24/07/2020</td>
+									<td> 9.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P177"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/Ebl0010/Medidor-estadistico-metajuego-Magic-The-Gathering">GII 19.32 Plataforma de análisis del metajuego Magic The Gathering</a></th>
+									<td> José Ignacio Santos Martín<p></p>José Manuel Galán Ordax </td>
+									<td> 1 </td>
+									<td> 31/10/2019</td>
+									<td> 24/07/2020</td>
+									<td> 6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P178"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/lcs1001/gestion-aulas-informatica">GII 19.09 Gestión de aulas de informática (versión Java)</a></th>
+									<td> Jesús M. Maudes Raedo </td>
+									<td> 1 </td>
+									<td> 14/10/2019</td>
+									<td> 24/07/2020</td>
+									<td> 8.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P179"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/scc0034/flutter_serpiente">GII 19.33 Integración de UbuVirtual con herramientas visuales de Minería de Datos</a></th>
+									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio </td>
+									<td> 1 </td>
+									<td> 26/02/2020</td>
+									<td> 24/07/2020</td>
+									<td> 7.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P180"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/gcm1001/TFG-CeniehAriadne">GII 19.41 Integración de repositorios en ARIADNE</a></th>
+									<td> Mario Juez Gil<p></p>Carlos López Nozal </td>
+									<td> 1 </td>
+									<td> 28/02/2020</td>
+									<td> 24/07/2020</td>
+									<td> 9.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P181"> <!-- Begin Proyecto-->
+									<th> <a href="https://dev.azure.com/rdg-tfg/TFG">GII 19.36 Análisis predictivo de anomalías de AGVs</a></th>
+									<td> Álvaro Herrero Cosío<p></p>Daniel Urda Muñoz </td>
+									<td> 1 </td>
+									<td> 02/12/2019</td>
+									<td> 24/07/2020</td>
+									<td> 9.6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P182"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jgo0038/TFG-Reserva-aulas-informatica">GII 19.10 Gestión de aulas de informática (versión Python)</a></th>
+									<td> Jesús M. Maudes Raedo </td>
+									<td> 1 </td>
+									<td> 16/01/2019</td>
+									<td> 24/07/2020</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P183"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/smi0010/TFG_Herramientas_Realidad_Aumentada">GII 19.29 Realidad Virtual: Desarrollo en Entorno Abiertos. Laureados</a></th>
+									<td> Pedro Luis Sánchez Ortega<p></p>Álvar Arnaiz González </td>
+									<td> 1 </td>
+									<td> 10/10/2019</td>
+									<td> 24/07/2020</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P184"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/SergioMedeiros/energysaver">GII18.0K EnergySaver: Centralizar el encendido y apagado de equipos de forma remota utilizando un sitema de reglas.</a></th>
+									<td> Ángel Arroyo Puente </td>
+									<td> 1 </td>
+									<td> 16/10/2018</td>
+									<td> 24/07/2020</td>
+									<td> 7.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P185"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-discovery2">GII 19.25 Discovery2: Calendario para la utilización de recursos e impresoras</a></th>
+									<td> Raúl Marticorena Sánchez<p></p>Tutor empresarial HP </td>
+									<td> 1 </td>
+									<td> 09/10/2019</td>
+									<td> 24/07/2020</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P186"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/nuf1001/XRayDetector">GII 19.11 Detección de defectos en piezas metálicas a partir de imágenes de radiografía</a></th>
+									<td> José Francisco Díez Pastor<p></p>Pedro Latorre Carmona </td>
+									<td> 1 </td>
+									<td> 30/09/2019</td>
+									<td> 24/07/2020</td>
+									<td> 7.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P187"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/wgm1001/Trabajo-de-Fin-de-Grado-Plataforma-de-text-mining-sobre-repositorios">GII 19.04 Plataforma de experimentación de text mining sobre repositorios de código abierto GitLab</a></th>
+									<td> Jesús M. Alonso Abad<p></p>Carlos López Nozal </td>
+									<td> 1 </td>
+									<td> 29/10/2019</td>
+									<td> 01/10/2020</td>
+									<td> 5.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P188"> <!-- Begin Proyecto-->
+									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-multiapi">GII 18.0Ñ MultiAPI</a></th>
+									<td> Ángel Arroyo Puente<p></p>Tutor empresarial  HP SCDS Alejandro Viloria </td>
+									<td> 1 </td>
+									<td> 16/10/2018</td>
+									<td> 01/10/2020</td>
+									<td> 7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P189"> <!-- Begin Proyecto-->
+									<th> <a href="https://github.com/jaa0124/iris_classifier">GII 19.70 Sistema de reconocimiento de personas mediante el iris.</a></th>
+									<td> José Francisco Díez Pastor </td>
+									<td> 1 </td>
+									<td> 01/06/2020</td>
+									<td> 02/10/2020</td>
+									<td> 7.5</td>
 								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
@@ -1312,22 +1668,26 @@ María Esther Baños García </td>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(146, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,146, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,146, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,146, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,146, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,146, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,146, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,146, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,146, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,146, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,146, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,146, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilas(11,10,146, 'P')">111...120</a> </td>
-									<td><a href="javascript:MostrarFilas(12,10,146, 'P')">121...130</a> </td>
-									<td><a href="javascript:MostrarFilas(13,10,146, 'P')">131...140</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(14,6,10,146, 'P')">141...146</a> </td>
+									<td><a href="javascript:MostrarAllFilas(190, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,190, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,190, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,190, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,190, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,190, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,190, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilas(6,10,190, 'P')">61...70</a> </td>
+									<td><a href="javascript:MostrarFilas(7,10,190, 'P')">71...80</a> </td>
+									<td><a href="javascript:MostrarFilas(8,10,190, 'P')">81...90</a> </td>
+									<td><a href="javascript:MostrarFilas(9,10,190, 'P')">91...100</a> </td>
+									<td><a href="javascript:MostrarFilas(10,10,190, 'P')">101...110</a> </td>
+									<td><a href="javascript:MostrarFilas(11,10,190, 'P')">111...120</a> </td>
+									<td><a href="javascript:MostrarFilas(12,10,190, 'P')">121...130</a> </td>
+									<td><a href="javascript:MostrarFilas(13,10,190, 'P')">131...140</a> </td>
+									<td><a href="javascript:MostrarFilas(14,10,190, 'P')">141...150</a> </td>
+									<td><a href="javascript:MostrarFilas(15,10,190, 'P')">151...160</a> </td>
+									<td><a href="javascript:MostrarFilas(16,10,190, 'P')">161...170</a> </td>
+									<td><a href="javascript:MostrarFilas(17,10,190, 'P')">171...180</a> </td>
+									<td><a href="javascript:MostrarFilas(18,10,190, 'P')">181...190</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1353,7 +1713,7 @@ María Esther Baños García </td>
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jul 30 14:20:12 CEST 2019 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Oct 29 12:33:31 CET 2020 </li>
 							</ul>
 						</div>
 					</div>
