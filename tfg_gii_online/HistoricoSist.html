@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 3, 0, 3, 4]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 7.833333333333333, 8.301076]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 2, 0, 2, 4]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 6.625, 3.080645]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 15 </td>
-									<td>N&uacute;mero Total de Alumnos: 14 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,1, 4, 10, 1,96) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (229,67, 112, 747, 160,31) </td>
+									<td>N&uacute;mero Total de Proyectos: 18 </td>
+									<td>N&uacute;mero Total de Alumnos: 17 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,04, 4, 10, 1,98) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (215, 80, 747, 151,93) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 3] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 3] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 4] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 2] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 3] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 2] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 4] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,9 +104,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(15, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,15, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,5,10,15, 'P')">11...15</a> </td>
+									<td><a href="javascript:MostrarAllFilas(18, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,18, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,8,10,18, 'P')">11...18</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -244,15 +244,39 @@
 									<td> 08/07/2020</td>
 									<td> 5</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P15"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_20.02 Sistema domótico inteligente<br> <a href= https://github.com/davidelinformatico/TFG>Repositorio software</a><br> <a href=https://youtu.be/nqs-VCi_m7I >Vídeo demostración</a> <br> <a href=https://youtu.be/6QRz6VPv2PY >Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=davidelinformatico_TFG >Calidad de código</a></th>
+									<td> Alejandro Merino Gómez (Mención en Ingeniería de Computadores)<p></p>Álvar Arnaiz González </td>
+									<td> 1 </td>
+									<td> 06/10/2020</td>
+									<td> 25/01/2021</td>
+									<td> 8.25</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P16"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.0B Aplicación de técnicas metaheurísticas para la optimización del reparto de material de una planta de montaje<br> <a href= https://github.com/CarolinaCCZ/LucErik/>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=5GwtDdN_6ko&feature=youtu.be>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=OrUFjE_UBGQ&feature=youtu.be>Vídeo de presentación</a><br></th>
+									<td> José Ignacio Santos Martín (Mención en Sistemas de Información)<p></p>José Manuel Galán Ordax </td>
+									<td> 1 </td>
+									<td> 06/11/2020</td>
+									<td> 25/01/2021</td>
+									<td> 5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P17"> <!-- Begin Proyecto-->
+									<th> GII_O_MC 20.01 Vulnerabilidades en redes de dependencias de paquetes de software<br> <a href=https://github.com/dsr0018/olivia>Repositorio software</a><br> <a href=https://youtu.be/qr8axe5nieo>Vídeo demostración</a> <br> <a href=https://sonarcloud.io/dashboard?id=dsr0018_olivia>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>José Ignacio Santos Martín (Mención en Sistemas de Información) </td>
+									<td> 1 </td>
+									<td> 05/06/2020</td>
+									<td> 25/01/2021</td>
+									<td> 10</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(15, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,15, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,5,10,15, 'P')">11...15</a> </td>
+									<td><a href="javascript:MostrarAllFilas(18, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,18, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,8,10,18, 'P')">11...18</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -278,7 +302,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Oct 08 09:59:36 CEST 2020 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jan 26 18:02:33 CET 2021 </li>
 							</ul>
 						</div>
 					</div>
