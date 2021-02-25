@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 2, 0, 2, 4]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 6.625, 3.080645]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 3, 0, 3, 7]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 6.583333333333333, 3.44086]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 18 </td>
-									<td>N&uacute;mero Total de Alumnos: 17 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,04, 4, 10, 1,98) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (215, 80, 747, 151,93) </td>
+									<td>N&uacute;mero Total de Proyectos: 19 </td>
+									<td>N&uacute;mero Total de Alumnos: 18 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,96, 4, 10, 1,96) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (210,47, 80, 747, 148,97) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 2] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 3] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 2] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 4] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 3] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 4] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 3] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 7] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,9 +104,9 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(18, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,18, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,8,10,18, 'P')">11...18</a> </td>
+									<td><a href="javascript:MostrarAllFilas(19, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,19, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,9,10,19, 'P')">11...19</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -268,15 +268,23 @@
 									<td> 25/01/2021</td>
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P18"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_20.04 Servicios de adquisición de datos y visualización de dashboards para la web de coyuntura económica<br> <a href=https://github.com/RaquelSancha/GII_O_MA_20.04 >Repositorio software</a><br> <a href=https://youtu.be/FveeOANVySU >Vídeo demostración</a> <br> <a href=https://youtu.be/f73WNutMKJA >Vídeo de presentación</a><br> <a href=https://app.codacy.com/gh/RaquelSancha/GII_O_MA_20.04/dashboard?branch=master >Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>Bruno Baruque Zanón<p></p>Santiago Porras Alfonso </td>
+									<td> 1 </td>
+									<td> 19/10/2020</td>
+									<td> 25/02/2021</td>
+									<td> 6.5</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(18, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,18, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,8,10,18, 'P')">11...18</a> </td>
+									<td><a href="javascript:MostrarAllFilas(19, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,19, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(1,9,10,19, 'P')">11...19</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -302,7 +310,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jan 26 18:02:33 CET 2021 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Feb 25 13:39:43 CET 2021 </li>
 							</ul>
 						</div>
 					</div>
