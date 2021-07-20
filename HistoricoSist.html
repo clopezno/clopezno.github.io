@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2013/2014', 4, 0, 4, 6], ['2014/2015', 26, 1, 26, 45], ['2015/2016', 29, 4, 29, 44], ['2016/2017', 29, 5, 29, 47], ['2017/2018', 27, 2, 27, 43], ['2018/2019', 41, 2, 41, 63], ['2019/2020', 27, 8, 27, 46]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2013/2014', 8.35, 10.225806], ['2014/2015', 7.363461538461538, 8.305211], ['2015/2016', 8.25344827586207, 7.215795], ['2016/2017', 7.9189655172413795, 5.833148], ['2017/2018', 8.025925925925925, 6.9749107], ['2018/2019', 7.900000000000001, 10.313139], ['2019/2020', 7.974074074074075, 6.826762]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 3.748387]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 190 </td>
-									<td>N&uacute;mero Total de Alumnos: 186 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,93, 0, 10, 1,48) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (245,46, 79, 864, 125,57) </td>
+									<td>N&uacute;mero Total de Proyectos: 21 </td>
+									<td>N&uacute;mero Total de Alumnos: 20 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,95, 4, 10, 1,89) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (202,86, 80, 747, 143,35) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [4, 26, 29, 29, 27, 41, 27] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[2, 24, 28, 31, 28, 36, 33] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[4, 26, 29, 29, 27, 41, 27] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[6, 45, 44, 47, 43, 63, 46] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,26 +104,10 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(190, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,190, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,190, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,190, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,190, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,190, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,190, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,190, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,190, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,190, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,190, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,190, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilas(11,10,190, 'P')">111...120</a> </td>
-									<td><a href="javascript:MostrarFilas(12,10,190, 'P')">121...130</a> </td>
-									<td><a href="javascript:MostrarFilas(13,10,190, 'P')">131...140</a> </td>
-									<td><a href="javascript:MostrarFilas(14,10,190, 'P')">141...150</a> </td>
-									<td><a href="javascript:MostrarFilas(15,10,190, 'P')">151...160</a> </td>
-									<td><a href="javascript:MostrarFilas(16,10,190, 'P')">161...170</a> </td>
-									<td><a href="javascript:MostrarFilas(17,10,190, 'P')">171...180</a> </td>
-									<td><a href="javascript:MostrarFilas(18,10,190, 'P')">181...190</a> </td>
+									<td><a href="javascript:MostrarAllFilas(21, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,21, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,21, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(2,1,10,21, 'P')">21...21</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -142,1525 +126,172 @@
 							</thead>
 							<tbody>
 								<tr id="P0"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/arg0070/cloze_code">CLOZE_CODE</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 30/11/2013</td>
-									<td> 24/07/2014</td>
-									<td> 8.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P1"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/victordzrz/moodroid-2014">Cliente Android para Moodle. Versión 2</a></th>
-									<td> Bruno Baruque Zanón<p></p>Belén Vaquerizo García </td>
-									<td> 1 </td>
-									<td> 04/12/2013</td>
-									<td> 24/07/2014</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P2"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/RobertoIA/PLQuiz">Generación de cuestionarios para la docencia on-line de procesadores de lenguajes y sus algoritmos</a></th>
-									<td> César I. García Osorio<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 16/12/2013</td>
-									<td> 24/07/2014</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P3"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/davidmdlf/Socio-RutaWeb">Migración de aplicación móvil para la visualización de guiones sociales con HTML5</a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 21/12/2013</td>
-									<td> 24/07/2014</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P4"> <!-- Begin Proyecto-->
-									<th> Recomposición de imágenes a partir de fragmentos </th>
-									<td> César I. García Osorio<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 11/01/2014</td>
-									<td> 24/07/2014</td>
-									<td> 9.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P5"> <!-- Begin Proyecto-->
-									<th> Aplicación Android para el reconocimiento de patrones de color</th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 17/01/2014</td>
-									<td> 24/07/2014</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P6"> <!-- Begin Proyecto-->
-									<th> FaTrApp - (Fair Trade App) v2.0"</th>
-									<td> Álvaro Herrero Cosío </td>
-									<td> 1 </td>
-									<td> 02/12/2013</td>
-									<td> 03/02/2015</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P7"> <!-- Begin Proyecto-->
-									<th> BlocklyToChapinToCFacil</th>
-									<td> Carlos Pardo Aguilar </td>
-									<td> 1 </td>
-									<td> 22/11/2013</td>
-									<td> 19/03/2015</td>
-									<td> 5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P8"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/ubu_tfg/2014-beatriz">Gestor de trabajos fin de grado y/o máster</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 02/12/2013</td>
-									<td> 19/03/2015</td>
-									<td> 9.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P9"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/dlr0008/filmoteca">Diseño de un archivo cinematográfico Personal</a></th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 01/02/2015</td>
-									<td> 01/05/2015</td>
-									<td> 6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P10"> <!-- Begin Proyecto-->
-									<th> Interfaz de acceso telefónico a módulo de control inalámbrico</th>
-									<td> José María Camara<p></p>Pedro Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 11/11/2014</td>
-									<td> 01/05/2015</td>
-									<td> 4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P11"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/velocistalmao/fotopremio.">Aplicación Android para la gestión de billetes de lotería</a></th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 28/11/2014</td>
-									<td> 01/05/2015</td>
-									<td> 6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P12"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/">Aplicación Fitness para Android</a></th>
-									<td> José Francisco Díez Pastor<p></p>Alvar Arnáiz González </td>
-									<td> 1 </td>
-									<td> 19/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 8.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P13"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/">Aplicación web multiplataforma para la mejora del sistema de gestión del servicio de recetas médicas</a></th>
-									<td> José Manuel Galán Ordax<p></p>Alvar Arnáiz González </td>
-									<td> 1 </td>
-									<td> 24/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 8.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P14"> <!-- Begin Proyecto-->
-									<th> <a href="https://xp-dev.com/login">Aplicación web para la gestión de prácticas en empresa</a></th>
-									<td> José Manuel Galán Ordax </td>
-									<td> 1 </td>
-									<td> 15/10/2014</td>
-									<td> 01/07/2015</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P15"> <!-- Begin Proyecto-->
-									<th> BlockCV Entorno gráfico de programación de algoritmos de visión artificia </th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 31/01/2015</td>
-									<td> 01/07/2015</td>
-									<td> 6.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P16"> <!-- Begin Proyecto-->
-									<th> Clasificación de langostinos basada en reconocimiento de color</th>
-									<td> César Represa Pérez<p></p>Pedro Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 29/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P17"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/garfio1/Proyecto-Fin-de-Grado">Estudio de herramientas de reconocimiento de imagenes con aplicación prototipo</a></th>
-									<td> José Francisco Díez Pastor<p></p>César I. García Osorio </td>
-									<td> 1 </td>
-									<td> 01/02/2015</td>
-									<td> 01/07/2015</td>
-									<td> 9.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P18"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/MarcAlmen/NetLogo-FuzzyLogic-Extension/commits/master">Extensión de Lógica Difusa para NetLogo</a></th>
-									<td> Luis R. Izquierdo Millán<p></p>María Pereda García </td>
-									<td> 1 </td>
-									<td> 17/09/2014</td>
-									<td> 01/07/2015</td>
-									<td> 8.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P19"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jam0101/TFGII-Quiz-Grafos">Generación de cuestionarios para la docencia on-line de grafos y sus algoritmos</a></th>
-									<td> Juan José Rodríguez Díez<p></p>Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 28/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P20"> <!-- Begin Proyecto-->
-									<th> <a href="https://www.assembla.com/login ">Herramienta para la resolución colaborativa y gestión de cuestionarios online</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 19/12/2014</td>
-									<td> 01/07/2015</td>
-									<td> 8.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P21"> <!-- Begin Proyecto-->
-									<th> Interfaz de acceso telefónico a módulo de control inalámbrico</th>
-									<td> José María Camara<p></p>Pedro Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 11/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P22"> <!-- Begin Proyecto-->
-									<th> Monitorización de una AGV basada en android</th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 08/09/2014</td>
-									<td> 01/07/2015</td>
-									<td> 6.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P23"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/">PiHealth Realidad aumentada aplicada a la salud</a></th>
-									<td> José María Camara<p></p>Pedro Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 01/02/2015</td>
-									<td> 01/07/2015</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P24"> <!-- Begin Proyecto-->
-									<th> Planificador de rutas multitransporte</th>
-									<td> Raúl Marticorena Sánchez<p></p>César I. García Osorio </td>
-									<td> 1 </td>
-									<td> 01/02/2015</td>
-									<td> 01/07/2015</td>
-									<td> 5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P25"> <!-- Begin Proyecto-->
-									<th> Plataforma web interactiva de Minería de Datos</th>
-									<td> Julián Luengo Martin<p></p>Cristobal J. Carmona del Jesús </td>
-									<td> 1 </td>
-									<td> 27/09/2014</td>
-									<td> 01/07/2015</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P26"> <!-- Begin Proyecto-->
-									<th> Plataforma Web para simulación electoral de las elecciones municipales</th>
-									<td> Julián Luengo Martin<p></p>Cristobal J. Carmona del Jesús </td>
-									<td> 1 </td>
-									<td> 09/12/2014</td>
-									<td> 01/07/2015</td>
-									<td> 7.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P27"> <!-- Begin Proyecto-->
-									<th> Realidad aumentada aplicada a la educación</th>
-									<td> José María Camara<p></p>Pedro Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 31/10/2014</td>
-									<td> 01/07/2015</td>
-									<td> 6.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P28"> <!-- Begin Proyecto-->
-									<th> Sistema de estimación de edad a partir de radiografías dentales</th>
-									<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor<p></p>Rebeca García González </td>
-									<td> 1 </td>
-									<td> 19/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 9.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P29"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/mjuez/tfg2015_stormcloud">Storm Cloud: Integración del modelo de negocio Sensing-as-a- Service para el internet de las cosas</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 18/11/2014</td>
-									<td> 01/07/2015</td>
-									<td> 9.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P30"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/dieprane/SWAPP">SWAAP-Aplicación para gestionar cambios de turno</a></th>
-									<td> Luis R. Izquierdo Millán<p></p>María Pereda García </td>
-									<td> 1 </td>
-									<td> 16/01/2014</td>
-									<td> 01/07/2015</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P31"> <!-- Begin Proyecto-->
-									<th> <a href="http://duclos.es:81/svn/UbuGraph">Ubugraph 3.0</a></th>
-									<td> José Manuel Galán Ordax </td>
-									<td> 1 </td>
-									<td> 11/07/2014</td>
-									<td> 01/07/2015</td>
-									<td> 7.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P32"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/">Webapp para presupuestos software</a></th>
-									<td> César I. García Osorio<p></p>Alvar Arnáiz González </td>
-									<td> 1 </td>
-									<td> 08/01/2015</td>
-									<td> 01/07/2015</td>
-									<td> 8.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P33"> <!-- Begin Proyecto-->
-									<th> <a href="http://smarquina.github.io/misBeans/ ">GII15.B Juegos de economía experimental multiplataforma</a></th>
-									<td> José Manuel Galán Ordax<p></p>José Ignacio Santos </td>
-									<td> 1 </td>
-									<td> 24/09/2015</td>
-									<td> 28/01/2016</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P34"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/aap65/triangulacion-iii/">GII14.2 Sistema de triangulación volumétrica IV</a></th>
-									<td> José Manuel Sáiz Díez </td>
-									<td> 1 </td>
-									<td> 25/09/2015</td>
-									<td> 28/01/2016</td>
-									<td> 8.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P35"> <!-- Begin Proyecto-->
-									<th> <a href=" https://github.com/mlj0004/tfg_gii14b/">GII14.b Aplicación de control de diabetes en dispositivos móviles</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Carlos Pardo Aguilar </td>
-									<td> 1 </td>
-									<td> 26/09/2015</td>
-									<td> 11/02/2016</td>
-									<td> 7.75</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P36"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/rober920/miscompras">GII 14.I OCR de tickets de compra. </a></th>
-									<td> José Francisco Díez Pastor<p></p>Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 03/02/2015</td>
-									<td> 12/02/2016</td>
-									<td> 9.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P37"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/dls0010/DavidKinectTFG2016">GII15.F Aplicación de la Kinect al envejecimiento activo</a></th>
-									<td> Pedro Luis Sánchez Ortega<p></p>César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 17/09/2015</td>
-									<td> 13/02/2016</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P38"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/garnaizd/chameleonsensors/">GII15.5 Aplicación iOS para el reconocimiento de patrones de color</a></th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 03/10/2015</td>
-									<td> 14/02/2016</td>
-									<td> 9.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P39"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/avg0043/TFG_Autocorrecc_Java ">GII14.L Servicio Web para la Auto-Corrección de Prácticas en Java</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 28/09/2015</td>
-									<td> 15/02/2016</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P40"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/dba0010/Activiti-Api">GII 14.P Monitor multiplataforma de la actividad de un proyecto</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 03/02/2015</td>
-									<td> 16/02/2016</td>
-									<td> 7.75</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P41"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/agr00095/tfg-alg.-seleccion-instancias-spark/">GII15.H Paralelización de algoritmos de selección de instancias con la arquitectura spark</a></th>
-									<td> Alvar Arnáiz González<p></p>Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 28/09/2015</td>
-									<td> 17/02/2016</td>
-									<td> 9.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P42"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/asl0044/UBUGraph4.0 ">GII15.A UBUGRAPH 4.0</a></th>
-									<td> José Manuel Galán Ordax </td>
-									<td> 1 </td>
-									<td> 26/01/2016</td>
-									<td> 06/06/2016</td>
-									<td> 7.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P43"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/lopezm/lidar ">GII15.Q Estimación de biomasaforestal a partir de imágenes aéreas y LIDAR.</a></th>
-									<td> José Francisco Díez Pastor<p></p>César I. García Osorio </td>
-									<td> 1 </td>
-									<td> 12/01/2016</td>
-									<td> 06/06/2016</td>
-									<td> 9.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P44"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/TfgAS/trabajofindegrado-alvinsartor/overview ">GII15.U Trayectorias inteligentes para Quadcopters</a></th>
-									<td> César I. García Osorio<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 03/03/2016</td>
-									<td> 06/06/2016</td>
-									<td> 9.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P45"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/scc0031/perikymata ">GII15.R Análisis paleontológico de piezas dentales.</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 11/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P46"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/Isma_R/thoth/ ">GII14.Ñ Herramienta web para algoritmos de lenguajes regulares</a></th>
-									<td> César I. García Osorio<p></p>Alvar Arnáiz González </td>
-									<td> 1 </td>
-									<td> 11/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9.8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P47"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/vrt0004/ ">GII15.2 Herramienta para la generación de cuestionarios Moodle sobre análisis sintáctico</a></th>
-									<td> César I. García Osorio<p></p>Alvar Arnáiz González </td>
-									<td> 1 </td>
-									<td> 28/12/2015</td>
-									<td> 14/07/2016</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P48"> <!-- Begin Proyecto-->
-									<th> <a href="https://xp-dev.com/git/Repo-GII15.D ">GII15.D Aplicación web para la gestión de estancias de alumnos en otras instituciones</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 21/12/2015</td>
-									<td> 14/07/2016</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P49"> <!-- Begin Proyecto-->
-									<th> <a href="https://xp-dev.com ">GII15.C [Habituate v.2.0] Aplicación web multimedia para la ayuda de personas con discapacidad a desenvolverse en el hogar.</a></th>
-									<td> Bruno Baruque Zanón<p></p>
-María Esther Baños García </td>
-									<td> 1 </td>
-									<td> 30/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P50"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/apd0025/AlarmaHablada">GII15.S Despertador Android con lectura de eventos</a></th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 12/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P51"> <!-- Begin Proyecto-->
-									<th> GII15.P Visión artificial aplicada a la clasificación basada en color</th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 26/11/2015</td>
-									<td> 14/07/2016</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P52"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/imn14/asignaci-n-de-pedidos-y-rutas ">GII14.1 Herramienta de soporte a la toma de decisiones para la Gestión de Flotas: Asignación de Pedidos y Rutas</a></th>
-									<td> María Belén Vaquerizo García </td>
-									<td> 1 </td>
-									<td> 11/03/2016</td>
-									<td> 14/07/2016</td>
-									<td> 6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P53"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/ppp0015/tfg-gii-revisiones-autom-ticas-de-calidad-de-proyectos-con ">GII15.8 Revisiones automáticas de calidad de proyectos con SonarQube</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 11/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P54"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/noeliamansog/TFG-GII.15.I ">GII15.I Aplicación para la creación personalizada y resolución automática de supuestos contables</a></th>
-									<td> Luis R. Izquierdo Millán<p></p>José Ignacio Santos </td>
-									<td> 1 </td>
-									<td> 26/12/2015</td>
-									<td> 14/07/2016</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P55"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/Xaaris/tfg/ ">GII15.G  Aplicación móvil iOS para preguntas tipo test</a></th>
-									<td> Luis R. Izquierdo Millán </td>
-									<td> 1 </td>
-									<td> 30/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P56"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/tfg_gii15l/androidclient">GII15.L Computación distribuida con dispositivos móviles para la ejecución de técnicas de aprendizaje de máquinas sobre grandes cantidades de datos</a></th>
-									<td> Carlos Pardo Aguilar<p></p>David Fernández Ortega (Hewlett Packard)<p></p>Vicente Ángel López Romero (Hewlett Packard) </td>
-									<td> 1 </td>
-									<td> 26/01/2016</td>
-									<td> 14/07/2016</td>
-									<td> 9.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P57"> <!-- Begin Proyecto-->
-									<th> GII15.7 Control de vehículos de guiado automático basado en Android</th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 25/10/2015</td>
-									<td> 14/07/2016</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P58"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/claumartinezh/tfg_gii15.6">GII15.6 Aplicación web para la configuración de las tablas de trabajo de un AGV</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 01/02/2016</td>
-									<td> 14/07/2016</td>
-									<td> 4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P59"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/aex0022/xgboost/ ">GII15.E Combinaciones de clasificadores en XGBoost</a></th>
-									<td> Juan José Rodríguez Díez </td>
-									<td> 1 </td>
-									<td> 24/11/2015</td>
-									<td> 22/09/2016</td>
-									<td> 8.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P60"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/aam0093/Proyecto-Quiz-Prog.-Dinamica ">GII14.F Generación de cuestionarios para la docencia on-line de métodos de programación dinámica </a></th>
-									<td> Juan José Rodríguez Díez<p></p>Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 24/02/2015</td>
-									<td> 22/09/2016</td>
-									<td> 6.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P61"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jba0040/PlataformaTorneos2x2 ">GII16.F Plataforma de torneos para juegos 2x2</a></th>
-									<td> José Ignacio Santos Martín<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 17/09/2016</td>
-									<td> 19/01/2017</td>
-									<td> 9.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P62"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/nunobasurto/apuestas_deportivas">GII16.C Simulador de apuestas deportivas</a></th>
-									<td> Alvar Arnáiz González<p></p>Cristobal J. Carmona del Jesús </td>
-									<td> 1 </td>
-									<td> 04/10/2016</td>
-									<td> 19/01/2017</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P63"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Itg0001/TFG_DietaPorDientes">GII16.6 Creación de un método de recuento de estrías de dieta en los dientes. </a></th>
-									<td> José Francisco Díez Pastor<p></p>Alvar Arnáiz González </td>
-									<td> 1 </td>
-									<td> 08/09/2016</td>
-									<td> 19/01/2017</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P64"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/dvr0006/UBUGRAPH-5.0">GII16.3  UBUGRAPH 5.0</a></th>
-									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 10/10/2016</td>
-									<td> 15/02/2017</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P65"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/rubenbarrios/mercapro-2">GII15.J Mercapro</a></th>
-									<td> José Manuel Galán Ordax<p></p>José Ignacio Santos </td>
-									<td> 1 </td>
-									<td> 24/11/2015</td>
-									<td> 15/02/2017</td>
-									<td> 6.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P66"> <!-- Begin Proyecto-->
-									<th> <a href="https://bitbucket.org/JRCUEVAS/control_de_transito">GII15.K Interfaces Hombre máquina basados en hardware libre</a></th>
-									<td> Pedro Luis Sánchez Ortega<p></p>José Mª Cámara Nebreda </td>
-									<td> 1 </td>
-									<td> 25/11/2015</td>
-									<td> 15/02/2017</td>
-									<td> 9.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P67"> <!-- Begin Proyecto-->
-									<th> <a href="http://digit-moodle.blogspot.com.es/2017/02/un-tfg-en-ingenieria-informatica-de-10.html">GII16.H Monitorización del estado de una colmena mediante un smartphone</a></th>
+									<th> (Ejemplo presencial) GII16.H Monitorización del estado de una colmena mediante un smartphone<br> <a href=http://digit-moodle.blogspot.com.es/2017/02/un-tfg-en-ingenieria-informatica-de-10.html>Repositorio software</a><br></th>
 									<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
 									<td> 30/09/2016</td>
 									<td> 15/02/2017</td>
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P68"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/claumartinezh/TFG_UBUGrades">GII16.I Herramienta de extracción y visualización de calficaciones para Moodle</a></th>
-									<td> Raúl Marticorena Sánchez </td>
+								<tr id="P1"> <!-- Begin Proyecto-->
+									<th> GII_O_MB_17.10 Generador de mapas de calor en tiempo real<br> <a href=https://www.youtube.com/watch?v=7Z6jsWn5dMs&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA&index=2>Vídeo demostración</a> <br> <a href=https://codebeat.co/projects/gitlab-com-oscortiz-tfg_gii17-10_generador_de_mapas_de_calor_en_tiempo_real-master-b980eb2f-1c28-44d3-b429-0c41a44fb59a/all_complexities>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p>Guillemo Santos Melgar </td>
 									<td> 1 </td>
-									<td> 07/10/2016</td>
-									<td> 15/02/2017</td>
-									<td> 7.6</td>
+									<td> 10/10/2017</td>
+									<td> 09/02/2018</td>
+									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P69"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jfb0019/Gestor-TFG-2016">GII15.9 Gestión de trabajos fin de grado v2.0.</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 25/09/2015</td>
-									<td> 15/02/2017</td>
-									<td> 7.9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P70"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/aps0047/UbuNurse">GII16.S UBUnurse</a></th>
-									<td> Pedro Luis Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 22/12/2016</td>
-									<td> 15/06/2017</td>
-									<td> 7.25</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P71"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Plata17/TouchCarPI">GII16.P Diseño de una autorradio con pantalla táctil mediante Rasberry Pi</a></th>
+								<tr id="P2"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_16.N Aplicación para la gestión del sonido en un dispositivo móvil<br> <a href=https://github.com/JorgeZamora94/TFG-Jorge-Zamora-2017-18>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=YygTc6teOkw&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA&index=4>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=XZy2yGWQVS8&index=3&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo de presentación</a><br></th>
 									<td> César Represa </td>
 									<td> 1 </td>
-									<td> 26/11/2016</td>
-									<td> 15/06/2017</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P72"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/aag0121/barterAPP">GII16.1 SWAPP MULTIPLATAFORMA</a></th>
-									<td> Luis R. Izquierdo Millán<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 04/10/2016</td>
-									<td> 05/07/2017</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P73"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Alberto-Vivar/3D-Viewer">GII16.R Visor 3D para la docencia de alumnos de antropología</a></th>
-									<td> Alvar Arnáiz González<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 12/11/2016</td>
-									<td> 05/07/2017</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P74"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/amtBurgos/Perikymata2017">GII17.09 Aplicación de análisis paleontológico. Perikymata 2.0</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 31/01/2017</td>
-									<td> 05/07/2017</td>
-									<td> 9.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P75"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/BorjaG90/threeplusone">GII17.E Gestión de actividades y estadísticas deportiva</a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 15/03/2017</td>
-									<td> 05/07/2017</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P76"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/PabloAlejos/Machine-Learning-GameDev">GII17.7 Creación de un videojuego y un bot inteligente para el mismo</a></th>
-									<td> José Francisco Díez Pastor<p></p>César García Osorio </td>
-									<td> 1 </td>
-									<td> 31/01/2017</td>
-									<td> 05/07/2017</td>
-									<td> 9.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P77"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/NelsonParamo/GI16.M_ProyectoCoyuntura">GII16.M Herramienta web dinámica para la captación, tratamiento y presentación de datos relacionados con la coyuntura económica de Burgos</a></th>
-									<td> Bruno Baruque Zanón<p></p>Ángel Arroyo Puente </td>
-									<td> 1 </td>
 									<td> 02/02/2017</td>
-									<td> 05/07/2017</td>
-									<td> 6.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P78"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/danielpuente-dpg/GII14.K.QUICKTEST">GII14.K Aplicación para el Acceso a Plataformas de ELearning desde Dispositivos Móviles</a></th>
-									<td> María Belén Vaquerizo García<p></p>Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 02/02/2017</td>
-									<td> 05/07/2017</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P79"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jaswellnitz/tourist-chatbot">GII16.G Bot conversacional para recomendaciones turísticas</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 15/12/2016</td>
-									<td> 05/07/2017</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P80"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Jazriel/WhatAClass">GII17.0A Aplicación web para la creación de reconocedores de imágenes personalizados</a></th>
-									<td> José Francisco Díez Pastor<p></p>César García Osorio </td>
-									<td> 1 </td>
-									<td> 01/02/2017</td>
-									<td> 05/07/2017</td>
-									<td> 0</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P81"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/DanielSantidrian/UBUassistant">GII17.0B Asistente Virtual</a></th>
-									<td> Pedro Renedo Fernández </td>
-									<td> 1 </td>
-									<td> 01/02/2017</td>
-									<td> 07/07/2017</td>
-									<td> 9.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P82"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Fernan-Ramos/Test-Manager">GII16.Q Aplicación híbrida para preguntas tipo test en entornos móviles</a></th>
-									<td> Luis R. Izquierdo Millán<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 01/02/2017</td>
-									<td> 07/07/2017</td>
-									<td> 9.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P83"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jasag/Phytoliths-recognition-system">GII17.04 Sistema de reconocimiento automático en arqueobotánica</a></th>
-									<td> Alvar Arnáiz González<p></p>José Francisco Díez Pastor<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 31/01/2017</td>
-									<td> 07/07/2017</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P84"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mrr0088/Gestor-de-Hemeroteca">GII17.08 Herramienta para el análisis hemeroteca</a></th>
-									<td> José Francisco Díez Pastor<p></p>César García Osorio </td>
-									<td> 1 </td>
-									<td> 31/01/2017</td>
-									<td> 07/07/2017</td>
-									<td> 9.8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P85"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/javierParamo94/Thoth-in-JavaScript">GII17.06 Conversión de la aplicación docente Thoth a JavaScript</a></th>
-									<td> Alvar Arnáiz González<p></p>César Ignacio García Osorio </td>
-									<td> 1 </td>
-									<td> 31/01/2017</td>
-									<td> 07/07/2017</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P86"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/vpe0001/Algoritmos_de_busqueda_3D-Unity">GII14.D Herramienta docente de algoritmos de búsqueda de rutas</a></th>
-									<td> José Francisco Díez Pastor<p></p>César I. García Osorio </td>
-									<td> 1 </td>
-									<td> 24/02/2015</td>
-									<td> 07/07/2017</td>
-									<td> 9.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P87"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/rmb0033/">GII16.K Aplicación web para la visualización y búsqueda de datos almacenados en dispositivo con linux embebido</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 02/02/2017</td>
-									<td> 07/07/2017</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P88"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/carmelobasconcillos/GII16.L-Simulacion-AGV">GII16.L AGVsim. Aplicabilidad de Gazebo en la simulación de vehículos autónomos</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 02/02/2017</td>
-									<td> 07/07/2017</td>
+									<td> 09/02/2018</td>
 									<td> 4</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P89"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/amt0001/rpi_traffic_signs ">GII16.O Reconocimiento de señales de tráfico mediante Raspberry Pi</a></th>
-									<td> César Represa </td>
+								<tr id="P3"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_17.02 Sistema de navegación semiautomático en interiores<br> <a href=https://github.com/mbm0089/GII_0_17.02_SNSI/>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=WjOSTpxChIY&index=6&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=OFmsPbaPsCA&index=5&list=PLbfgDC115L3ChawVdhepSh-Fl5ER1_RNA>Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=GII_0_17.02_SNSI>Calidad de código</a></th>
+									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p>César García Osorio<p></p>José Francisco Díez Pastor </td>
 									<td> 1 </td>
-									<td> 24/11/2016</td>
-									<td> 21/09/2017</td>
+									<td> 09/11/2017</td>
+									<td> 05/06/2018</td>
+									<td> 10</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P4"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_17.01 Desarrollo de una interfaz para planta piloto<br> <a href=https://github.com/FranBurgos/TFG>Repositorio software</a><br> <a href=https://youtu.be/uvDMTtxGMDw?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/i_OkqDiP0AE?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG/files>Calidad de código</a></th>
+									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p> Daniel Sarabia Ortiz </td>
+									<td> 1 </td>
+									<td> 30/10/2018</td>
+									<td> 19/02/2019</td>
+									<td> 8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P5"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_18.01  Simulación de redes con GNS3<br> <a href=https://github.com/javi13gg/TFG_GII_O_MA_18.01-Simulacion-de-redes-con-GNS3>Repositorio software</a><br> <a href=https://youtu.be/PxZo4v2LuCw?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/9YZ86-tp1Ns?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG_GII_O_MA_18.01-Simulacion-de-redes-con-GNS3/files>Calidad de código</a></th>
+									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores)<p></p>Daniel Sarabia Ortiz </td>
+									<td> 1 </td>
+									<td> 19/09/2018</td>
+									<td> 19/02/2019</td>
+									<td> 6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P6"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_18.02 Generación rutas utilizando sistemas empotrados<br> <a href=https://github.com/alejandrolampreave/GPS>Repositorio software</a><br> <a href=https://youtu.be/6XycE70kDAU?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/UJMdEgxIo6w?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/GPS/files>Calidad de código</a></th>
+									<td> Alejandro Merino Gómez  (Mención en Ingeniería de Computadores) </td>
+									<td> 1 </td>
+									<td> 19/09/2018</td>
+									<td> 19/02/2019</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P90"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Jazriel/WhatAClass">GII17.0A Framework web de uso de sistemas machine learning</a></th>
-									<td> José Francisco Díez Pastor<p></p>César García Osorio </td>
+								<tr id="P7"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_17.0M Secuenciador heurístico<br> <a href=https://github.com/Victoracha/TFG-Reglas-de-prioridad>Repositorio software</a><br> <a href=https://youtu.be/nF6N2glndAk?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/2L5iGrXjTxI?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG-Reglas-de-prioridad/files>Calidad de código</a></th>
+									<td> José Manuel Galán Ordax (Mención en Sistemas de Información) </td>
 									<td> 1 </td>
-									<td> 01/02/2017</td>
-									<td> 21/09/2017</td>
-									<td> 9</td>
+									<td> 24/09/2018</td>
+									<td> 19/02/2019</td>
+									<td> 7.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P91"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/carmelobasconcillos/GII16.L-Simulacion-AGV">GII16.L AGVsim. Aplicabilidad de Gazebo en la simulación de vehículos autónomos</a></th>
-									<td> Jesús Enrique Sierra García </td>
+								<tr id="P8"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_16.N Aplicación para la gestión del sonido en un dispositivo móvil<br> <a href=https://github.com/JorgeZamora94/TFG-Gestor-de-sonido-para-dispositivos-Android>Repositorio software</a><br> <a href=https://youtu.be/VQNTjM7Kk3M?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo demostración</a> <br> <a href=https://youtu.be/bbjKM6LRkEk?list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN>Vídeo de presentación</a><br> <a href=https://app.codacy.com/app/ubutfgm/TFG/files>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
 									<td> 1 </td>
 									<td> 02/02/2017</td>
-									<td> 21/09/2017</td>
-									<td> 5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P92"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/trona85/GII-17.1B-UBULog-1.0">GII17.1B UBULog 1.0-Seguimiento de actividad en UBUVirtual</a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 05/10/2017</td>
-									<td> 19/01/2018</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P93"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/AdrianAntonGarcia/-TFG-UBUSetas">GII17.0U Aplicación móvil para la ayuda en el reconocimiento de setas.</a></th>
-									<td> José Francisco Díez Pastor<p></p>Raúl Marticorena </td>
-									<td> 1 </td>
-									<td> 25/09/2017</td>
-									<td> 19/01/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P94"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jppasvit/geo-indoor">GII17.0D Geolocalización dentro de edificios</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 29/03/2017</td>
-									<td> 19/01/2018</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P95"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/huco95/UBUGrades/">GII17.0K UBUGrades 2.0 </a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 29/09/2017</td>
-									<td> 19/01/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P96"> <!-- Begin Proyecto-->
-									<th> GII17.0O Aplicación de inteligencia artificial en la gestión del conocimiento</th>
-									<td> Ángel Arroyo Puente<p></p>Lourdes Sáiz Bárcena </td>
-									<td> 1 </td>
-									<td> 18/09/2017</td>
-									<td> 20/02/2018</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P97"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Tulmot/Sklearn-Multilabel">GII17.05 Clasificadores multi-label en Scikit Learn</a></th>
-									<td> Álvar Arnaiz González<p></p>Juan José Rodríguez Díez </td>
-									<td> 1 </td>
-									<td> 06/10/2017</td>
-									<td> 20/02/2018</td>
-									<td> 6.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P98"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jmg0137/3D-Viewer-v2.0">GII17.0Q 3D Viewer v2</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 18/09/2017</td>
-									<td> 20/02/2018</td>
-									<td> 9.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P99"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/RobertoOrtegaOrtega/UBU_object_detection">GII17.1C Sistema automático de reconocimiento de secuencias de imágenes.</a></th>
-									<td> César Represa<p></p>Pedro Luis Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 09/10/2017</td>
-									<td> 20/02/2018</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P100"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/borjamartinezpardo91/ControlDeEsquemasDeRespuestasEnAPIs">GII17.13 Control de esquemas de respuestas en APIs</a></th>
-									<td> Carlos López Nozal<p></p>Sergio Díez Cristóbal </td>
-									<td> 1 </td>
-									<td> 02/10/2017</td>
-									<td> 20/02/2018</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P101"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/RosanaAV/BlocklyToChapinToCFacil">GII14.Z BlocklyToChapinToCFacil v2</a></th>
-									<td> Carlos Pardo Aguilar </td>
-									<td> 1 </td>
-									<td> 24/02/2017</td>
-									<td> 20/02/2018</td>
-									<td> 5.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P102"> <!-- Begin Proyecto-->
-									<th> GII17.1D Prototipo de simulador de carretilla elevadora</th>
-									<td> Bruno Baruque Zanón<p></p>Carlos Alberto Catalina Ortega (ITCL) </td>
-									<td> 1 </td>
-									<td> 18/10/2017</td>
-									<td> 20/02/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P103"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/IvanArjona/TFG-Datos-publicos">GII17.0X Aplicación Web para la recopilación, tratamiento y visualización de datos públicos.</a></th>
-									<td> Jesús M. Maudes Raedo<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 25/09/2017</td>
-									<td> 06/06/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P104"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/ClaraPalacios/TFG-Sistema_de_recomendacion_Asignaturas_Optativas">GII16.7 Sistema de recomendación de asignaturas optativas</a></th>
-									<td> José Ignacio Santos Martín<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 30/10/2017</td>
-									<td> 06/06/2018</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P105"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/SergioBarberoBascones/AntennasStats">GII18.02 Retail Antenna Analytics</a></th>
-									<td> José Manuel Galán Ordax<p></p>VIrginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 19/03/2018</td>
-									<td> 06/06/2018</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P106"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/MJ0T4/Simulador_Domotica_Raspberry">GII17.0P Gestión desde Android de un simulador de control domótico con Raspberry Pi</a></th>
-									<td> César Represa </td>
-									<td> 1 </td>
-									<td> 18/09/2017</td>
-									<td> 06/06/2018</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P107"> <!-- Begin Proyecto-->
-									<th> GII17.16 Supervisión remota de Impresión 3D</th>
-									<td> Pedro Luis Sánchez Ortega<p></p>César Represa </td>
-									<td> 1 </td>
-									<td> 06/10/2017</td>
-									<td> 06/06/2018</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P108"> <!-- Begin Proyecto-->
-									<th> GII13.3 Herramienta de cálculo de rutas óptimas según parámetros de accesibilidad física en itinerarios urbanos.</th>
-									<td> María Belén Vaquerizo García </td>
-									<td> 1 </td>
-									<td> 07/03/2016</td>
-									<td> 06/06/2018</td>
-									<td> 6.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P109"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/IvanBeke/TFG-Visor-de-espectros/">GII17.0F Visor de espectros</a></th>
-									<td> César I. García Osorio<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 06/10/2017</td>
-									<td> 09/07/2018</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P110"> <!-- Begin Proyecto-->
-									<th> GII16.D Seguimiento de Titulación</th>
-									<td> Carlos Pardo Aguilar </td>
-									<td> 1 </td>
-									<td> 17/01/2018</td>
-									<td> 09/07/2018</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P111"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Kiszaner/2017_SetasVR_TFG">GII17.0V Juego de realidad virtual sobre recogida de setas.</a></th>
-									<td> José Francisco Díez Pastor<p></p>Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 25/09/2017</td>
-									<td> 09/07/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P112"> <!-- Begin Proyecto-->
-									<th> GII17 Localización de Intrusos</th>
-									<td> José Manuel Sáiz Díez </td>
-									<td> 1 </td>
-									<td> 01/01/2018</td>
-									<td> 09/07/2018</td>
-									<td> 5.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P113"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/apj0007/PrawnView">GII17.18 PrawnVIEW</a></th>
-									<td> José Francisco Díez Pastor<p></p>Álvar Arnaiz González </td>
-									<td> 1 </td>
-									<td> 25/09/2017</td>
-									<td> 09/07/2018</td>
-									<td> 6.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P114"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/cgc0045/TFG-UBUassistant">GII18.03 UBUassistant para Android</a></th>
-									<td> Pedro Renedo Fernández </td>
-									<td> 1 </td>
-									<td> 14/03/2018</td>
-									<td> 09/07/2018</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P115"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/ama0114/TFG-OpenCV/">GII17.0Z Seguimiento de líneas basado en openCV para AGVs</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 25/09/2017</td>
-									<td> 09/07/2018</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P116"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/luismiguel17/Documentation_UBUDiabetes2.0_GII17.0J">GII17.0J UBUDiabetes 2.0</a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 19/03/2018</td>
-									<td> 09/07/2018</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P117"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/victorcas04/TFG-FacialRecognition">GII 17.1E Diseño de un sistema de identificación de personas</a></th>
-									<td> César Represa </td>
-									<td> 1 </td>
-									<td> 05/12/2017</td>
-									<td> 09/07/2018</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P118"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Sonia95LG/POODLEapp">GII17.14 POODLE Planificación  de carga académica</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 06/10/2017</td>
-									<td> 21/09/2018</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P119"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mmb0093/TFG_Fitolitos">GII17.0H Reconocimiento de fitolitos v2.0</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 06/10/2017</td>
-									<td> 21/09/2018</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P120"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/arp0054/TFG_ObjDetectorViaLaser/">GII18.0Z Detección de objetos con láser de seguridad</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 05/09/2017</td>
-									<td> 25/01/2019</td>
+									<td> 19/02/2019</td>
 									<td> 6</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P121"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/fransaiz95/Weblectric2018">GII18.0B Cliente-Servidor para administración de BBDD on-line de energía</a></th>
-									<td> Jesús M. Maudes Raedo<p></p>Álvar Arnaiz González </td>
+								<tr id="P9"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_18.08 Retrogaming recommender<br> <a href=https://github.com/raulolles/TFG_GII_O_MA_18.08>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=BszjUZQFj30&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=12>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=CgOmExE7U3U&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=11>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/raulolles/TFG_GII_O_MA_18.08/dashboard>Calidad de código</a></th>
+									<td> José Manuel Galán Ordax (Mención en Sistemas de Información)<p></p>José Ignacio Santos Martín </td>
 									<td> 1 </td>
-									<td> 23/09/2018</td>
-									<td> 20/02/2019</td>
-									<td> 6</td>
+									<td> 08/11/2018</td>
+									<td> 12/06/2019</td>
+									<td> 9.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P122"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/AbadiaTecnologica/Monitor-en-tiempo-real-de-un-sistema-de-fabricacion-aditiva-para-Octoprint">GII18.07 Monitor en tiempo real y control de acceso a recursos de un sistema de fabricación aditiva multi-puesto.</a></th>
-									<td> César Represa Pérez </td>
+								<tr id="P10"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_18.09 Automatización del proceso de delineación a partir de datos de un levantamiento topográfico<br> <a href=https://github.com/EduardoRisco/SurveyingPointCode>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=EZ_11OUcYGw&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=14>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=EZ_11OUcYGw&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=13>Vídeo de presentación</a><br> <a href=https://codebeat.co/projects/github-com-eduardorisco-surveyingpointcode-master>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención ingeniería del  Software)<p></p>César I. García Osorio </td>
 									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 20/02/2019</td>
-									<td> 8.5</td>
+									<td> 10/12/2018</td>
+									<td> 12/06/2019</td>
+									<td> 10</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P123"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/amb0070/CRET">GII18.0O Can-bus reverse engeniering toolkit</a></th>
-									<td> César Represa Pérez<p></p>Álvar Arnaiz González </td>
+								<tr id="P11"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.01Autoevaluación proceso de desarrollo de Trabajo Fin de Grado  en Github <br> <a href=https://github.com/rlp0019/Activiti-Api>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=yiQpHgNWMZY&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=16>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=gYCQdf51SsE&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=15>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/rlp0019/Activiti-Api/dashboard>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
 									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 20/02/2019</td>
-									<td> 9.8</td>
+									<td> 12/02/2019</td>
+									<td> 12/06/2019</td>
+									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P124"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jubecu/DiagnosticoFresadoras">GII17.17 App para el diagnóstico de fallos en fresadoras</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Andrés Bustillo Iglesias </td>
+								<tr id="P12"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.09 UBUGestLab v2<br> <a href=https://github.com/masantamario/Geslab-2.0>Repositorio software</a><br> <a href=https://web.microsoftstream.com/video/4ccf08c5-5341-4584-8b91-135d23bc7dab?App=msteamsBot&refId=f:1680646452739020596>Vídeo demostración</a> <br> <a href=https://web.microsoftstream.com/video/76a86f4c-af94-4005-b2eb-6da2a9889274>Vídeo de presentación</a><br></th>
+									<td> Pedro Renedo Fernández (Mención en Ingeniería del Software) </td>
 									<td> 1 </td>
-									<td> 27/11/2017</td>
-									<td> 20/02/2019</td>
+									<td> 05/12/2019</td>
+									<td> 08/07/2020</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P13"> <!-- Begin Proyecto-->
+									<th> GII_O_MB_19.0C ExoplanetIA<br> <a href=https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-exoplanetia>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=SpfrMFKNMdU>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=u0z3oxd8WTU>Vídeo de presentación</a><br></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software) </td>
+									<td> 1 </td>
+									<td> 07/10/2019</td>
+									<td> 08/07/2020</td>
+									<td> 9.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P14"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_19.XX-Fatiga+PR<br> <a href=https://github.com/ysi0000/-FatigaMasPR>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=1ZRhmhdU6YU>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=9C4oSkTTeM4>Vídeo de presentación</a><br></th>
+									<td> José Manuel Galán Ordax (Mención en Sistemas de Información)<p></p>Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 01/10/2019</td>
+									<td> 08/07/2020</td>
 									<td> 5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P125"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mni0000/TFG_InterpretacionEscalas_UBU">GII18.0F Desarrollo de una aplicación informática para el registro e interpretación de una Escala de análisis funcional en edades 0-6 años</a></th>
-									<td> Raúl Marticorena Sánchez </td>
+								<tr id="P15"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_20.02 Sistema domótico inteligente<br> <a href= https://github.com/davidelinformatico/TFG>Repositorio software</a><br> <a href=https://youtu.be/nqs-VCi_m7I >Vídeo demostración</a> <br> <a href=https://youtu.be/6QRz6VPv2PY >Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=davidelinformatico_TFG >Calidad de código</a></th>
+									<td> Alejandro Merino Gómez (Mención en Ingeniería de Computadores)<p></p>Álvar Arnaiz González </td>
 									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 20/02/2019</td>
-									<td> 5.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P126"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/rpp0041/PCVN.git">GII18.0PCVN</a></th>
-									<td> César I. García Osorio<p></p>Juan José Rodríguez Díez </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 20/02/2019</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P127"> <!-- Begin Proyecto-->
-									<th> GII18.0X Implantación de gestión de tiempos con control de presencia en SAP HR</th>
-									<td> José Manuel Galán Ordax </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/06/2019</td>
-									<td> 7.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P128"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/maltejanssen/NoisyNER---named-entity-recognition-in-social-media">GII18.0L NoisyNER - Named entity recognition in social media</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P129"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Guillecal/TFG-Herramienta_para_medir_la_eficiencia_de_codigo_python/">GII18.0Y Herramienta para medir la eficiencia de código en Python</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P130"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Heber94/TFG-ElMundoEnTusGafas">GII18.0W El Mundo en tus Gafas</a></th>
-									<td> Álvar Arnaiz González<p></p>Pedro Luis Sánchez Ortega </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P131"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-smartfiller">GII18.0H SmartFiller</a></th>
-									<td> Juan José Rodríguez Diez </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P132"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/lca0037/GII18.0U-Ububooknet/">GII18.0U Ububooknet</a></th>
-									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P133"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/ElvisDSO/Qualificajocs">GII18.0Z Qualificajocs</a></th>
-									<td> José Manuel Galán Ordax<p></p>Luis Rodrigo Izquierdo Millán </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P134"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mpl0045/UBU-TFG-IG-Study">GII18.0R IG-Study</a></th>
-									<td> José Manuel Galán Ordax<p></p>José Ignacio Santos Martín </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P135"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mfe0007/TFG-Deteccion_de_pallets_mediante_LIDAR">GII18.0S Detección de palets mediante LIDAR</a></th>
-									<td> Jesús Enrique Sierra García </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P136"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/hca0004/GII17.0T_Trayectorias_Semanticas_1819">GII18.0T Trayectorias Semánticas</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P137"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/rnc0011/SistemaRecomendacionTFG">GII18.0M Sistema de Recomendación basado en Aprendizaje Profundo</a></th>
-									<td> Bruno Baruque Zanón </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P138"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-reactvr">GII18.0X ReactVR</a></th>
-									<td> Ángel Arroyo Puente </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P139"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/mus0007/testing-awe ">GII18.0J Testing AWE</a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P140"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/yjx0003/UBUMonitor">GII18.10 UBUMonitor</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Carlos Pardo </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P141"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jhm0025/TFG-GII18.09-Generador-de-informes-nutricionales/ ">GII18.09 Generador de Informes Nutricionales</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Antonio Canepa Oneto </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P142"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jct0024/HealthApp">GII18.0V Aplicación de recomendación nutricional - HEALTHAPP</a></th>
-									<td> Antonio Canepa Oneto </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P143"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mdi0007/Sistema-Informacion-sobre-Matriculacion ">GII18.18 Sistema de Información sobre Matriculación</a></th>
-									<td> Carlos Pardo </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 6.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P144"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/amm0131/TFG-HyperledgerFabric">GII18.19 Cartera blockchain sobre Hyperledger Fabric</a></th>
-									<td> Álvaro Herrero </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P145"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/daniarnaizg/TFG-Amazon-Scraper ">GII18.0C Extracción y procesamiento de datos de Amazon para su utilización en un estudio de marketing</a></th>
-									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P146"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/AdrianArnaiz/TFG-Neurodegenerative-Disease-Detection ">GII18.0E Uso de biomarcadores extraídos de la voz para la detección de la enfermedad del Parkinson</a></th>
-									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P147"> <!-- Begin Proyecto-->
-									<th> Clasificación de enfermedades de la piel con Deep Learning</th>
-									<td> José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.4</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P148"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jlgarridol/TFG-SmartBeds ">GII18.13 Minería de datos aplicada a la detección de crisis epilépticas y aplicación web</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P149"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/SergioLopez92/TFG-Datos-publicos ">GII18.11 Aplicación Web para la recopilación, tratamiento y visualización de datos públicos 2</a></th>
-									<td> José Francisco Díez Pastor<p></p>Jesus Maudes Raedo </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P150"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/aog0036/TFG-SmartBeds ">GII18.12 Minería de datos aplicada a la detección de crisis epilépticas y aplicación movil</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P151"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Josemi/AVC-TFG ">GII18.0Q Asistente Virtual para la Comunicación</a></th>
-									<td> César Represa Pérez<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 9.8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P152"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/bsc0001/TFG_Stroke-Lesion-Segmentation-Approach-using-CT ">GII18.08 Aproximación hacia la identificación automática de lesión de ictus en TC craneal</a></th>
-									<td> Álvar Arnaiz González<p></p>José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 01/07/2019</td>
-									<td> 7.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P153"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/carhf95/gestionCrisisYEmergenciasAdisseo">GII18.0O Gestión de crisis y emergencias en una planta química</a></th>
-									<td> César Represa </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 19/09/2019</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P154"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/dsm0028/TFG-1819">GII18.0D Seguimiento de la actividad mediante pulseras cuantificadoras</a></th>
-									<td> José Francisco Díez Pastor<p></p>César García Osorio </td>
-									<td> 1 </td>
-									<td> 05/09/2018</td>
-									<td> 19/09/2019</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P155"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/mlb0029/comparador-de-metricas-de-evolucion-en-repositorios-software">GII17.0Ñ Evaluación de la actividad de un proyecto software</a></th>
-									<td> Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 18/09/2018</td>
-									<td> 19/09/2019</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P156"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/ers0026/ProyectoFinal">GII18.0I BC4Distribution: Aplicar tecnología Blockchain en una cadena de distribución de productos</a></th>
-									<td> Ángel Arroyo Puente<p></p>Tutor empresarial     HP SCDS     Pablo Tejedor </td>
-									<td> 1 </td>
-									<td> 16/10/2018</td>
-									<td> 24/01/2020</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P157"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/fma0043/TFG_ARBUBU">GII18.16 Árboles Singulares de la UBU (ARBUBU)</a></th>
-									<td> Pedro Renedo Fernández<p></p>Antonio Canepa Oneto<p></p>Luis Marcos </td>
-									<td> 1 </td>
-									<td> 28/02/2019</td>
-									<td> 24/01/2020</td>
-									<td> 6.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P158"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jng0020/PruebaNetExtractor">GII 19.08 NetExtractor</a></th>
-									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 09/10/2019</td>
-									<td> 20/02/2020</td>
-									<td> 9.1</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P159"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/SergioBueno27/TFG_GII_Analisis_Comercial_Urbano">GII 19.31 Análisis comercial urbano utilizando series temporales de compras de tarjetas de crédito</a></th>
-									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
-									<td> 1 </td>
-									<td> 24/10/2019</td>
-									<td> 20/02/2020</td>
-									<td> 9.3</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P160"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/gonzalez23david/subscription-app">GII 19.37 Gestión y Entrega Subscripciones</a></th>
-									<td> Pedro Renedo Fernández </td>
-									<td> 1 </td>
-									<td> 30/09/2019</td>
-									<td> 20/02/2020</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P161"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jrb0043/TFG-BigchainDB">GII 19.30 Arquitectura de validación sobre Blockchain</a></th>
-									<td> Álvaro Herrero Cosío </td>
-									<td> 1 </td>
-									<td> 14/10/2019</td>
-									<td> 20/02/2020</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P162"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jcr0069/TourPlanner-FrontEnd-Cliente">GII17.0S Planificación de Rutas Turísticas Personalizadas con Ventanas de Tiempo</a></th>
-									<td> Bruno Baruque Zanón<p></p>Santiago Porras Alonso </td>
-									<td> 1 </td>
-									<td> 05/04/2019</td>
-									<td> 20/02/2020</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P163"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/MarcosMillanTFG/GII-19.20--ASTI-CHALLENGE">Programación de robot móvil para superación de pruebas en competición robótica</a></th>
-									<td> Jesús Enrique Sierra García<p></p>Diego Moreno Eguiluz </td>
-									<td> 1 </td>
-									<td> 04/10/2019</td>
-									<td> 20/02/2020</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P164"> <!-- Begin Proyecto-->
-									<th> Datawarehouse Sistema de ayuda para la asignación en sigma</th>
-									<td> Carlos Pardo Aguilar </td>
-									<td> 1 </td>
-									<td> 01/02/2019</td>
-									<td> 20/02/2020</td>
-									<td> 5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P165"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-smartenhancer">GII 19.23 SmartEnhancer: Machine Learning para mejorar la calidad de las imágenes</a></th>
-									<td> Ángel Arroyo Puente<p></p>Tutor empresarial HP </td>
-									<td> 1 </td>
-									<td> 09/10/2019</td>
-									<td> 06/07/2020</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P166"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/adp1002/UBUVoiceAssistant">GII 19.40 Desarrollo de aplicación con asistente de voz para Moodle</a></th>
-									<td> Raúl Marticorena Sánchez </td>
-									<td> 1 </td>
-									<td> 10/02/2020</td>
-									<td> 06/07/2020</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P167"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-scan2vector">GII 19.24 Scan2Vector</a></th>
-									<td> Pedro Latorre Carmona<p></p>Tutor empresarial HP </td>
-									<td> 1 </td>
-									<td> 09/10/2019</td>
-									<td> 06/07/2020</td>
-									<td> 5.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P168"> <!-- Begin Proyecto-->
-									<th> GII 19.42 Desarrollo de aplicaciones mediante plataformas Low Code</th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 04/03/2020</td>
-									<td> 06/07/2020</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P169"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/turbolargoo/Free-Connect">GII 19.35 Free Connect: Toolkit de ayuda para la interconexión de sensores inalambricos.</a></th>
-									<td> César Represa Pérez </td>
-									<td> 1 </td>
-									<td> 02/12/2019</td>
-									<td> 06/07/2020</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P170"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/gpm0009/TFG_MetrominutoWeb">GII 19.12 Creador automático de mapas de movilidad</a></th>
-									<td> Álvar Arnaiz González<p></p>César García Osorio </td>
-									<td> 1 </td>
-									<td> 24/10/2019</td>
-									<td> 06/07/2020</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P171"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/apm1005/TFG">GII 19.26 LogScope</a></th>
-									<td> Virginia Ahedo García<p></p>José Manuel Galán Ordax<p></p>Ignacio Cruzado Nuño </td>
-									<td> 1 </td>
-									<td> 10/10/2019</td>
-									<td> 06/07/2020</td>
+									<td> 06/10/2020</td>
+									<td> 25/01/2021</td>
 									<td> 8.25</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P172"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/ZoeCalvo/Sentinel">GII 19.01 Sentinel</a></th>
-									<td> José Manuel Galán Ordax<p></p>Virginia Ahedo García </td>
+								<tr id="P16"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.0B Aplicación de técnicas metaheurísticas para la optimización del reparto de material de una planta de montaje<br> <a href= https://github.com/CarolinaCCZ/LucErik/>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=5GwtDdN_6ko&feature=youtu.be>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=OrUFjE_UBGQ&feature=youtu.be>Vídeo de presentación</a><br></th>
+									<td> José Ignacio Santos Martín (Mención en Sistemas de Información)<p></p>José Manuel Galán Ordax </td>
 									<td> 1 </td>
-									<td> 30/09/2019</td>
-									<td> 06/07/2020</td>
-									<td> 9</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P173"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/psnti/Jellyfish_Forecast">GII 19.34 Predicción de llegada de medusas a la costa usando Aprendizaje Automático</a></th>
-									<td> José Francisco Díez Pastor<p></p>Álvar Arnaiz González </td>
-									<td> 1 </td>
-									<td> 29/01/2020</td>
-									<td> 06/07/2020</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P174"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/RubenMarcosUBU/TFG">GII 19.46 Asistente de programación en lenguaje C</a></th>
-									<td> Carlos Pardo Aguilar </td>
-									<td> 1 </td>
-									<td> 10/02/2020</td>
-									<td> 06/07/2020</td>
+									<td> 06/11/2020</td>
+									<td> 25/01/2021</td>
 									<td> 5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P175"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/mpc0082/UBUEstelas">GII 19.45 UBUEstelas</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Andrés Bustillo Iglesias </td>
+								<tr id="P17"> <!-- Begin Proyecto-->
+									<th> GII_O_MC 20.01 Vulnerabilidades en redes de dependencias de paquetes de software<br> <a href=https://github.com/dsr0018/olivia>Repositorio software</a><br> <a href=https://youtu.be/qr8axe5nieo>Vídeo demostración</a> <br> <a href=https://sonarcloud.io/dashboard?id=dsr0018_olivia>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>José Ignacio Santos Martín (Mención en Sistemas de Información) </td>
 									<td> 1 </td>
-									<td> 05/09/2019</td>
-									<td> 06/07/2020</td>
-									<td> 9.25</td>
+									<td> 05/06/2020</td>
+									<td> 25/01/2021</td>
+									<td> 10</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P176"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/xjx1001/UBUMonitor">GII 19.38 Herramienta de clustering a partir de datos extraídos de Moodle</a></th>
-									<td> Raúl Marticorena Sánchez </td>
+								<tr id="P18"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_20.04 Servicios de adquisición de datos y visualización de dashboards para la web de coyuntura económica<br> <a href=https://github.com/RaquelSancha/GII_O_MA_20.04 >Repositorio software</a><br> <a href=https://youtu.be/FveeOANVySU >Vídeo demostración</a> <br> <a href=https://youtu.be/f73WNutMKJA >Vídeo de presentación</a><br> <a href=https://app.codacy.com/gh/RaquelSancha/GII_O_MA_20.04/dashboard?branch=master >Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>Bruno Baruque Zanón<p></p>Santiago Porras Alfonso </td>
 									<td> 1 </td>
-									<td> 21/01/2020</td>
-									<td> 24/07/2020</td>
-									<td> 9.3</td>
+									<td> 19/10/2020</td>
+									<td> 25/02/2021</td>
+									<td> 6.5</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P177"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/Ebl0010/Medidor-estadistico-metajuego-Magic-The-Gathering">GII 19.32 Plataforma de análisis del metajuego Magic The Gathering</a></th>
-									<td> José Ignacio Santos Martín<p></p>José Manuel Galán Ordax </td>
+								<tr id="P19"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.04 Desarrollo y explotación de un chatbot para la asignatura de Trabajo Fin de Grado<br> <a href=https://github.com/aav0038/UBU-CHATBOT>Repositorio software</a><br> <a href= https://www.youtube.com/watch?v=b82GP8TjW98 >Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=Z86EJeIXAUM>Vídeo de presentación</a><br></th>
+									<td> Raúl Marticorena Sánchez (Mención Computación) </td>
 									<td> 1 </td>
-									<td> 31/10/2019</td>
-									<td> 24/07/2020</td>
-									<td> 6</td>
+									<td> 19/10/2020</td>
+									<td> 13/07/2021</td>
+									<td> 9</td>
 								</tr><!-- End Proyecto-->
-								<tr id="P178"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/lcs1001/gestion-aulas-informatica">GII 19.09 Gestión de aulas de informática (versión Java)</a></th>
-									<td> Jesús M. Maudes Raedo </td>
+								<tr id="P20"> <!-- Begin Proyecto-->
+									<th> GII_O_MB_21.011CarSharing: Servicio Web y APP móvil para compartir vehículo para ir al trabajo<br> <a href= https://gitlab.com/HP-SCDS/Observatorio/2020-2021/ubu-carsharing >Repositorio software</a><br> <a href= https://www.youtube.com/watch?v=b82GP8TjW98 >Vídeo demostración</a> <br> <a href= https://youtu.be/fgvwXKAkYYk >Vídeo de presentación</a><br></th>
+									<td> Bruno Baruque Zanón<p></p>Francisco Alonso (tutor empresa HP SCDS)<p></p>Patricia Pérez (tutor empresa HP SCDS) </td>
 									<td> 1 </td>
-									<td> 14/10/2019</td>
-									<td> 24/07/2020</td>
-									<td> 8.2</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P179"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/scc0034/flutter_serpiente">GII 19.33 Integración de UbuVirtual con herramientas visuales de Minería de Datos</a></th>
-									<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio </td>
-									<td> 1 </td>
-									<td> 26/02/2020</td>
-									<td> 24/07/2020</td>
-									<td> 7.8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P180"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/gcm1001/TFG-CeniehAriadne">GII 19.41 Integración de repositorios en ARIADNE</a></th>
-									<td> Mario Juez Gil<p></p>Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 28/02/2020</td>
-									<td> 24/07/2020</td>
-									<td> 9.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P181"> <!-- Begin Proyecto-->
-									<th> <a href="https://dev.azure.com/rdg-tfg/TFG">GII 19.36 Análisis predictivo de anomalías de AGVs</a></th>
-									<td> Álvaro Herrero Cosío<p></p>Daniel Urda Muñoz </td>
-									<td> 1 </td>
-									<td> 02/12/2019</td>
-									<td> 24/07/2020</td>
-									<td> 9.6</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P182"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jgo0038/TFG-Reserva-aulas-informatica">GII 19.10 Gestión de aulas de informática (versión Python)</a></th>
-									<td> Jesús M. Maudes Raedo </td>
-									<td> 1 </td>
-									<td> 16/01/2019</td>
-									<td> 24/07/2020</td>
-									<td> 8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P183"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/smi0010/TFG_Herramientas_Realidad_Aumentada">GII 19.29 Realidad Virtual: Desarrollo en Entorno Abiertos. Laureados</a></th>
-									<td> Pedro Luis Sánchez Ortega<p></p>Álvar Arnaiz González </td>
-									<td> 1 </td>
-									<td> 10/10/2019</td>
-									<td> 24/07/2020</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P184"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/SergioMedeiros/energysaver">GII18.0K EnergySaver: Centralizar el encendido y apagado de equipos de forma remota utilizando un sitema de reglas.</a></th>
-									<td> Ángel Arroyo Puente </td>
-									<td> 1 </td>
-									<td> 16/10/2018</td>
-									<td> 24/07/2020</td>
-									<td> 7.8</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P185"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2019-2020/ubu-discovery2">GII 19.25 Discovery2: Calendario para la utilización de recursos e impresoras</a></th>
-									<td> Raúl Marticorena Sánchez<p></p>Tutor empresarial HP </td>
-									<td> 1 </td>
-									<td> 09/10/2019</td>
-									<td> 24/07/2020</td>
-									<td> 8.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P186"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/nuf1001/XRayDetector">GII 19.11 Detección de defectos en piezas metálicas a partir de imágenes de radiografía</a></th>
-									<td> José Francisco Díez Pastor<p></p>Pedro Latorre Carmona </td>
-									<td> 1 </td>
-									<td> 30/09/2019</td>
-									<td> 24/07/2020</td>
-									<td> 7.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P187"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/wgm1001/Trabajo-de-Fin-de-Grado-Plataforma-de-text-mining-sobre-repositorios">GII 19.04 Plataforma de experimentación de text mining sobre repositorios de código abierto GitLab</a></th>
-									<td> Jesús M. Alonso Abad<p></p>Carlos López Nozal </td>
-									<td> 1 </td>
-									<td> 29/10/2019</td>
-									<td> 01/10/2020</td>
-									<td> 5.5</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P188"> <!-- Begin Proyecto-->
-									<th> <a href="https://gitlab.com/HP-SCDS/Observatorio/2018-2019/ubu-multiapi">GII 18.0Ñ MultiAPI</a></th>
-									<td> Ángel Arroyo Puente<p></p>Tutor empresarial  HP SCDS Alejandro Viloria </td>
-									<td> 1 </td>
-									<td> 16/10/2018</td>
-									<td> 01/10/2020</td>
-									<td> 7</td>
-								</tr><!-- End Proyecto-->
-								<tr id="P189"> <!-- Begin Proyecto-->
-									<th> <a href="https://github.com/jaa0124/iris_classifier">GII 19.70 Sistema de reconocimiento de personas mediante el iris.</a></th>
-									<td> José Francisco Díez Pastor </td>
-									<td> 1 </td>
-									<td> 01/06/2020</td>
-									<td> 02/10/2020</td>
-									<td> 7.5</td>
+									<td> 19/10/2020</td>
+									<td> 13/07/2021</td>
+									<td> 6.7</td>
 								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
@@ -1668,26 +299,10 @@ María Esther Baños García </td>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(190, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,190, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,190, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,190, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilas(3,10,190, 'P')">31...40</a> </td>
-									<td><a href="javascript:MostrarFilas(4,10,190, 'P')">41...50</a> </td>
-									<td><a href="javascript:MostrarFilas(5,10,190, 'P')">51...60</a> </td>
-									<td><a href="javascript:MostrarFilas(6,10,190, 'P')">61...70</a> </td>
-									<td><a href="javascript:MostrarFilas(7,10,190, 'P')">71...80</a> </td>
-									<td><a href="javascript:MostrarFilas(8,10,190, 'P')">81...90</a> </td>
-									<td><a href="javascript:MostrarFilas(9,10,190, 'P')">91...100</a> </td>
-									<td><a href="javascript:MostrarFilas(10,10,190, 'P')">101...110</a> </td>
-									<td><a href="javascript:MostrarFilas(11,10,190, 'P')">111...120</a> </td>
-									<td><a href="javascript:MostrarFilas(12,10,190, 'P')">121...130</a> </td>
-									<td><a href="javascript:MostrarFilas(13,10,190, 'P')">131...140</a> </td>
-									<td><a href="javascript:MostrarFilas(14,10,190, 'P')">141...150</a> </td>
-									<td><a href="javascript:MostrarFilas(15,10,190, 'P')">151...160</a> </td>
-									<td><a href="javascript:MostrarFilas(16,10,190, 'P')">161...170</a> </td>
-									<td><a href="javascript:MostrarFilas(17,10,190, 'P')">171...180</a> </td>
-									<td><a href="javascript:MostrarFilas(18,10,190, 'P')">181...190</a> </td>
+									<td><a href="javascript:MostrarAllFilas(21, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,21, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,21, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(2,1,10,21, 'P')">21...21</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -1713,7 +328,7 @@ María Esther Baños García </td>
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Oct 29 12:33:31 CET 2020 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jul 20 14:28:30 CEST 2021 </li>
 							</ul>
 						</div>
 					</div>
