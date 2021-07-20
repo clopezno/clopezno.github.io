@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 3, 0, 3, 7]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 6.583333333333333, 3.44086]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 3.748387]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 19 </td>
-									<td>N&uacute;mero Total de Alumnos: 18 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,96, 4, 10, 1,96) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (210,47, 80, 747, 148,97) </td>
+									<td>N&uacute;mero Total de Proyectos: 21 </td>
+									<td>N&uacute;mero Total de Alumnos: 20 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,95, 4, 10, 1,89) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (202,86, 80, 747, 143,35) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 3] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 4] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 3] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 7] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,9 +104,10 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(19, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,19, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,9,10,19, 'P')">11...19</a> </td>
+									<td><a href="javascript:MostrarAllFilas(21, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,21, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,21, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(2,1,10,21, 'P')">21...21</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -276,15 +277,32 @@
 									<td> 25/02/2021</td>
 									<td> 6.5</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P19"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.04 Desarrollo y explotación de un chatbot para la asignatura de Trabajo Fin de Grado<br> <a href=https://github.com/aav0038/UBU-CHATBOT>Repositorio software</a><br> <a href= https://www.youtube.com/watch?v=b82GP8TjW98 >Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=Z86EJeIXAUM>Vídeo de presentación</a><br></th>
+									<td> Raúl Marticorena Sánchez (Mención Computación) </td>
+									<td> 1 </td>
+									<td> 19/10/2020</td>
+									<td> 13/07/2021</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P20"> <!-- Begin Proyecto-->
+									<th> GII_O_MB_21.011CarSharing: Servicio Web y APP móvil para compartir vehículo para ir al trabajo<br> <a href= https://gitlab.com/HP-SCDS/Observatorio/2020-2021/ubu-carsharing >Repositorio software</a><br> <a href= https://www.youtube.com/watch?v=b82GP8TjW98 >Vídeo demostración</a> <br> <a href= https://youtu.be/fgvwXKAkYYk >Vídeo de presentación</a><br></th>
+									<td> Bruno Baruque Zanón<p></p>Francisco Alonso (tutor empresa HP SCDS)<p></p>Patricia Pérez (tutor empresa HP SCDS) </td>
+									<td> 1 </td>
+									<td> 19/10/2020</td>
+									<td> 13/07/2021</td>
+									<td> 6.7</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(19, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,19, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(1,9,10,19, 'P')">11...19</a> </td>
+									<td><a href="javascript:MostrarAllFilas(21, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,21, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,21, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(2,1,10,21, 'P')">21...21</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -310,7 +328,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Feb 25 13:39:43 CET 2021 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jul 20 14:28:30 CEST 2021 </li>
 							</ul>
 						</div>
 					</div>
