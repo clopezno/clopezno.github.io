@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 3.748387]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11], ['2021/2022', 3, 0, 3, 5]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 3.748387], ['2021/2022', 8.5, 4.290323]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 21 </td>
-									<td>N&uacute;mero Total de Alumnos: 20 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,95, 4, 10, 1,89) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (202,86, 80, 747, 143,35) </td>
+									<td>N&uacute;mero Total de Proyectos: 24 </td>
+									<td>N&uacute;mero Total de Alumnos: 23 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,02, 4, 10, 1,82) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (194,12, 80, 747, 135,75) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5, 3] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6, 3] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5, 3] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11, 5] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,10 +104,10 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(21, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,21, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,21, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(2,1,10,21, 'P')">21...21</a> </td>
+									<td><a href="javascript:MostrarAllFilas(24, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,24, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,24, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(2,4,10,24, 'P')">21...24</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -214,7 +214,7 @@
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P11"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_19.01Autoevaluación proceso de desarrollo de Trabajo Fin de Grado  en Github <br> <a href=https://github.com/rlp0019/Activiti-Api>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=yiQpHgNWMZY&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=16>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=gYCQdf51SsE&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=15>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/rlp0019/Activiti-Api/dashboard>Calidad de código</a></th>
+									<th> GII_O_MA_19.01Autoevaluación proceso de desarrollo de Trabajo Fin de Grado  en Github<br> <a href=https://github.com/rlp0019/Activiti-Api>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=yiQpHgNWMZY&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=16>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=gYCQdf51SsE&list=PLbfgDC115L3ALlisGoqqJYWPmFPsr3CEN&index=15>Vídeo de presentación</a><br> <a href=https://app.codacy.com/project/rlp0019/Activiti-Api/dashboard>Calidad de código</a></th>
 									<td> Carlos López Nozal (Mención ingeniería del  Software) </td>
 									<td> 1 </td>
 									<td> 12/02/2019</td>
@@ -246,7 +246,7 @@
 									<td> 5</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P15"> <!-- Begin Proyecto-->
-									<th> GII_O_MC_20.02 Sistema domótico inteligente<br> <a href= https://github.com/davidelinformatico/TFG>Repositorio software</a><br> <a href=https://youtu.be/nqs-VCi_m7I >Vídeo demostración</a> <br> <a href=https://youtu.be/6QRz6VPv2PY >Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=davidelinformatico_TFG >Calidad de código</a></th>
+									<th> GII_O_MC_20.02 Sistema domótico inteligente<br> <a href= https://github.com/davidelinformatico/TFG>Repositorio software</a><br> <a href=https://youtu.be/nqs-VCi_m7I>Vídeo demostración</a> <br> <a href=https://youtu.be/6QRz6VPv2PY>Vídeo de presentación</a><br> <a href=https://sonarcloud.io/dashboard?id=davidelinformatico_TFG>Calidad de código</a></th>
 									<td> Alejandro Merino Gómez (Mención en Ingeniería de Computadores)<p></p>Álvar Arnaiz González </td>
 									<td> 1 </td>
 									<td> 06/10/2020</td>
@@ -270,7 +270,7 @@
 									<td> 10</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P18"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_20.04 Servicios de adquisición de datos y visualización de dashboards para la web de coyuntura económica<br> <a href=https://github.com/RaquelSancha/GII_O_MA_20.04 >Repositorio software</a><br> <a href=https://youtu.be/FveeOANVySU >Vídeo demostración</a> <br> <a href=https://youtu.be/f73WNutMKJA >Vídeo de presentación</a><br> <a href=https://app.codacy.com/gh/RaquelSancha/GII_O_MA_20.04/dashboard?branch=master >Calidad de código</a></th>
+									<th> GII_O_MA_20.04 Servicios de adquisición de datos y visualización de dashboards para la web de coyuntura económica<br> <a href=https://github.com/RaquelSancha/GII_O_MA_20.04>Repositorio software</a><br> <a href=https://youtu.be/FveeOANVySU>Vídeo demostración</a> <br> <a href=https://youtu.be/f73WNutMKJA>Vídeo de presentación</a><br> <a href=https://app.codacy.com/gh/RaquelSancha/GII_O_MA_20.04/dashboard?branch=master>Calidad de código</a></th>
 									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>Bruno Baruque Zanón<p></p>Santiago Porras Alfonso </td>
 									<td> 1 </td>
 									<td> 19/10/2020</td>
@@ -278,7 +278,7 @@
 									<td> 6.5</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P19"> <!-- Begin Proyecto-->
-									<th> GII_O_MA_19.04 Desarrollo y explotación de un chatbot para la asignatura de Trabajo Fin de Grado<br> <a href=https://github.com/aav0038/UBU-CHATBOT>Repositorio software</a><br> <a href= https://www.youtube.com/watch?v=b82GP8TjW98 >Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=Z86EJeIXAUM>Vídeo de presentación</a><br></th>
+									<th> GII_O_MA_19.04 Desarrollo y explotación de un chatbot para la asignatura de Trabajo Fin de Grado<br> <a href=https://github.com/aav0038/UBU-CHATBOT>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=b82GP8TjW98>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=Z86EJeIXAUM>Vídeo de presentación</a><br></th>
 									<td> Raúl Marticorena Sánchez (Mención Computación) </td>
 									<td> 1 </td>
 									<td> 19/10/2020</td>
@@ -286,12 +286,36 @@
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
 								<tr id="P20"> <!-- Begin Proyecto-->
-									<th> GII_O_MB_21.011CarSharing: Servicio Web y APP móvil para compartir vehículo para ir al trabajo<br> <a href= https://gitlab.com/HP-SCDS/Observatorio/2020-2021/ubu-carsharing >Repositorio software</a><br> <a href= https://www.youtube.com/watch?v=b82GP8TjW98 >Vídeo demostración</a> <br> <a href= https://youtu.be/fgvwXKAkYYk >Vídeo de presentación</a><br></th>
+									<th> GII_O_MB_21.011CarSharing: Servicio Web y APP móvil para compartir vehículo para ir al trabajo<br> <a href=https://gitlab.com/HP-SCDS/Observatorio/2020-2021/ubu-carsharing>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=b82GP8TjW98>Vídeo demostración</a> <br> <a href=https://youtu.be/fgvwXKAkYYk>Vídeo de presentación</a><br></th>
 									<td> Bruno Baruque Zanón<p></p>Francisco Alonso (tutor empresa HP SCDS)<p></p>Patricia Pérez (tutor empresa HP SCDS) </td>
 									<td> 1 </td>
 									<td> 19/10/2020</td>
 									<td> 13/07/2021</td>
 									<td> 6.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P21"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_19.07 Comparador de métricas de evolución en repositorios Software<br> <a href=https://github.com/Joaquin-GM/GII_O_MA_19.07-Comparador-de-metricas-de-evolucion-en-repositorios-Software>Repositorio software</a><br> <a href=https://youtu.be/AlYTr4l0f9I>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=Z4xfvGF23gI&list=PLbfgDC115L3AZwK-8HJ1sht7g_qr6KyTw&index=5>Vídeo de presentación</a><br></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software) </td>
+									<td> 1 </td>
+									<td> 07/10/2021</td>
+									<td> 16/06/2022</td>
+									<td> 9.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P22"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_21.01 MoodleQA<br> <a href=https://github.com/RobertoArastiBlanco/eLearningQA>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=nSt-2h2KmvE&list=PLbfgDC115L3AZwK-8HJ1sht7g_qr6KyTw&index=6>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=GAGd5qTeAOQ&list=PLbfgDC115L3AZwK-8HJ1sht7g_qr6KyTw&index=3>Vídeo de presentación</a><br></th>
+									<td> Raúl Marticorena Sánchez (Mención Computación)<p></p>Carlos López Nozal (Mención en Ingeniería del Software) </td>
+									<td> 1 </td>
+									<td> 01/10/2021</td>
+									<td> 16/06/2022</td>
+									<td> 9</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P23"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_21.05 Dashboard de visualización del uso y preferencias de los desarrolladores basado en las encuestas anuales de Stack Overflow<br> <a href=https://github.com/albarrom/GII_O_MA_21.05>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=vuZMDhxt5iQ&list=PLbfgDC115L3AZwK-8HJ1sht7g_qr6KyTw&index=4>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=SAU4wE_WJ2I&list=PLbfgDC115L3AZwK-8HJ1sht7g_qr6KyTw&index=1>Vídeo de presentación</a><br> <a href=https://www.codacy.com/gh/albarrom/GII_O_MA_21.05/dashboard?utm_source=github.com&utm_medium=referral&utm_content=albarrom/GII_O_MA_21.05&utm_campaign=Badge_Grade>Calidad de código</a></th>
+									<td> José Ignacio Santos Martín (Mención en Sistemas de Información)<p></p>Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 30/09/2021</td>
+									<td> 16/06/2022</td>
+									<td> 7</td>
 								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
@@ -299,10 +323,10 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(21, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,21, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,21, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(2,1,10,21, 'P')">21...21</a> </td>
+									<td><a href="javascript:MostrarAllFilas(24, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,24, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,24, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(2,4,10,24, 'P')">21...24</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -328,7 +352,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jul 20 14:28:30 CEST 2021 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Jun 16 13:44:05 CEST 2022 </li>
 							</ul>
 						</div>
 					</div>
