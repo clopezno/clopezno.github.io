@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11], ['2021/2022', 7, 0, 7, 13], ['2022/2023', 2, 0, 2, 4]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 3.748387], ['2021/2022', 8.442857142857145, 4.354839], ['2022/2023', 8.75, 4.5]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11], ['2021/2022', 8, 0, 8, 15], ['2022/2023', 7, 1, 7, 15]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 5.5096774], ['2021/2022', 8.275, 9.564516], ['2022/2023', 7.385714285714286, 8.115208]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 30 </td>
-									<td>N&uacute;mero Total de Alumnos: 29 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (8,12, 4, 10, 1,65) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (182,8, 80, 747, 123,07) </td>
+									<td>N&uacute;mero Total de Proyectos: 36 </td>
+									<td>N&uacute;mero Total de Alumnos: 35 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,91, 4, 10, 1,67) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (240,72, 80, 747, 132,59) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5, 7, 2] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6, 5, 4] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5, 7, 2] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11, 13, 4] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5, 8, 7] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6, 5, 10] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5, 8, 7] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11, 15, 15] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,10 +104,11 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(30, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,30, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,30, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,30, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarAllFilas(36, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,36, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,36, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,36, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(3,6,10,36, 'P')">31...36</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -365,16 +366,65 @@
 									<td> 20/06/2023</td>
 									<td> 9</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P30"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_22.07 Análisis de datos de temperatura y humedad de suelo procedentes de sensores IoT desplegados en un viñedo<br> <a href=https://github.com/jzx1003/GII_O_MA_22.07>Repositorio software</a><br> <a href=https://universidaddeburgos-my.sharepoint.com/:v:/g/personal/jzx1003_alu_ubu_es/EeDdavc3Dc5KmPmY3i-QcOoBjfDmz5-phjQ0EJyomT9StA?e=4nOx5D>Vídeo demostración</a> <br> <a href=https://universidaddeburgos-my.sharepoint.com/:v:/g/personal/jzx1003_alu_ubu_es/EZIw_-TCa8NLvLsUib9q5pYBtvKSE8uIgCMGwoaPZTzWgg?e=YH4HCQ>Vídeo de presentación</a><br></th>
+									<td> Alejandro Merino Gómez (Mención en Ingeniería de Computadores)<p></p>Rubén Ruiz González </td>
+									<td> 1 </td>
+									<td> 29/09/2022</td>
+									<td> 12/07/2023</td>
+									<td> 6.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P31"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_22.13 Aplicación de Gestión de Quirófanos mediante Inteligencia Computacional<br> <a href=https://github.com/jesgararm/GestorQuirofanos>Repositorio software</a><br> <a href=https://universidaddeburgos-my.sharepoint.com/:v:/g/personal/jga1021_alu_ubu_es/EUIW71S-GTdKrZd_EkWMgnEBNnRWEBg5SidSACal7E8kxg?e=nUCu0d>Vídeo demostración</a> <br> <a href=https://universidaddeburgos-my.sharepoint.com/:v:/g/personal/jga1021_alu_ubu_es/EUIW71S-GTdKrZd_EkWMgnEBNnRWEBg5SidSACal7E8kxg?e=nUCu0d>Vídeo de presentación</a><br> <a href=https://universidaddeburgos-my.sharepoint.com/:v:/g/personal/jga1021_alu_ubu_es/EQHbwrRtbA9HpYoEMCHCS28BNwTjxAUyl-2vY5j9WXPuoA?e=wRN0x1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19>Calidad de código</a></th>
+									<td> Raúl Marticorena Sánchez (Mención Computación)<p></p>Bruno Baruque Zanón<p></p>Daniel Urda Muñoz </td>
+									<td> 1 </td>
+									<td> 04/11/2022</td>
+									<td> 12/07/2023</td>
+									<td> 9.4</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P32"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_22.06 XacoMeter II - Google trends and Google News<br> <a href=https://github.com/map10100/XacoMeter-Google>Repositorio software</a><br> <a href=https://www.youtube.com/watch?v=oI_IJIYf_RM>Vídeo demostración</a> <br> <a href=https://www.youtube.com/watch?v=oI_IJIYf_RM>Vídeo de presentación</a><br> <a href=https://youtu.be/XFjewVf0jsU>Calidad de código</a></th>
+									<td> José Ignacio Santos Martín (Mención en Sistemas de Información)<p></p>Virginia Ahedo García<p></p>Silvia Díaz de la Fuente </td>
+									<td> 1 </td>
+									<td> 30/09/2022</td>
+									<td> 12/07/2023</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P33"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_23.02_IA-IVR<br> <a href=https://github.com/andonivianez/ubutfg-ai-callbo>Repositorio software</a><br></th>
+									<td> Alejandro Merino Gómez (Mención en Ingeniería de Computadores) </td>
+									<td> 1 </td>
+									<td> 22/02/2023</td>
+									<td> 12/07/2023</td>
+									<td> 5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P34"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_22.11 Lista de comprobación de buenas prácticas de enseñanza en cursos Moodle<br> <a href=https://github.com/ada1012/eLearningQA>Repositorio software</a><br> <a href=https://dai.ly/k3dgXAa1Dl6DsKzgU1Z>Vídeo demostración</a> <br> <a href=https://dai.ly/k3dgXAa1Dl6DsKzgU1Z>Vídeo de presentación</a><br> <a href=https://dai.ly/k6uMuXbeiibhD9zgTQT>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>Raúl Marticorena Sánchez </td>
+									<td> 1 </td>
+									<td> 06/10/2022</td>
+									<td> 12/07/2023</td>
+									<td> 6.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P35"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_21.03 Investigación, creación y explotación de modelos para el estudio del COVID-19 en pacientes del servicio cántabro de Salud.<br> <a href=https://github.com/sgg0008/ml-COVID-19>Repositorio software</a><br> <a href=https://youtu.be/sGoMh_xDQwg>Vídeo demostración</a> <br> <a href=https://youtu.be/sGoMh_xDQwg>Vídeo de presentación</a><br> <a href=https://youtu.be/b7AtJThKwcY>Calidad de código</a></th>
+									<td> Carlos López Nozal (Mención Ingeniería del Software)<p></p>José Francisco Díez Pastor </td>
+									<td> 1 </td>
+									<td> 04/10/2021</td>
+									<td> 12/07/2023</td>
+									<td> 7.1</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(30, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,30, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,30, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,30, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarAllFilas(36, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,36, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,36, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,36, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(3,6,10,36, 'P')">31...36</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -400,7 +450,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Tue Jun 20 14:06:59 CEST 2023 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Thu Jul 13 09:12:46 CEST 2023 </li>
 							</ul>
 						</div>
 					</div>
