@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://cdn.tiny.cloud/1/8wj40zla3q28xo2vbsihrypt3akdg9s8xdk1s8wasqwknrbg/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
- 
+   <script src="https://cdn.tiny.cloud/1/8wj40zla3q28xo2vbsihrypt3akdg9s8xdk1s8wasqwknrbg/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
   </head>
 
   <body>
     <h1>TinyMCE Quick Start Guide</h1>
+    <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+  <script>
+  tinymce.init({
+    selector: 'textarea',
+    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+  });
+  </script>
+  <textarea>
+    Welcome to TinyMCE!
+ </textarea>
 
-     <script  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+    <!-- <script  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
      <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <script>
@@ -31,5 +43,6 @@
 <textarea>
   Welcome to TinyMCE!
 </textarea>
+    -->
   </body>
 </html>
