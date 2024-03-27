@@ -16,8 +16,10 @@
     <script>
     tinymce.init({
     selector: 'textarea',
+    external_plugins: {"codehl": "https://clopezno.github.io/codeeditorMoodle/assets/js/codehl/plugin.min.js", 
+                       "clozeeditor": "https://clopezno.github.io/codeeditorMoodle/assets/js/clozeeditor/plugin.min.js"},   
     plugins: 'codehl clozeeditor anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-    external_plugins: {"codehl": "https://clopezno.github.io/codeeditorMoodle/assets/js/codehl/plugin.min.js", "clozeeditor": "https://clopezno.github.io/codeeditorMoodle/assets/js/clozeeditor/plugin.min.js"},  
+    
     toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
   });
 </script>
