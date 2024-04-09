@@ -1,0 +1,116 @@
+body {
+    font-size: 14px;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "gandhi sans", helvetica, sans-serif;
+}
+.btn {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+}
+.container {
+    max-width: 920px;
+}
+.navbar {
+    background: #111;
+    padding: 0.3em 0;
+}
+.navbar .navbar-brand {
+    color: #fff;
+    font-family: "gandhi serif", georgia, serif;
+    font-weight: bold;
+}
+.navbar ul.nav li a {
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 1.5em;
+}
+.navbar ul.nav li button {
+    margin: 0.7em 0 0 1em;
+}
+.jumbotron {
+    background-color: #428BCA;
+    color: #fff;
+    padding: 6.5em 0 6em;
+    text-align: center;
+}
+.jumbotron h1 {
+    font-family: "gandhi serif", georgia, serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+}
+.jumbotron h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin-bottom: 1.4em;
+}
+.jumbotron a{
+    color: #fff;
+}
+.jumbotron .btn {
+    box-shadow: 1px 1px 3px #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.3em 2.5em 0.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px;
+}
+.jumbotron .btn .glyphicon {
+    margin-left: 0.2em;
+    position: relative;
+    top: 3px;
+}
+.box{
+    border-left: 1px solid rgba(243,234,234,0.7); 
+    text-shadow: 1px 1px 3px #000;
+}
+.sect-border {
+    border-top: 1px dashed #d6d6d6;
+    border-bottom: 1px dashed #f6f6f6;
+    margin: 2em 8% 2.4em;
+}
+.subhead {
+    color: #000;
+    font-family: "gandhi serif", georgia, serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.3em 0;
+}
+footer {
+    background: #111;
+    color: #fff;
+    margin: 3.5em 0 0;
+    padding: 1.5em 0 0.8em;
+}
+footer a{
+    margin:2px;
+    display:inline;
+}
+@media screen and (max-width: 768px) {
+    .navbar ul.nav li {
+        text-align: center;
+    }
+    .navbar ul.nav li button {
+        margin: 1em 0;
+    }
+    .jumbotron {
+        font-size: 14px;
+        padding: 6em 0 4em;
+    }
+    .benefit {
+        margin-bottom: 2em;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .jumbotron {
+        font-size: 12px;
+    }
+}
