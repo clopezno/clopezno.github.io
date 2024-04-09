@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="./tinymce/js/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript">
+ tinymce.init({ 
+    selector: "#mytextarea",
+	  plugins: [ 
+         "clozeeditor advlist autolink link image lists charmap print preview hr anchor pagebreak", 
+         "spellchecker searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", 
+         "save table contextmenu directionality emoticons template paste textcolor" 
+   ],
+    
+   toolbar: "clozeeditor | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | ink image | print preview media fullpage | forecolor  backcolor emoticons"
+  
+  
+ }); 
+  </script>
+</head>
+<body>
+  <h1>TinyMCE Quick Start Guide</h1>
+  <form method="post">
+    <textarea id="mytextarea">Hello 4.0, World!</textarea>
+  </form>
+</body>
+</html>
