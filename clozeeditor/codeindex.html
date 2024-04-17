@@ -3,6 +3,9 @@
 <head>
   <script src="./tinymce/js/tinymce/tinymce.min.js"></script>
   <script type="text/javascript">
+  <link href="tinymce/js/tinymce/plugins/codehl/js/prettify/prettify.css" rel="stylesheet">
+  <scripttype="text/javascript"src="tinymce/js/tinymce/plugins/codehl/js/prettify.js"></script>
+	  
  tinymce.init({ 
     selector: "#clozetextarea",
 	  plugins: [ 
@@ -17,7 +20,7 @@
  }); 
   </script>
 </head>
-<body>
+<body onload="prettyPrint()">
   <h1>Editor para crear preguntas de tipo cloze</h1>
   <form method="post">
     <textarea id="clozetextarea">Añade el contenido de la pregunta y pulsa el botón amarillo ? para ayudarte a crear la pregunta cloze</textarea>
