@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="./tinymce/js/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript">
+ tinymce.init({ 
+    selector: "#clozetextarea",
+	  plugins: [ 
+         "codehl clozeeditor advlist autolink link image lists charmap print preview hr anchor pagebreak", 
+         "spellchecker searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", 
+         "save table contextmenu directionality emoticons template paste textcolor" 
+   ],
+    
+   toolbar: "codehl clozeeditor | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | ink image | print preview media fullpage | forecolor  backcolor emoticons"
+  
+  
+ }); 
+  </script>
+</head>
+<body>
+  <h1>Editor para crear preguntas de tipo cloze</h1>
+  <form method="post">
+    <textarea id="clozetextarea">Añade el contenido de la pregunta y pulsa el botón amarillo ? para ayudarte a crear la pregunta cloze</textarea>
+  </form>
+  <h1>Vídeo tutorial de ayuda para crear preguntas cloze en Moodle con el uso del Editor</h1>
+  <iframe width="1214" height="683" src="https://www.youtube.com/embed/2H9OjEdm1QI" title="Preguntas Cloze" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
