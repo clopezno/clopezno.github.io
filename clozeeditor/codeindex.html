@@ -2,10 +2,10 @@
 <html>
 <head>
   <script src="./tinymce/js/tinymce/tinymce.min.js"></script>
-  <script type="text/javascript">
   <link href="tinymce/js/tinymce/plugins/codehl/js/prettify/prettify.css" rel="stylesheet">
   <scripttype="text/javascript"src="tinymce/js/tinymce/plugins/codehl/js/prettify.js"></script>
 	  
+<script type="text/javascript">	  
  tinymce.init({ 
     selector: "#clozetextarea",
 	  plugins: [ 
@@ -13,7 +13,8 @@
          "spellchecker searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", 
          "save table contextmenu directionality emoticons template paste textcolor" ],
     
-   toolbar: "codehl clozeeditor | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | ink image | print preview media fullpage | forecolor  backcolor emoticons"
+   toolbar: "codehl clozeeditor | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | ink image | print preview media fullpage | forecolor  backcolor emoticons",
+   height: 300	 
 
   
   
@@ -24,7 +25,13 @@
   <h1>Editor para crear preguntas de tipo cloze</h1>
   <form method="post">
     <textarea id="clozetextarea">
-	Hola
+	<p>Para crear una pregunta cloze con c&oacute;digo formateado el proceso el siguinente:</p>
+	    <ol style="list-style-type: undefined;">
+	    <li>Edita o copia el c&oacute;digo en cualquier lenguaje de programaci&oacute;n en el editor</li>
+	    <li>Selecciona el c&oacute;digo y pulsa el bot&oacute;n azul C para formatearlo. No se te olvide incrustar los estilos</li>
+	    <li>Crea tu pregunta cloze utilizando el bot&oacute;n amarillo con&nbsp;la etiqueta ?</li>
+	    <li>Copia el texto de la pregunta directamente y pega&ntilde;o en el editor de Moodle</li>
+            </ol>  
     </textarea>
   </form>
   <h1>Vídeo tutorial de ayuda para crear preguntas cloze en Moodle con el uso del Editor</h1>
