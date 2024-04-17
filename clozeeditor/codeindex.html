@@ -12,6 +12,7 @@
          "codehl clozeeditor advlist autolink link image lists charmap print preview hr anchor pagebreak", 
          "spellchecker searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", 
          "save table contextmenu directionality emoticons template paste textcolor" 
+     height: 300
    ],
     
    toolbar: "codehl clozeeditor | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | ink image | print preview media fullpage | forecolor  backcolor emoticons"
@@ -23,7 +24,15 @@
 <body onload="prettyPrint()">
   <h1>Editor para crear preguntas de tipo cloze</h1>
   <form method="post">
-    <textarea id="clozetextarea">Añade el contenido de la pregunta y pulsa el botón amarillo ? para ayudarte a crear la pregunta cloze</textarea>
+    <textarea id="clozetextarea">
+	<p>Para crear una pregunta cloze con c&oacute;digo formateado el proceso el siguinente:</p>
+	    <ol style="list-style-type: undefined;">
+	    <li>Edita o copia el c&oacute;digo en cualquier lenguaje de programaci&oacute;n en el editor</li>
+	    <li>Selecciona el c&oacute;digo y pulsa el bot&oacute;n azul C para formatearlo. No se te olvide incrustar los estilos</li>
+	    <li>Crea tu pregunta cloze utilizando el bot&oacute;n amarillo con&nbsp;la etiqueta ?</li>
+	    <li>Copia el texto de la pregunta directamente y pega&ntilde;o en el editor de Moodle</li>
+            </ol>    
+    </textarea>
   </form>
   <h1>Vídeo tutorial de ayuda para crear preguntas cloze en Moodle con el uso del Editor</h1>
   <iframe width="1214" height="683" src="https://www.youtube.com/embed/2H9OjEdm1QI" title="Preguntas Cloze" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
