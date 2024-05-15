@@ -5,7 +5,7 @@ tinymce.PluginManager.add("clozeeditor", function(t, e) {
         t.windowManager.open({
             title: "Cloze Editor",
             url: e + '/dialog.html?lang=' + lang,
-            width: 490 + parseInt(t.getLang('clozeeditor.delta_width', 0)),
+            width: 620 + parseInt(t.getLang('clozeeditor.delta_width', 0)),
             height: 360 + parseInt(t.getLang('clozeeditor.delta_height', 0)),
             inline: true,
             buttons: [{text: "Close", onclick: "close"}]
