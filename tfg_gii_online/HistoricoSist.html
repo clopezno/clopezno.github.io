@@ -18,8 +18,8 @@
 		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
 		<script type='text/javascript'>
 			function dibujar(){
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11], ['2021/2022', 8, 0, 8, 15], ['2022/2023', 7, 1, 7, 15]], "grafica", "Metricas agrupadas por curso"));
-			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 5.5096774], ['2021/2022', 8.275, 9.564516], ['2022/2023', 7.385714285714286, 8.115208]], "media", "Medias agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Proyectos nuevos', 'Proyectos ya asignados', 'Alumnos Asignados', 'Tutores Asignados'], ['2016/2017', 2, 0, 2, 2], ['2017/2018', 2, 2, 2, 5], ['2018/2019', 7, 1, 7, 11], ['2019/2020', 4, 0, 4, 6], ['2020/2021', 5, 0, 5, 11], ['2021/2022', 9, 0, 9, 16], ['2022/2023', 11, 2, 11, 21], ['2023/2024', 22, 5, 22, 35]], "grafica", "Metricas agrupadas por curso"));
+			 google.setOnLoadCallback(drawChart([['AÃ±o', 'Media Aritmetica Notas', 'Media Aritmetica Meses'], ['2016/2017', 5.0, 18.048388], ['2017/2018', 9.5, 5.322581], ['2018/2019', 8.428571428571429, 5.004608], ['2019/2020', 8.375, 8.112904], ['2020/2021', 7.090000000000001, 5.5096774], ['2021/2022', 7.933333333333334, 11.139785], ['2022/2023', 7.418181818181819, 10.721408], ['2023/2024', 7.786363636363634, 5.1407623]], "media", "Medias agrupadas por curso"));
 			}
 		</script> 
 	</head>
@@ -76,16 +76,16 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos: 36 </td>
-									<td>N&uacute;mero Total de Alumnos: 35 </td>
-									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,91, 4, 10, 1,67) </td>
-									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (240,72, 80, 747, 132,59) </td>
+									<td>N&uacute;mero Total de Proyectos: 63 </td>
+									<td>N&uacute;mero Total de Alumnos: 62 </td>
+									<td>Calificaci&oacute;n (media,min,max,stdv):<p></p> (7,8, 4, 10, 1,48) </td>
+									<td>Tiempo/d&iacute;as (media,min,max,stdv):<p></p> (234,97, 80, 747, 144,75) </td>
 								</tr>
 								<tr>
-									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5, 8, 7] </td>
-									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6, 5, 10] </td>
-									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5, 8, 7] </td>
-									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11, 15, 15] </td>
+									<td>N&uacute;mero Total de Proyectos Asignados por Curso:<br/> [2, 2, 7, 4, 5, 9, 11, 22] </td>
+									<td>N&uacute;mero Total de Proyectos Presentados por Curso: <br/>[0, 3, 8, 3, 6, 5, 10, 27] </td>
+									<td>N&uacute;mero Total de Alumnos Asignados por Curso: <br/>[2, 2, 7, 4, 5, 9, 11, 22] </td>
+									<td>N&uacute;mero Total de Tutores con nuevas asignaciones por Curso: <br/>[2, 5, 11, 6, 11, 16, 21, 35] </td>
 								</tr>
 								<tr>
 									<td colspan='4' ><div  class='grafica' id="grafica" ></div></td>
@@ -104,11 +104,14 @@
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(36, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,36, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,36, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,36, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(3,6,10,36, 'P')">31...36</a> </td>
+									<td><a href="javascript:MostrarAllFilas(63, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,63, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,63, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,63, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,63, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,63, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,63, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(6,3,10,63, 'P')">61...63</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -414,17 +417,241 @@
 									<td> 12/07/2023</td>
 									<td> 7.1</td>
 								</tr><!-- End Proyecto-->
+								<tr id="P36"> <!-- Begin Proyecto-->
+									<th>  GII_O_MA_22.05 Backend en microservicios para aplicación móvil<br> <a href=https://github.com/emur-uy/backend
+https://github.com/emur-uy/chatbot/
+https://github.com/emur-uy/documentation>Repositorio software</a><br></th>
+									<td>  Pedro Renedo Fernández </td>
+									<td> 1 </td>
+									<td> 29/09/2022</td>
+									<td> 24/01/2024</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P37"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.22 MiVoto. Aplicación para realización de votaciones en comunidades de vecinos.<br> <a href=https://bitbucket.org/mivototfg/workspace/overview/>Repositorio software</a><br></th>
+									<td> José Ignacio Santos Martín<p></p>Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 28/09/2023</td>
+									<td> 24/01/2024</td>
+									<td> 9.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P38"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.24. Desarrollo de un chatbot basado en 'Large Language Model' (LLM) y técnicas de 'Retrieval-augmented Generation' (RAG) para asistente de dudas sobre la realización del TFG en el Grado de Ingeniería Informática<br> <a href=https://github.com/jrg1013/chatbot>Repositorio software</a><br></th>
+									<td> José Ignacio Santos Martín<p></p>Carlos López Nozal </td>
+									<td> 1 </td>
+									<td> 15/10/2023</td>
+									<td> 24/01/2024</td>
+									<td> 9.4</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P39"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.25. Optimización pedidos TETRAPAK<br> <a href=https://github.com/icg0019/TFG>Repositorio software</a><br></th>
+									<td> Ángel Arroyo Puente<p></p>Nuño Basurto Hornillos </td>
+									<td> 1 </td>
+									<td> 04/10/2023</td>
+									<td> 24/01/2024</td>
+									<td> 8.4</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P40"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_21.02 Migración de Generador de Informes Nutricionales a plataforma Web<br> <a href=https://github.com/alvaromanjon/NutriMenu>Repositorio software</a><br></th>
+									<td> Raúl Marticorena Sánchez<p></p>Antonio Jesús Canepa Oneto </td>
+									<td> 1 </td>
+									<td> 07/10/2022</td>
+									<td> 27/02/2024</td>
+									<td> 8.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P41"> <!-- Begin Proyecto-->
+									<th>  GII_O_MA_21.07 Generación de rutas utilizando sistemas empotrados<br> <a href=https://github.com/guillealcuaz/GPS2.0>Repositorio software</a><br></th>
+									<td> Alejandro Merino Gómez </td>
+									<td> 1 </td>
+									<td> 21/02/2022</td>
+									<td> 27/02/2024</td>
+									<td> 5.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P42"> <!-- Begin Proyecto-->
+									<th>  GII_O_MC_23.01_Motor de físicas en función del entorno<br> <a href=https://github.com/dmm1005/PhysicsEngine>Repositorio software</a><br></th>
+									<td>  Alejandro Merino Gómez </td>
+									<td> 1 </td>
+									<td> 21/02/2023</td>
+									<td> 27/02/2024</td>
+									<td> 6.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P43"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.21 Programación de redes definidas por software (SDN) mediante el lenguaje P4<br> <a href=https://github.com/jas1008/TFG_SDN_P4>Repositorio software</a><br></th>
+									<td>  Alejandro Merino Gómez<p></p>Rubén Ruiz González </td>
+									<td> 1 </td>
+									<td> 19/09/2023</td>
+									<td> 27/02/2024</td>
+									<td> 7.6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P44"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.23. Aplicación de análisis de reseñas basado en modelos de lenguaje grandes mediante prompt engineering<br> <a href=https://github.com/tgs1003/TFG_2023_2024>Repositorio software</a><br></th>
+									<td> José Ignacio Santos Martín
+José Manuel Galán Ordax
+Virginia Ahedo García </td>
+									<td> 1 </td>
+									<td> 23/10/2023</td>
+									<td> 27/02/2024</td>
+									<td> 8.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P45"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.31. Diseño de un sistema IoT de monitorización de invernaderos<br> <a href=https://github.com/JLCaballeroMQ/Proyecto_TFG_UBU_23_24>Repositorio software</a><br></th>
+									<td> Carlos Cambra Baseca<p></p>Alejandro Merino Gómez </td>
+									<td> 1 </td>
+									<td> 06/10/2023</td>
+									<td> 27/02/2024</td>
+									<td> 6.6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P46"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.32. Generador de cuestionarios y escenarios de test sobre soft skills<br> <a href=https://github.com/Daniel-Fernandez-UBU/riskRealUBU>Repositorio software</a><br></th>
+									<td> Raúl Marticorena Sánchez </td>
+									<td> 1 </td>
+									<td> 16/10/2023</td>
+									<td> 18/06/2024</td>
+									<td> 7.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P47"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.33. FAT: Financial Analysis Tool. Herramienta para realizar análisis financiero con Python<br> <a href=https://github.com/rmt0009alu/FAT>Repositorio software</a><br></th>
+									<td> Virginia Ahedo García<p></p>José Ignacio Santos Martín </td>
+									<td> 1 </td>
+									<td> 23/10/2023</td>
+									<td> 18/06/2024</td>
+									<td> 9.6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P48"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.38. Fusión Sensorial para la Mejora de la Detección de Obstáculos en Conducción Autónoma: Integración de Cámara RGB y LiDAR 3D<br> <a href=https://github.com/miguelangulismo/LiDAR_and_RGB_Fusion>Repositorio software</a><br></th>
+									<td> Nuño Basurto Hornillos<p></p>Diego Granados López </td>
+									<td> 1 </td>
+									<td> 15/01/2024</td>
+									<td> 18/06/2024</td>
+									<td> 8.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P49"> <!-- Begin Proyecto-->
+									<th> GII 23.39 PrimeBot: Robot autónomo y preciso	<br> <a href=https://github.com/marioAlonso2122/Primebot>Repositorio software</a><br></th>
+									<td> Jesús Enrique Sierra García<p></p>César Represa Pérez </td>
+									<td> 1 </td>
+									<td> 01/01/2023</td>
+									<td> 18/06/2024</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P50"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.08. Aplicación para gestión de stocks y caducidades<br> <a href=https://github.com/jsc1013/StayFresh>Repositorio software</a><br></th>
+									<td> Jesús Manuel Maudes Raedo<p></p>José Antonio Barbero </td>
+									<td> 1 </td>
+									<td> 05/03/2024</td>
+									<td> 18/06/2024</td>
+									<td> 8.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P51"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.26. Aplicación móvil (FrontEnd) acceso a los microservicios de servicios a usuarios afectados por la Esclerosis Múltiple (EM).<br> <a href=https://github.com/jmc1005/red-ela>Repositorio software</a><br></th>
+									<td> Pedro Renedo Fernández </td>
+									<td> 1 </td>
+									<td> 20/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 6.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P52"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.27. Diaberse: the return of the hypoglycemia <br> <a href=https://gitlab.com/HP-SCDS/Observatorio/2023-2024/diaberse/ubu-diaberse>Repositorio software</a><br></th>
+									<td> 
+Pedro Renedo Fernández<p></p>Tutor empresarial HP </td>
+									<td> 1 </td>
+									<td> 26/01/2024</td>
+									<td> 15/07/2024</td>
+									<td> 8.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P53"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.29. Generador de WEB/APP<br> <a href=https://github.com/Angel798v/TFG_AngelVega>Repositorio software</a><br></th>
+									<td> José Manuel Aroca Fernández </td>
+									<td> 1 </td>
+									<td> 05/10/2023</td>
+									<td> 15/07/2024</td>
+									<td> 6.7</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P54"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.30. Comparador de sistemas de despliegue de software mediante APIs <br> <a href=https://github.com/mariolopezmatamala/cloud-duo-aws-gcp>Repositorio software</a><br></th>
+									<td> José Manuel Aroca Fernández </td>
+									<td> 1 </td>
+									<td> 05/10/2023</td>
+									<td> 15/07/2024</td>
+									<td> 7.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P55"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_23.37. Prototipo de reconocimiento de actividades en base a señales cerebrales<br> <a href=https://github.com/jpg1003/AnalisisEEG>Repositorio software</a><br></th>
+									<td> Bruno Baruque Zanón <p></p>Jesús Enrique Sierra García </td>
+									<td> 1 </td>
+									<td> 20/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 7.5</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P56"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.01. Gestión de cartera de opciones<br> <a href=https://github.com/cbr1005/TFG.git>Repositorio software</a><br></th>
+									<td> José Ignacio Santos Martín </td>
+									<td> 1 </td>
+									<td> 12/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 5.8</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P57"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.02. Estudio y Configuración de un sistema ELK<br> <a href=https://github.com/hds1001/Estudio-y-configuracion-de-un-sistema-ELK>Repositorio software</a><br></th>
+									<td> Jesus Manuel Maudes Raedo<p></p>Antonio Jesús Canepa Oneto </td>
+									<td> 1 </td>
+									<td> 16/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 7.3</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P58"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.03. Herramienta de modelado de Bases de Datos relacionales con Crows Foot<br> <a href=https://github.com/jrp1004/CrowsFoot_JuanRomera_TFG>Repositorio software</a><br></th>
+									<td> Jesus Manuel Maudes Raedo </td>
+									<td> 1 </td>
+									<td> 29/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 7.6</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P59"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.05. Herramienta de modelado E/R<br> <a href=https://github.com/rubenmate/draw-entity-relation>Repositorio software</a><br></th>
+									<td> Jesus Manuel Maudes Raedo </td>
+									<td> 1 </td>
+									<td> 21/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 8.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P60"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.06. Inteligencia Artificial para seguridad IoT<br> <a href=https://github.com/eddddddp/AI-for-IoT-security>Repositorio software</a><br></th>
+									<td> Rubén Ruiz González<p></p>Alejandro Merino Gómez </td>
+									<td> 1 </td>
+									<td> 22/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 7.2</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P61"> <!-- Begin Proyecto-->
+									<th> GII_O_MA_24.07. IA para detección temprana de incidentes de ciberseguridad con Telegram como fuente de datos<br> <a href=https://github.com/iraty/AI-for-early-detection-in-cybersecurity>Repositorio software</a><br></th>
+									<td> César Ignacio García Osorio </td>
+									<td> 1 </td>
+									<td> 26/02/2024</td>
+									<td> 15/07/2024</td>
+									<td> 9.1</td>
+								</tr><!-- End Proyecto-->
+								<tr id="P62"> <!-- Begin Proyecto-->
+									<th> GII_O_MC_24.10. Implementación de una Prueba de Concepto (PoC) de Manage Engine PAM para la Gestión Eficiente de Acceso Privilegiado en Organizaciones<br> <a href=https://github.com/avs1002/TFG-PoC-de-PAM-Alejandro-Villar-Solla>Repositorio software</a><br></th>
+									<td> Luis Antonio Antolín Sánchez<p></p>Livan Rodriguez Regueria </td>
+									<td> 1 </td>
+									<td> 09/04/2024</td>
+									<td> 15/07/2024</td>
+									<td> 5.4</td>
+								</tr><!-- End Proyecto-->
 							</tbody>
 						</table>
 						<p></p>
 						<table class='nav'>
 							<tbody>
 								<tr>
-									<td><a href="javascript:MostrarAllFilas(36, 'P')"> Todas</a> </td>
-									<td><a href="javascript:MostrarFilas(0,10,36, 'P')">1...10</a> </td>
-									<td><a href="javascript:MostrarFilas(1,10,36, 'P')">11...20</a> </td>
-									<td><a href="javascript:MostrarFilas(2,10,36, 'P')">21...30</a> </td>
-									<td><a href="javascript:MostrarFilasUltima(3,6,10,36, 'P')">31...36</a> </td>
+									<td><a href="javascript:MostrarAllFilas(63, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,63, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,63, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,63, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilas(3,10,63, 'P')">31...40</a> </td>
+									<td><a href="javascript:MostrarFilas(4,10,63, 'P')">41...50</a> </td>
+									<td><a href="javascript:MostrarFilas(5,10,63, 'P')">51...60</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(6,3,10,63, 'P')">61...63</a> </td>
 								</tr>
 							</tbody>
 						</table>
@@ -450,7 +677,7 @@
 						<div class='col l4 s12'>
 							<ul>
 								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
-								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Jul 22 12:54:47 CEST 2024 </li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Mon Jul 22 13:01:23 CEST 2024 </li>
 							</ul>
 						</div>
 					</div>
